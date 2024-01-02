@@ -1,0 +1,28 @@
+/* style.css */
+.playstore-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .google-play-button {
+    background: url('assets/imgs/.google-play-button') no-repeat center center;
+    background-size: cover;
+    display: block;
+    width: 200px;
+    height: 160px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
