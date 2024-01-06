@@ -49,7 +49,10 @@
 *::after {
   box-sizing: border-box;
 }
-
+.fixed-size-image {
+  width: 300px; /* Set the desired width */
+  height: 200px; /* Set the desired height */
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -134,6 +137,11 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+}
+
+.smaller-image {
+  max-width: 50%; /* Adjust the maximum width as needed */
+  max-height: 50%; /* Maintain the aspect ratio */
 }
 
 b,
@@ -12122,6 +12130,13 @@ pre .code {
   font-weight: bold;
   opacity: .8;
   color: #212529;
+}
+
+.custom-padding {
+  text-align: center; /* Center the content horizontally */
+    padding-left: 20px !important; /* Adjust the left padding as needed */
+    padding-right: 20px !important; /* Adjust the right padding as needed */
+    margin: 0 auto;
 }
 
 .header-mini {
