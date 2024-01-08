@@ -80,11 +80,14 @@
     </section> <!-- end of about section -->
 
 
-    <section>
+    <div class="row">
         <div class="custom-padding">
             <img src="assets/imgs/settowally_mockup.svg" class="smaller-image">
         </div>
-    </section>
+        <div class="custom-padding">
+            <img src="assets/imgs/settowally_mockup.png" class="smaller-image">
+        </div>
+    </div>
 
     <!-- Tecnical section -->
     <section class="section pt-0" id="tecnical_details">
@@ -278,7 +281,7 @@
             portfolioSection.scrollIntoView({ behavior: 'smooth' });
         });
     </script>
-<style>
+    <style>
     .custom-padding {
         text-align: center; /* Center the content horizontally */
         padding-left: 20px; /* Adjust the left padding as needed */
@@ -286,12 +289,16 @@
         margin: 0 auto; /* Center the div within its parent */
     }
     .smaller-image {
-        max-width: 75% !important; /* Adjust the maximum width as needed */
-        height: auto !important; /* Maintain the aspect ratio */
+        max-width: 50% !important; /* Adjust the maximum width as needed */
+        max-height: 50% !important; /* Maintain the aspect ratio */
     }
     .fixed-size-image {
         width: 300px; /* Set the desired width */
         height: 200px; /* Set the desired height */
+    }
+    .row {
+    display: flex;
+    justify-content: space-between; /* Optional: Adjust the alignment as needed */
     }
     </style>
 </body>
