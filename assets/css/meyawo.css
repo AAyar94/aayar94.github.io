@@ -28,7 +28,7 @@
   --gray: #6c757d;
   --gray-dark: #393e46;
   --primary: #695aa6;
-  --secondary: #393e46;
+  --secondary: #e07ede;
   --success: #1bb74f;
   --info: #17a2b8;
   --warning: #ff6d02;
@@ -5520,7 +5520,7 @@ a.badge-primary:focus, a.badge-primary.focus {
 
 .badge-secondary {
   color: #fff;
-  background-color: #393e46;
+  background-color: #e07ede;
 }
 
 a.badge-secondary:hover, a.badge-secondary:focus {
