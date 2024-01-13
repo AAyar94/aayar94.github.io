@@ -98,21 +98,39 @@
                 <div class="about-caption">
                     <h2 class="section-title mb-3">Teknik Detaylar</h2>
                     <p>
-                        Valorguide & Stats uygulamasını <strong>MVVM</strong> mimarisinde,<br>
-                        <strong> Dagger-Hilt </strong>-> bağımlılık yönetimi için, <br>
-                        <strong>Data Binding,View Binding </strong>-> Ekrandaki componentlerin mantık ve data
-                        iletişimi için, <br>
-                        <strong>DataStore</strong> -> key-value şeklinde veri tutabileceğiniz veri tabanı olarak,<br>
-                        <strong>ROOM</strong> -> ROOM, Android'de SQLite' ı temel alan güçlü bir veritabanı
-                        kütüphanesini kullanarak. <br>
-                        <strong>Coroutines</strong> -> Asenkron işlemleri yönetmek için kullanılan hafif ve etkili
-                        bir kütüphanesini kullanarak
-                        (uzun süreli işlemleri yapmada etkilidir.Daha az bellek tükedir.)<br>
-                        <strong>Retrofit </strong>-> Açık kaynak kodlu rest istemcisi olan bir network için
-                        .<br>
-                        <strong>Coil </strong>-> Android için Kotlin Coroutines tarafından desteklenen bir görüntü
-                        yüklemek için kullaranak geliştirdim.<br>
-                        Projenin kaynak koduna Sayfa girişindeki repo linkinden ulaşabilirsiniz.
+                        <br><br><span class="badge badge-pill badge-primary">MVVM</span> uygulama geliştirmede
+                        kullanılan bir desendir ve üç ana bileşenden oluşur: Model, View ve ViewModel. Model, veri ve iş
+                        mantığını temsil eder; View, kullanıcı arayüzünü (UI) ve kullanıcı etkileşimlerini yönetir;
+                        ViewModel ise View ve Model arasında bir köprü görevi görür, UI mantığını içerir ve Model'den
+                        gelen verileri UI için uygun formata dönüştürür. MVVM, veri bağlama (data binding) özelliği
+                        sayesinde View ve ViewModel arasındaki bağlantıyı otomatize eder, böylece kodun daha temiz, daha
+                        iyi organize edilmiş ve daha kolay test edilebilir olmasını sağlar.
+                        <br><br><span class="badge badge-pill badge-secondary">Dagger-Hilt</span> Android uygulamaları
+                        için Dagger'ın kolaylaştırılmış bir sürümüdür ve bağımlılık enjeksiyonunu basitleştirmek için
+                        tasarlanmıştır, böylece geliştiriciler daha az boilerplate kodu ile bağımlılık enjeksiyonunu
+                        kolayca uygulayabilirler.
+                        <br><br><span class="badge badge-pill badge-primary">DataStore</span> Android'de hafif, güvenli
+                        ve esnek bir veri saklama çözümüdür ve SharedPreferences'ın modern bir alternatifidir. Jetpack
+                        DataStore, verileri disk üzerinde asenkron olarak saklamak ve okumak için Kotlin coroutines ve
+                        Flow'ları kullanır. İki ana türü vardır: Preferences DataStore, anahtar-değer çiftleri şeklinde
+                        veri saklar ve Proto DataStore, verileri tip güvenliği sağlayan ve daha verimli bir biçimde
+                        saklayan protokol tamponları (Protocol Buffers) kullanır. DataStore, verileri güvenli ve tutarlı
+                        bir şekilde yönetmek, veri göçü ve veri değişikliklerini takip etmek için daha iyi araçlar
+                        sunar.
+                        <br><br><span class="badge badge-pill badge-info">Room</span> Android Jetpack'in bir parçası
+                        olan ve SQLite veritabanı işlemlerini kolaylaştıran bir kalıcılık kütüphanesidir. Room, SQL
+                        sorgularını yazmayı kolaylaştırır ve compile-time kontrolü sağlayarak hataları azaltır.
+                        <br><br><span class="badge badge-pill badge-danger">Coroutines</span> Android'de asenkron
+                        programlamayı kolaylaştırmak için Kotlin coroutines ile entegre bir yaklaşım sunan bir
+                        kütüphanedir.
+                        <br><br><span class="badge badge-pill badge-primary">Retrofit</span> Android ve Java
+                        uygulamalarında REST API çağrılarını yönetmek için kullanılan, tip güvenliği sağlayan ve ağ
+                        işlemlerini kolaylaştıran bir HTTP istemci kütüphanesidir.
+                        <br><br><span class="badge badge-pill badge-secondary">Coil</span> Kotlin tabanlı, modern ve
+                        hafif bir Android görüntü yükleme kütüphanesidir. Bu kütüphane, Kotlin coroutines kullanarak
+                        asenkron ve performanslı bir şekilde görüntüleri yüklemek için tasarlanmıştır ve Android
+                        uygulamalarında görüntü yükleme işlemlerini kolaylaştırır.
+
                     </p>
                 </div>
             </div><!-- end of about wrapper -->
