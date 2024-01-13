@@ -92,20 +92,15 @@
                 <div class="about-caption">
                     <h2 class="section-title mb-3">Teknik Detaylar</h2>
                     <p>
-                        Yemek Tarifleri uygulamasını <strong>MVVm mimarisinde,<br>
-                            <strong> Dagger-Hilt </strong>-> bağımlılık yönetimi için, <br>
-                            <strong>Data Binding,View Binding </strong>-> Ekrandaki componentlerin mantık ve data
-                            iletişimi için, <br>
-                            <strong>DataStore</strong> -> key-value şeklinde veri tutabileceğiniz veri tabanı,<br>
-                            <strong>ROOM</strong> -> ROOM, Android'de SQLite' ı temel alan güçlü bir veritabanı
-                            kütüphanesidir. <br>
-                            <strong>Coroutines</strong> -> Asenkron işlemleri yönetmek için kullanılan hafif ve etkili
-                            bir kütüphanedir.
-                            uzun süreli işlemleri yapmada etkilidir.Daha az bellek tükedir.<br>
-                            <strong>Retrofit </strong>-> Açık kaynak kodlu rest istemcisi olan bir network
-                            kütüphanesir.<br>
-                            <strong>Coil </strong>-> Android için Kotlin Coroutines tarafından desteklenen bir görüntü
-                            yükleme kütüphanesini kullarak geliştirdim.<br>
+                        <h5>Yemek Tarifleri uygulaması:</h5>
+                        <br><br><span class="badge badge-pill badge-primary">MVVM mimarisinde</span> uygulama geliştirmede kullanılan bir desendir ve üç ana bileşenden oluşur: Model, View ve ViewModel. Model, veri ve iş mantığını temsil eder; View, kullanıcı arayüzünü (UI) ve kullanıcı etkileşimlerini yönetir; ViewModel ise View ve Model arasında bir köprü görevi görür, UI mantığını içerir ve Model'den gelen verileri UI için uygun formata dönüştürür. MVVM, veri bağlama (data binding) özelliği sayesinde View ve ViewModel arasındaki bağlantıyı otomatize eder, böylece kodun daha temiz, daha iyi organize edilmiş ve daha kolay test edilebilir olmasını sağlar.
+                        <br><br><span class="badge badge-pill badge-secondary">Dagger-Hilt</span> Android uygulamaları için Dagger'ın kolaylaştırılmış bir sürümüdür ve bağımlılık enjeksiyonunu basitleştirmek için tasarlanmıştır, böylece geliştiriciler daha az boilerplate kodu ile bağımlılık enjeksiyonunu kolayca uygulayabilirler.
+                        <br><br><span class="badge badge-pill badge-success">Data Binding,View Binding</span> Data Binding, Android geliştirmede kullanılan bir kavramdır ve XML layout dosyalarında tanımlanan UI bileşenlerini doğrudan arka plandaki veri kaynaklarına (örneğin ViewModel'daki verilere) bağlamayı sağlar. Bu teknik, geliştiricinin programatik olarak her UI bileşenini yönetmek yerine, layout dosyalarında verileri doğrudan bağlayarak UI güncellemelerini otomatize eder. Data Binding, kod miktarını azaltır, uygulamanın okunabilirliğini ve bakımını kolaylaştırır ve hata riskini düşürür. Ayrıca, MVVM mimarisi ile birlikte kullanıldığında, veri ve UI arasındaki senkronizasyonu daha verimli hale getirir.View Binding, Android'de kullanıcı arayüzü elemanlarına daha güvenli ve kolay bir şekilde erişim sağlamak için tasarlanmış bir özelliktir. Bu özellik, layout XML dosyalarında tanımlanan her görünüm için bir binding sınıfı oluşturarak, findViewById metoduna olan ihtiyacı azaltır. View Binding sayesinde, geliştiriciler null kontrolü yapmadan ve daha az hata yapma riskiyle doğrudan UI elemanlarına erişebilirler. Bu, uygulamanın kodunun daha temiz, daha okunabilir ve daha az hata eğilimli olmasını sağlar. View Binding, Data Binding'den farklı olarak, veri bağlama işlemlerini desteklemez; sadece view'lara erişimi kolaylaştırır.
+                        <br><br><span class="badge badge-pill badge-warning">DataStore</span> Android'de hafif, güvenli ve esnek bir veri saklama çözümüdür ve SharedPreferences'ın modern bir alternatifidir. Jetpack DataStore, verileri disk üzerinde asenkron olarak saklamak ve okumak için Kotlin coroutines ve Flow'ları kullanır. İki ana türü vardır: Preferences DataStore, anahtar-değer çiftleri şeklinde veri saklar ve Proto DataStore, verileri tip güvenliği sağlayan ve daha verimli bir biçimde saklayan protokol tamponları (Protocol Buffers) kullanır. DataStore, verileri güvenli ve tutarlı bir şekilde yönetmek, veri göçü ve veri değişikliklerini takip etmek için daha iyi araçlar sunar.
+                        <br><br><span class="badge badge-pill badge-info">Room</span> Android Jetpack'in bir parçası olan ve SQLite veritabanı işlemlerini kolaylaştıran bir kalıcılık kütüphanesidir. Room, SQL sorgularını yazmayı kolaylaştırır ve compile-time kontrolü sağlayarak hataları azaltır.
+                        <br><br><span class="badge badge-pill badge-danger">Coroutines</span> Android'de asenkron programlamayı kolaylaştırmak için Kotlin coroutines ile entegre bir yaklaşım sunan bir kütüphanedir.
+                        <br><br><span class="badge badge-pill badge-primary">Retrofit</span> Android ve Java uygulamalarında REST API çağrılarını yönetmek için kullanılan, tip güvenliği sağlayan ve ağ işlemlerini kolaylaştıran bir HTTP istemci kütüphanesidir.
+                        <br><br><span class="badge badge-pill badge-secondary">Coil</span> Kotlin tabanlı, modern ve hafif bir Android görüntü yükleme kütüphanesidir. Bu kütüphane, Kotlin coroutines kullanarak asenkron ve performanslı bir şekilde görüntüleri yüklemek için tasarlanmıştır ve Android uygulamalarında görüntü yükleme işlemlerini kolaylaştırır.
                     </p>
                 </div>
             </div><!-- end of about wrapper -->
