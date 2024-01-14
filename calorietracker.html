@@ -46,10 +46,10 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">Oyun Rehberi ve İstatistikler</span>
-                <span class="down">Valorguide & Stats</span>
+                <span class="up">Günlük aldığınız kalorileri edebileceğiniz</span>
+                <span class="down">Calory Tracker</span>
             </h1>
-            <a href="https://github.com/AAyar94/Valorant_Guide_And_Stats">
+            <a href="https://github.com/AAyar94/CaloryTracker">
                 <button class="btn btn-primary" id="seeGithubPage">Github Reposunu Gör</button>
             </a>
         </div>
@@ -62,30 +62,23 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/valorguide_image.png" class="about-img">
+                    <img src="assets/imgs/calorietracker.png" class="about-img">
                 </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Bu uygulama hakkında ?</p>
-                    <h2 class="section-title mb-3">Valorguide & Stats</h2>
-                    <p>
-                        Bu uygulama ile Valorant oyunu hakkında temel bilgilere sahip olurken, oyundaki oynanabilir
-                        karakterleri, bu karakterlerin yeteneklerini görebilirsiniz.<br>
-                        Oyunda kullanabileceğiniz silahları, Oyundaki bulunan haritaları görebilir, Oyunun sezonlarını
-                        inceleyebilirsiniz.
-                        Oyunda bulunun komik stickerları Whatsapp, Twitter gibi sosyal medyalarda arkdaşalarınızla
-                        paylaşabilirsiniz.
-                        <br>
-                        Bir başka kısımda ise oyundaki kullanıcı adınızı girerek oyundaki yaptığınız maçların bir ,
-                        seviyenizin, derecenizin bir özetini bulabilirsiniz.
-                    </p>
-                </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
+                    <div class="about-caption">
+                        <p class="section-subtitle">Bu uygulama hakkında ?</p>
+                        <h2 class="section-title mb-3">Calory Tracker</h2>
+                        <p>
+                            Günlük aldığınız kalori miktarını, aldığınız karbonhidrat,protein ve yağı ayrı olarak grafik
+                            halinde görebilecegiz, günlük ihtiyacınızı kontrol etmenize yardımcı bir uygulama
+                        </p>
+                    </div>
+                </div><!-- end of about wrapper -->
+            </div><!-- end of container -->
     </section> <!-- end of about section -->
 
     <section>
         <div class="custom-padding">
-            <img src="assets/imgs/valorantgallery.svg" class="smaller-image">
+            <img src="assets/imgs/CalorieTrackerMockup.png" class="smaller-image">
         </div>
     </section>
 
@@ -98,58 +91,47 @@
                 <div class="about-caption">
                     <h2 class="section-title mb-3">Teknik Detaylar</h2>
                     <p>
-                        <br><br><span class="badge badge-pill badge-primary">MVVM</span> uygulama geliştirmede
-                        kullanılan bir desendir ve üç ana bileşenden oluşur: Model, View ve ViewModel. Model, veri ve iş
-                        mantığını temsil eder; View, kullanıcı arayüzünü (UI) ve kullanıcı etkileşimlerini yönetir;
-                        ViewModel ise View ve Model arasında bir köprü görevi görür, UI mantığını içerir ve Model'den
-                        gelen verileri UI için uygun formata dönüştürür. MVVM, veri bağlama (data binding) özelliği
-                        sayesinde View ve ViewModel arasındaki bağlantıyı otomatize eder, böylece kodun daha temiz, daha
-                        iyi organize edilmiş ve daha kolay test edilebilir olmasını sağlar.
-                        <br><br><span class="badge badge-pill badge-secondary">Dagger-Hilt</span> Android uygulamaları
-                        için Dagger'ın kolaylaştırılmış bir sürümüdür ve bağımlılık enjeksiyonunu basitleştirmek için
-                        tasarlanmıştır, böylece geliştiriciler daha az boilerplate kodu ile bağımlılık enjeksiyonunu
-                        kolayca uygulayabilirler.
-                        <br><br><span class="badge badge-pill badge-primary">DataStore</span> Android'de hafif, güvenli
-                        ve esnek bir veri saklama çözümüdür ve SharedPreferences'ın modern bir alternatifidir. Jetpack
-                        DataStore, verileri disk üzerinde asenkron olarak saklamak ve okumak için Kotlin coroutines ve
-                        Flow'ları kullanır. İki ana türü vardır: Preferences DataStore, anahtar-değer çiftleri şeklinde
-                        veri saklar ve Proto DataStore, verileri tip güvenliği sağlayan ve daha verimli bir biçimde
-                        saklayan protokol tamponları (Protocol Buffers) kullanır. DataStore, verileri güvenli ve tutarlı
-                        bir şekilde yönetmek, veri göçü ve veri değişikliklerini takip etmek için daha iyi araçlar
-                        sunar.
-                        <br><br><span class="badge badge-pill badge-info">Room</span> Android Jetpack'in bir parçası
-                        olan ve SQLite veritabanı işlemlerini kolaylaştıran bir kalıcılık kütüphanesidir. Room, SQL
-                        sorgularını yazmayı kolaylaştırır ve compile-time kontrolü sağlayarak hataları azaltır.
-                        <br><br><span class="badge badge-pill badge-danger">Coroutines</span> Android'de asenkron
-                        programlamayı kolaylaştırmak için Kotlin coroutines ile entegre bir yaklaşım sunan bir
-                        kütüphanedir.
-                        <br><br><span class="badge badge-pill badge-primary">Retrofit</span> Android ve Java
-                        uygulamalarında REST API çağrılarını yönetmek için kullanılan, tip güvenliği sağlayan ve ağ
-                        işlemlerini kolaylaştıran bir HTTP istemci kütüphanesidir.
-                        <br><br><span class="badge badge-pill badge-secondary">Coil</span> Kotlin tabanlı, modern ve
-                        hafif bir Android görüntü yükleme kütüphanesidir. Bu kütüphane, Kotlin coroutines kullanarak
-                        asenkron ve performanslı bir şekilde görüntüleri yüklemek için tasarlanmıştır ve Android
-                        uygulamalarında görüntü yükleme işlemlerini kolaylaştırır.
-
+                    <h5>Calory Tracker uygulaması:</h5>
+                    <br><br><span class="badge badge-pill badge-primary">MVVM mimarisinde</span> uygulama geliştirmede
+                    kullanılan bir desendir ve üç ana bileşenden oluşur: Model, View ve ViewModel. Model, veri ve iş
+                    mantığını temsil eder; View, kullanıcı arayüzünü (UI) ve kullanıcı etkileşimlerini yönetir;
+                    ViewModel ise View ve Model arasında bir köprü görevi görür, UI mantığını içerir ve Model'den gelen
+                    verileri UI için uygun formata dönüştürür. MVVM, veri bağlama (data binding) özelliği sayesinde View
+                    ve ViewModel arasındaki bağlantıyı otomatize eder, böylece kodun daha temiz, daha iyi organize
+                    edilmiş ve daha kolay test edilebilir olmasını sağlar.
+                    <br><br><span class="badge badge-pill badge-warning">Multi Moduler</span> genellikle büyük ve karmaşık yazılım projelerinde kullanılan bir yaklaşımdır ve projeyi daha küçük, yönetilebilir, tekrar kullanılabilir ve bağımsız modüllere ayırır. Bu modüller, özelliklere, işlevselliklere veya katmanlara göre ayrılabilir ve her biri kendi yapılandırma dosyaları, kaynak kodları ve bağımlılıkları ile bağımsız olarak geliştirilebilir. Multi-module yapısı, projenin ölçeklenebilirliğini, bakımını ve test edilebilirliğini artırır ve ekip üyelerinin aynı anda farklı bölümler üzerinde çalışabilmesini sağlar.
+                    <br><br><span class="badge badge-pill badge-secondary">Dagger-Hilt</span> Android uygulamaları için
+                    Dagger'ın kolaylaştırılmış bir sürümüdür ve bağımlılık enjeksiyonunu basitleştirmek için
+                    tasarlanmıştır, böylece geliştiriciler daha az boilerplate kodu ile bağımlılık enjeksiyonunu kolayca
+                    uygulayabilirler.
+                    <br><br><span class="badge badge-pill badge-info">Room</span> Android Jetpack'in bir parçası olan ve
+                    SQLite veritabanı işlemlerini kolaylaştıran bir kalıcılık kütüphanesidir. Room, SQL sorgularını
+                    yazmayı kolaylaştırır ve compile-time kontrolü sağlayarak hataları azaltır.
+                    <br><br><span class="badge badge-pill badge-danger">Coroutines</span> Android'de asenkron
+                    programlamayı kolaylaştırmak için Kotlin coroutines ile entegre bir yaklaşım sunan bir kütüphanedir.
+                    <br><br><span class="badge badge-pill badge-primary">Retrofit</span> Android ve Java uygulamalarında
+                    REST API çağrılarını yönetmek için kullanılan, tip güvenliği sağlayan ve ağ işlemlerini
+                    kolaylaştıran bir HTTP istemci kütüphanesidir.
+                    <br><br><span class="badge badge-pill badge-secondary">Coil</span> Kotlin tabanlı, modern ve hafif
+                    bir Android görüntü yükleme kütüphanesidir. Bu kütüphane, Kotlin coroutines kullanarak asenkron ve
+                    performanslı bir şekilde görüntüleri yüklemek için tasarlanmıştır ve Android uygulamalarında görüntü
+                    yükleme işlemlerini kolaylaştırır.
+                    <br><br><span class="bade badge-pill badge-success">Junit Test</span> Java programlama dilinde yazılan uygulamalar için popüler bir birim test çerçevesidir. Geliştiricilere, kodlarının beklenen davranışları gösterip göstermediğini doğrulamak için basit ve etkili bir yol sunar. JUnit, test durumlarını tanımlamak için açıklayıcı (annotation) tabanlı bir yapı kullanır ve otomatik testlerin kolayca yazılmasını ve çalıştırılmasını sağlar, böylece yazılım geliştirme sürecinin kalitesini ve güvenilirliğini artırır.
                     </p>
                 </div>
             </div><!-- end of about wrapper -->
         </div><!-- end of container -->
     </section> <!-- end of about section -->
 
+    <!--RETURN HOME SECTION-->
     <section class="section" id="returnback">
         <div class="container text-center">
-            <a href="https://play.google.com/store/apps/details?id=com.aayar94.valorguidestats">
-                <button class="btn btn-outline-primary">Google Play Store' dan indir</button>
+            <a href="index.html">
+                <button class="btn btn-primary">Anasayfaya dön</button>
             </a>
         </div>
     </section>
-
-    <section class="section" id="returnback">
-        <div class="container text-center">
-            <button class="btn btn-primary">Anasayfaya dön</button>
-        </div>
-    </section>
+    <!--RETURN HOME SECTION END-->
 
     <!-- portfolio section -->
     <section class="section" id="portfolio">
@@ -160,7 +142,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="noteskmm.html" target="_self" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-0.jpg" class="portfolio-card-img">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-0.jpg" class="portfolio-card-img">,
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Notlar uygulaması</h4>
@@ -225,20 +207,11 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Son Depremler</h4>
-                                <p class="font-weight-normal">Son Depremler uygulaması ile Türkiye içerisinde olan
+                                <p class="font-weight-normal">
+                                    Son Depremler uygulaması ile Türkiye içerisinde olan
                                     son 100 depremi görebilir, depremlerin merkez üssüne haritadan bakabilir,
-                                    Türkiye' nin deprem riski haritasına görebiliceğiniz bir uygulamadır.</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="calorietracker.html" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/CalorieTrackerMockup.png" class="img-responsive rounded">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>CaloryTracker</h4>
-                                    <p class="font-weight-normal">Günlük kalori alma miktarınızi takip uygulaması</p>
+                                    Türkiye' nin deprem riski haritasına görebiliceğiniz bir uygulamadır.
+                                </p>
                             </span>
                         </span>
                     </a>
