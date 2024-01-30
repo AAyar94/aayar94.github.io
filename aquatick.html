@@ -46,12 +46,9 @@
         <div class="overlay"></div>
         <div class="header-content container">
             <h1 class="header-title">
-                <span class="up">Hızlı bir şekilde notlar alabileceğiniz bir not uygulaması</span>
-                <span class="down">Notlar</span>
+                <span class="up">Günlük sıvı alınımı takip etmek için</span>
+                <span class="down">Aquatick</span>
             </h1>
-            <a href="https://github.com/AAyar94/NotesKMM">
-                <button class="btn btn-primary" id="seeGithubPage">Github Reposunu Gör</button>
-            </a>
         </div>
     </header><!-- end of page header -->
 
@@ -62,25 +59,23 @@
             <!-- about wrapper -->
             <div class="about">
                 <div class="about-img-holder">
-                    <img src="assets/imgs/noteskmm_image.png" class="about-img"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    <img src="assets/imgs/aquatick_logo.png" class="about-img">
                 </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Bu uygulama hakkında ?</p>
-                    <h2 class="section-title mb-3">Notlar</h2>
-                    <p>
-                        Bu uyglama hızlı bir şekilde notlar alabileceğiniz. Aldığınız notlara öncelikler
-                        ekleyebileceğiniz.<br>
-                        Notlar içerisinde arama yapabileğiniz bir not uygulaması.
-                    </p>
-                </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
+                    <div class="about-caption">
+                        <p class="section-subtitle">Bu uygulama hakkında ?</p>
+                        <h2 class="section-title mb-3">Aquatick</h2>
+                        <p>
+                            Günlük aldığınız sıvı miktarını, içtiğiniz farklı tipteki içeçekleri günlük,haftalık,aylık şekilde ayrı olarak grafik
+                            halinde görebilecegiz, günlük ihtiyacınızı kontrol etmenize yardımcı bir uygulama.
+                        </p>
+                    </div>
+                </div><!-- end of about wrapper -->
+            </div><!-- end of container -->
     </section> <!-- end of about section -->
 
     <section>
         <div class="custom-padding">
-            <img src="assets/imgs/kmm_notes_mockup.png" class="smaller-image">
+            <img src="assets/imgs/aquatick_mockup.svg" class="smaller-image">
         </div>
     </section>
 
@@ -93,42 +88,37 @@
                 <div class="about-caption">
                     <h2 class="section-title mb-3">Teknik Detaylar</h2>
                     <p>
-                        <br><br><span class="badge badge-pill badge-primary">MVVVM mimarisi</span> uygulama geliştirmede
-                        kullanılan bir desendir ve üç ana bileşenden oluşur: Model, View ve ViewModel. Model, veri ve iş
-                        mantığını temsil eder; View, kullanıcı arayüzünü (UI) ve kullanıcı etkileşimlerini yönetir;
-                        ViewModel ise View ve Model arasında bir köprü görevi görür, UI mantığını içerir ve Model'den
-                        gelen verileri UI için uygun formata dönüştürür. MVVM, veri bağlama (data binding) özelliği
-                        sayesinde View ve ViewModel arasındaki bağlantıyı otomatize eder, böylece kodun daha temiz, daha
-                        iyi organize edilmiş ve daha kolay test edilebilir olmasını sağlar.
-                        <br><br><span class="badge badge-pill badge-secondary">KMM(Kotlin Multi
-                            Platform)</span> geliştiricilere hem Android hem de iOS için ortak bir kod tabanı kullanarak
-                        mobil uygulamalar geliştirmelerini sağlayan bir Kotlin çerçevesidir. KMM, Kotlin'in
-                        multiplatform özelliklerinden yararlanarak, iş mantığını (networking, veri yönetimi vb.) ortak
-                        Kotlin kodu olarak yazmanıza ve her platform için özgü olan kullanıcı arayüzünü (UI) ayrı ayrı
-                        tasarlamanıza olanak tanır. Bu yaklaşım, kod tekrarını azaltır, bakım ve geliştirme süreçlerini
-                        kolaylaştırır ve platformlar arası tutarlılık sağlar, ancak her platformun özgün özelliklerini
-                        ve kullanıcı deneyimlerini korumanıza olanak tanır.
-                        <br><br><span class="badge badge-pill badge-warning">SQLDelight</span> Kotlin Multiplatform
-                        projelerde kullanılan bir veritabanı kütüphanesidir ve SQLite veritabanı ile etkileşim için bir
-                        tip-güvenli yol sunar. SQLDelight, SQL sorgularını yazmanızı ve bu sorguları temel alan Kotlin
-                        interfaceler oluşturmanızı sağlar. Bu interfaceler aracılığıyla veritabanı işlemleri
-                        gerçekleştirilir.
-                        <br><br><span class="badge badge-pill badge-info">Kotlin</span> modern, statik olarak
-                        tiplemeli bir programlama dilidir ve genellikle Android uygulama geliştirme için tercih edilir,
-                        ancak JVM (Java Sanal Makinesi), JavaScript ve Native platformlarında da kullanılabilir.
-                        <br><br><span class="badge badge-pill badge-success">Swift</span>Apple tarafından geliştirilen
-                        modern, hızlı ve tip güvenli bir programlama dilidir. Özellikle iOS, macOS, watchOS ve tvOS
-                        uygulama geliştirmeleri için tasarlanmıştır. Swift, Objective-C'nin yerini almak üzere 2014
-                        yılında tanıtılmıştır ve Apple platformları için uygulama geliştirmede tercih edilen bir dil
-                        haline gelmiştir.
-                        <br><br><span class="badge badge-pill badge-primary">MVVVM mimarisi</span> iOS ve macOS
-                        uygulamaları için bir bağımlılık yöneticisidir. Bu araç, harici kütüphaneleri ve framework'leri
-                        projenize kolayca entegre etmenize olanak tanır, böylece geliştirme sürecini hızlandırır ve
-                        basitleştirir.
-                        <br><br><span class="badge badge-pill badge-danger">Dagger-Hilt</span> Android uygulamaları için
-                        Dagger'ın kolaylaştırılmış bir sürümüdür ve bağımlılık enjeksiyonunu basitleştirmek için
-                        tasarlanmıştır, böylece geliştiriciler daha az boilerplate kodu ile bağımlılık enjeksiyonunu
-                        kolayca uygulayabilirler.
+                    <h5>Aquatick uygulaması:</h5>
+                    <br><br><span class="badge badge-pill badge-primary">MVVM mimarisinde</span> uygulama geliştirmede
+                    kullanılan bir desendir ve üç ana bileşenden oluşur: Model, View ve ViewModel. Model, veri ve iş
+                    mantığını temsil eder; View, kullanıcı arayüzünü (UI) ve kullanıcı etkileşimlerini yönetir;
+                    ViewModel ise View ve Model arasında bir köprü görevi görür, UI mantığını içerir ve Model'den gelen
+                    verileri UI için uygun formata dönüştürür. MVVM, veri bağlama (data binding) özelliği sayesinde View
+                    ve ViewModel arasındaki bağlantıyı otomatize eder, böylece kodun daha temiz, daha iyi organize
+                    edilmiş ve daha kolay test edilebilir olmasını sağlar.
+                    <br><br><span class="badge badge-pill badge-warning">Multi Moduler</span> genellikle büyük ve karmaşık yazılım projelerinde kullanılan bir yaklaşımdır ve projeyi daha küçük, yönetilebilir, tekrar kullanılabilir ve bağımsız modüllere ayırır. Bu modüller, özelliklere, işlevselliklere veya katmanlara göre ayrılabilir ve her biri kendi yapılandırma dosyaları, kaynak kodları ve bağımlılıkları ile bağımsız olarak geliştirilebilir. Multi-module yapısı, projenin ölçeklenebilirliğini, bakımını ve test edilebilirliğini artırır ve ekip üyelerinin aynı anda farklı bölümler üzerinde çalışabilmesini sağlar.
+                    <br><br><span class="badge badge-pill badge-secondary">Dagger-Hilt</span> Android uygulamaları için
+                    Dagger'ın kolaylaştırılmış bir sürümüdür ve bağımlılık enjeksiyonunu basitleştirmek için
+                    tasarlanmıştır, böylece geliştiriciler daha az boilerplate kodu ile bağımlılık enjeksiyonunu kolayca
+                    uygulayabilirler.
+                    <br><br><span class="badge badge-pill badge-info">Room</span> Android Jetpack'in bir parçası olan ve
+                    SQLite veritabanı işlemlerini kolaylaştıran bir kalıcılık kütüphanesidir. Room, SQL sorgularını
+                    yazmayı kolaylaştırır ve compile-time kontrolü sağlayarak hataları azaltır.
+                    <br><br><span class="badge badge-pill badge-danger">Coroutines</span> Android'de asenkron
+                    programlamayı kolaylaştırmak için Kotlin coroutines ile entegre bir yaklaşım sunan bir kütüphanedir.
+                    <br><br><span class="badge badge-pill badge-primary">Retrofit</span> Android ve Java uygulamalarında
+                    REST API çağrılarını yönetmek için kullanılan, tip güvenliği sağlayan ve ağ işlemlerini
+                    kolaylaştıran bir HTTP istemci kütüphanesidir.
+                    <br><br><span class="badge badge-pill badge-secondary">Coil</span> Kotlin tabanlı, modern ve hafif
+                    bir Android görüntü yükleme kütüphanesidir. Bu kütüphane, Kotlin coroutines kullanarak asenkron ve
+                    performanslı bir şekilde görüntüleri yüklemek için tasarlanmıştır ve Android uygulamalarında görüntü
+                    yükleme işlemlerini kolaylaştırır.
+                    <br><br><span class="bade badge-pill badge-primary">Firebase</span>
+                    <br><br><span class="bade badge-pill badge-danger">Coil</span>
+                    <br><br><span class="bade badge-pill badge-info">Lottie</span>
+                    <br><br><span class="bade badge-pill badge-warning">Work Manager</span>
+                    <br><br><span class="bade badge-pill badge-secondary">Vito</span>
+                    <br><br><span class="bade badge-pill badge-success">Junit Test</span> Java programlama dilinde yazılan uygulamalar için popüler bir birim test çerçevesidir. Geliştiricilere, kodlarının beklenen davranışları gösterip göstermediğini doğrulamak için basit ve etkili bir yol sunar. JUnit, test durumlarını tanımlamak için açıklayıcı (annotation) tabanlı bir yapı kullanır ve otomatik testlerin kolayca yazılmasını ve çalıştırılmasını sağlar, böylece yazılım geliştirme sürecinin kalitesini ve güvenilirliğini artırır.
                     </p>
                 </div>
             </div><!-- end of about wrapper -->
@@ -145,7 +135,6 @@
     </section>
     <!--RETURN HOME SECTION END-->
 
-
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
@@ -155,7 +144,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="noteskmm.html" target="_self" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-0.jpg" class="portfolio-card-img">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-0.jpg" class="portfolio-card-img">,
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Notlar uygulaması</h4>
@@ -220,9 +209,11 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4>Son Depremler</h4>
-                                <p class="font-weight-normal">Son Depremler uygulaması ile Türkiye içerisinde olan
+                                <p class="font-weight-normal">
+                                    Son Depremler uygulaması ile Türkiye içerisinde olan
                                     son 100 depremi görebilir, depremlerin merkez üssüne haritadan bakabilir,
-                                    Türkiye' nin deprem riski haritasına görebiliceğiniz bir uygulamadır.</p>
+                                    Türkiye' nin deprem riski haritasına görebiliceğiniz bir uygulamadır.
+                                </p>
                             </span>
                         </span>
                     </a>
@@ -318,7 +309,10 @@
     </script>
     <script>
         // Get the button element
-        const scrollButton = document.getElementById('seeGithubRepository');
+        const scrollButton = document.getElementById('scrollPortfolio');
+
+        // Get the portfolio section element
+        const portfolioSection = document.getElementById('portfolio');
 
         // Add click event listener to the button
         scrollButton.addEventListener('click', () => {
@@ -339,9 +333,9 @@
         }
 
         .smaller-image {
-            max-width: 50% !important;
+            max-width: 75% !important;
             /* Adjust the maximum width as needed */
-            max-height: 50% !important;
+            height: auto !important;
             /* Maintain the aspect ratio */
         }
 
@@ -350,12 +344,6 @@
             /* Set the desired width */
             height: 200px;
             /* Set the desired height */
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-between;
-            /* Optional: Adjust the alignment as needed */
         }
     </style>
 
