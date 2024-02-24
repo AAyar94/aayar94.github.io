@@ -288,11 +288,18 @@
     <script>
         // Get the button element by its ID
         const emailButton = document.getElementById('emailButton');
-
+    
         // Add a click event listener to the button
         emailButton.addEventListener('click', function () {
             // Change 'your_email@example.com' to the desired email address
-            window.location.href = 'mailto:a.ayar94@gmail.com';
+            var emailAddress = 'a.ayar94@gmail.com';
+            var subject = 'Subject of the email'; // Optional: Change to desired subject
+    
+            // Construct the mailto URL with the email address and subject
+            var mailtoLink = 'mailto:' + encodeURIComponent(emailAddress) + '?subject=' + encodeURIComponent(subject);
+    
+            // Open the mail client in a new tab
+            window.open(mailtoLink, '_blank');
         });
     </script>
 
