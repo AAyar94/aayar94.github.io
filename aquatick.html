@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -60,7 +61,7 @@
             <div class="about">
                 <div class="about-img-holder">
                     <img src="assets/imgs/aquatick_logo.png" class="about-img">
-                </div>
+                 </div>
                     <div class="about-caption">
                         <p class="section-subtitle">Bu uygulama hakkında ?</p>
                         <h2 class="section-title mb-3">Aquatick</h2>
@@ -75,8 +76,10 @@
 
     <section>
         <div class="custom-padding">
+            <div data-aos="zoom-in-down">
             <img src="assets/imgs/aquatick_mockup.svg" class="smaller-image">
         </div>
+    </div>
     </section>
 
     <!-- about section -->
@@ -356,5 +359,8 @@
     </style>
 
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>

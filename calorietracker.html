@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -78,7 +79,9 @@
 
     <section>
         <div class="custom-padding">
+            <div data-aos="zoom-in-down">
             <img src="assets/imgs/CalorieTrackerMockup.png" class="smaller-image">
+            </div>
         </div>
     </section>
 
@@ -354,5 +357,8 @@
     </style>
 
 </body>
-
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </html>
