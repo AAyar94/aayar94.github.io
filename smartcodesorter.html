@@ -50,7 +50,7 @@
                 <span class="up">Kotlin code organization for</span>
                 <span class="down">SmartCodeSorter</span>
             </h1>
-            <a href="https://plugins.jetbrains.com" target="_blank">
+            <a href="https://plugins.jetbrains.com/plugin/31219" target="_blank">
                 <button class="btn btn-primary">JetBrains Marketplace</button>
             </a>
         </div>
@@ -77,6 +77,8 @@
                         Or navigate to <strong>Code → Smart Code Sorter → Sort Kotlin Code</strong>
                     </p>
                     <br>
+                    <div id="marketplace-install" style="margin-bottom: 12px;"></div>
+                    <div id="marketplace-card" style="margin-bottom: 12px;"></div>
                     <a href="smartcodesorter-license.html" target="_blank">
                         <button class="btn btn-outline-primary">View License</button>
                     </a>
@@ -290,6 +292,11 @@
         function openLinkedIn() {
             window.open('https://www.linkedin.com/in/ademayar94/');
         }
+    </script>
+    <script src="https://plugins.jetbrains.com/assets/scripts/mp-widget.js"></script>
+    <script>
+        MarketplaceWidget.setupMarketplaceWidget('install', 31219, "#marketplace-install");
+        MarketplaceWidget.setupMarketplaceWidget('card', 31219, "#marketplace-card");
     </script>
 
     <style>
