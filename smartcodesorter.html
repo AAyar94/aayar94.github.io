@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SmartCodeSorter - Kotlin code-organizing plugin for IntelliJ IDEA / Android Studio">
+    <meta name="author" content="Adem Ayar">
+    <title>SmartCodeSorter - Adem Ayar</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/project.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#"> </a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#features">Features</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Portfolio</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Kotlin code organization for</span>
+                <span class="down">SmartCodeSorter</span>
+            </h1>
+            <a href="https://plugins.jetbrains.com" target="_blank">
+                <button class="btn btn-primary">JetBrains Marketplace</button>
+            </a>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/imgs/smart_code_sorter_x.png" class="about-img">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">About this plugin</p>
+                    <h2 class="section-title mb-3">SmartCodeSorter</h2>
+                    <p>
+                        SmartCodeSorter is a Kotlin code-organizing plugin for IntelliJ IDEA and Android Studio.
+                        It automatically sorts class members, constructor parameters, and more — keeping your
+                        Kotlin code clean, consistent, and easy to read without any manual effort.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Shortcut:</strong> <code>Option + Command + S</code> (macOS)<br>
+                        Or navigate to <strong>Code → Smart Code Sorter → Sort Kotlin Code</strong>
+                    </p>
+                    <br>
+                    <a href="smartcodesorter-license.html" target="_blank">
+                        <button class="btn btn-outline-primary">View License</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features section -->
+    <section class="section pt-0" id="features">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-caption" style="width: 100%;">
+                    <br>
+                    <h2 class="section-title mb-3">Features</h2>
+                    <p>
+                        <br><span class="badge badge-pill badge-primary">Sort Class Members</span>
+                        Automatically sorts fields, methods, and nested classes within Kotlin classes following a
+                        consistent, readable ordering.
+
+                        <br><br><span class="badge badge-pill badge-warning">Constructor Parameter Sorting</span>
+                        Organizes constructor parameters in a logical order, making your class definitions
+                        easier to understand at a glance.
+
+                        <br><br><span class="badge badge-pill badge-success">Sort on Save</span>
+                        Enable automatic sorting every time you save a file via
+                        <strong>Code → Smart Code Sorter → Sort on Save</strong>.
+                        Never think about member ordering again.
+
+                        <br><br><span class="badge badge-pill badge-info">IntelliJ IDEA &amp; Android Studio</span>
+                        Compatible with IntelliJ IDEA and Android Studio. Integrates seamlessly into your
+                        existing workflow with no extra setup required.
+
+                        <br><br><span class="badge badge-pill badge-secondary">Keyboard Shortcut</span>
+                        Trigger sorting instantly with <code>Option + Command + S</code> on macOS, or via the
+                        Code menu on any platform.
+
+                        <br><br><span class="badge badge-pill badge-danger">Zero Configuration</span>
+                        Install and go. SmartCodeSorter works out of the box with sensible defaults that follow
+                        Kotlin coding conventions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- usage section -->
+    <section class="section pt-0">
+        <div class="container text-center">
+            <div class="about">
+                <div class="about-caption" style="width: 100%;">
+                    <h2 class="section-title mb-3">How to Use</h2>
+                    <div style="text-align: left; max-width: 600px; margin: 0 auto;">
+                        <h5>Manual Sort</h5>
+                        <ol>
+                            <li>Open any Kotlin file in IntelliJ IDEA or Android Studio.</li>
+                            <li>Press <strong>Option + Command + S</strong> (macOS).</li>
+                            <li>Or go to <strong>Code → Smart Code Sorter → Sort Kotlin Code</strong>.</li>
+                        </ol>
+                        <br>
+                        <h5>Sort on Save</h5>
+                        <ol>
+                            <li>Go to <strong>Code → Smart Code Sorter → Sort on Save</strong>.</li>
+                            <li>Toggle the option on — your code will be sorted automatically on every save.</li>
+                        </ol>
+                        <br>
+                        <h5>License</h5>
+                        <p>
+                            SmartCodeSorter is free for personal and commercial use under a
+                            <a href="smartcodesorter-license.html" target="_blank">Free Closed-Source License</a>.
+                            The source code is proprietary. You may not modify, redistribute, or reverse-engineer the plugin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--RETURN HOME SECTION-->
+    <section class="section" id="returnback">
+        <div class="container text-center">
+            <a href="index.html">
+                <button class="btn btn-primary">Back to Home</button>
+            </a>
+        </div>
+    </section>
+    <!--RETURN HOME SECTION END-->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What have I built?</p>
+            <h6 class="section-title mb-6">Portfolio</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="noteskmm.html" target="_self" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-0.jpg">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Notes App (KMM)</h4>
+                                <p class="font-weight-normal">Cross-platform notes app for Android &amp; iOS built with Kotlin Multiplatform</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="settowally.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-1.jpg" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Settowally</h4>
+                                <p class="font-weight-normal">Free high-resolution wallpaper downloader app</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="passwordgenerator.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Password Generator</h4>
+                                <p class="font-weight-normal">Generate strong, hard-to-crack passwords</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="aquatick.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/aquatick_mockup.svg" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Aquatick</h4>
+                                <p class="font-weight-normal">Daily fluid intake tracker</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="calorietracker.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/CalorieTrackerMockup.png" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>CaloryTracker</h4>
+                                <p class="font-weight-normal">Daily calorie intake tracker</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="crypto.html" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/imgs/crypto_screenshot_multi.png" class="img-responsive rounded">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Crypto Tracker</h4>
+                                <p class="font-weight-normal">Cryptocurrency prices and details</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <div class="container text-center text-sm-left">
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Feel free to get in touch.</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button class="btn btn-lg my-font btn-light rounded" onclick="openLinkedIn()">LinkedIn</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you reach me?</p>
+            <h6 class="section-title mb-5">Right here</h6>
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-12 mt-3">
+                        <button class="btn btn-outline-primary" id="emailButton">Send Mail</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/meyawo.js"></script>
+
+    <script>
+        const emailButton = document.getElementById('emailButton');
+        emailButton.addEventListener('click', function () {
+            var emailAddress = 'a.ayar94@gmail.com';
+            var subject = 'SmartCodeSorter Plugin';
+            var mailtoLink = 'mailto:' + encodeURIComponent(emailAddress) + '?subject=' + encodeURIComponent(subject);
+            window.open(mailtoLink, '_blank');
+        });
+    </script>
+    <script>
+        function openLinkedIn() {
+            window.open('https://www.linkedin.com/in/ademayar94/');
+        }
+    </script>
+
+    <style>
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+    </style>
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
