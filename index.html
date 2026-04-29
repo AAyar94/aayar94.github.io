@@ -24,11 +24,15 @@
     <div class="container">
         <a href="#hero" class="nav-logo">AA</a>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" data-i18n="nav.about">About</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
         </ul>
+        <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="tr">TR</button>
+        </div>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span><span></span><span></span>
         </button>
@@ -37,10 +41,10 @@
 
 <!-- Mobile Nav -->
 <div class="mobile-nav" id="mobileNav">
-    <a href="#about" class="mobile-link">About</a>
-    <a href="#skills" class="mobile-link">Skills</a>
-    <a href="#projects" class="mobile-link">Projects</a>
-    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#about" class="mobile-link" data-i18n="nav.about">About</a>
+    <a href="#skills" class="mobile-link" data-i18n="nav.skills">Skills</a>
+    <a href="#projects" class="mobile-link" data-i18n="nav.projects">Projects</a>
+    <a href="#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
 </div>
 
 <!-- ========== HERO ========== -->
@@ -55,7 +59,7 @@
             </div>
             -->
 
-            <h1 class="hero-title">
+            <h1 class="hero-title" data-i18n-html="hero.title">
                 Hi, I'm <span class="gradient-text">Adem Ayar</span>
             </h1>
 
@@ -63,7 +67,7 @@
                 <span id="typewriter"></span><span class="cursor"></span>
             </p>
 
-            <p class="hero-desc">
+            <p class="hero-desc" data-i18n="hero.desc">
                 Android Developer passionate about crafting clean, performant mobile experiences with Kotlin and Jetpack Compose.
             </p>
 
@@ -73,14 +77,14 @@
                         <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
                         <rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>
                     </svg>
-                    View Projects
+                    <span data-i18n="hero.viewProjects">View Projects</span>
                 </a>
                 <a href="assets/cv/AdemAyarCV.pdf" download class="btn btn-outline">
                     <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2">
                         <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                         <polyline points="7,10 12,15 17,10"/><line x1="12" y1="15" x2="12" y2="3"/>
                     </svg>
-                    Download CV
+                    <span data-i18n="hero.downloadCV">Download CV</span>
                 </a>
             </div>
 
@@ -119,9 +123,9 @@
             </div>
 
             <div class="fade-up">
-                <p class="section-label">About Me</p>
-                <h2 class="section-title">Building apps people<br><span class="gradient-text">actually enjoy using</span></h2>
-                <p class="about-bio">
+                <p class="section-label" data-i18n="about.label">About Me</p>
+                <h2 class="section-title" data-i18n-html="about.title">Building apps people<br><span class="gradient-text">actually enjoy using</span></h2>
+                <p class="about-bio" data-i18n-html="about.bio">
                     I'm an Android Developer with a background in Electrical &amp; Electronics Engineering (class of 2022). I build polished, production-ready Android apps using Kotlin, Jetpack Compose, and modern architecture patterns like MVVM and Clean Architecture.
                     <br><br>
                     Beyond Android, I'm passionate about Kotlin Multiplatform for sharing business logic across platforms, and I've extended my skills into IntelliJ plugin development with SmartCodeSorter.
@@ -129,15 +133,15 @@
                 <div class="about-stats">
                     <div>
                         <span class="stat-number">10+</span>
-                        <span class="stat-label">Projects Built</span>
+                        <span class="stat-label" data-i18n="about.projectsBuilt">Projects Built</span>
                     </div>
                     <div>
                         <span class="stat-number">3+</span>
-                        <span class="stat-label">Years Experience</span>
+                        <span class="stat-label" data-i18n="about.yearsExp">Years Experience</span>
                     </div>
                     <div>
                         <span class="stat-number">2</span>
-                        <span class="stat-label">Platforms</span>
+                        <span class="stat-label" data-i18n="about.platforms">Platforms</span>
                     </div>
                 </div>
             </div>
@@ -150,8 +154,8 @@
 <section class="section" id="skills">
     <div class="container">
         <div class="section-header">
-            <p class="section-label">What I Work With</p>
-            <h2 class="section-title">Tech Stack</h2>
+            <p class="section-label" data-i18n="skills.label">What I Work With</p>
+            <h2 class="section-title" data-i18n="skills.title">Tech Stack</h2>
         </div>
         <div class="skills-grid fade-up">
             <span class="skill-badge"><span class="skill-dot" style="background:#a78bfa"></span>Kotlin</span>
@@ -176,8 +180,8 @@
 <section class="section" id="projects">
     <div class="container">
         <div class="section-header">
-            <p class="section-label">What I've Built</p>
-            <h2 class="section-title">Projects</h2>
+            <p class="section-label" data-i18n="projects.label">What I've Built</p>
+            <h2 class="section-title" data-i18n="projects.title">Projects</h2>
         </div>
         <div class="projects-grid">
 
@@ -188,12 +192,12 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">SmartCodeSorter</h3>
-                    <p class="proj-desc">IntelliJ IDEA &amp; Android Studio plugin that automatically organizes Kotlin class members by structure and conventions.</p>
+                    <p class="proj-desc" data-i18n-html="projects.smartCodeSorter">IntelliJ IDEA &amp; Android Studio plugin that automatically organizes Kotlin class members by structure and conventions.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-plugin">Plugin SDK</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -204,13 +208,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">KMM Notes</h3>
-                    <p class="proj-desc">Cross-platform notes app for Android &amp; iOS built with Kotlin Multiplatform — sharing business logic across both platforms.</p>
+                    <p class="proj-desc" data-i18n-html="projects.kmmNotes">Cross-platform notes app for Android &amp; iOS built with Kotlin Multiplatform — sharing business logic across both platforms.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-kmm">KMM</span>
                         <span class="tag tag-android">Android</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -221,14 +225,14 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Crypto Tracker</h3>
-                    <p class="proj-desc">Live cryptocurrency tracker with coin details, price charts, and adaptive UI for phones and tablets.</p>
+                    <p class="proj-desc" data-i18n="projects.crypto">Live cryptocurrency tracker with coin details, price charts, and adaptive UI for phones and tablets.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-compose">Compose</span>
                         <span class="tag tag-retrofit">Retrofit</span>
                         <span class="tag tag-mvvm">MVVM</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -239,13 +243,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Aquatick</h3>
-                    <p class="proj-desc">Daily hydration tracker that calculates your personal water intake goal and logs progress throughout the day.</p>
+                    <p class="proj-desc" data-i18n="projects.aquatick">Daily hydration tracker that calculates your personal water intake goal and logs progress throughout the day.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-compose">Compose</span>
                         <span class="tag tag-room">Room</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -256,13 +260,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Calorie Tracker</h3>
-                    <p class="proj-desc">Nutrition app to set daily calorie goals, track meals, and monitor macronutrient intake throughout the day.</p>
+                    <p class="proj-desc" data-i18n="projects.calorieTracker">Nutrition app to set daily calorie goals, track meals, and monitor macronutrient intake throughout the day.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-compose">Compose</span>
                         <span class="tag tag-mvvm">MVVM</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -273,13 +277,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Last Earthquakes</h3>
-                    <p class="proj-desc">Real-time tracker for the last 100 earthquakes in Turkey with interactive map view and risk zone visualization.</p>
+                    <p class="proj-desc" data-i18n="projects.earthquakes">Real-time tracker for the last 100 earthquakes in Turkey with interactive map view and risk zone visualization.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-retrofit">Retrofit</span>
                         <span class="tag tag-maps">Maps</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -290,13 +294,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Settowally</h3>
-                    <p class="proj-desc">Free high-resolution wallpaper app with curated collections, search, and one-tap set functionality.</p>
+                    <p class="proj-desc" data-i18n="projects.settowally">Free high-resolution wallpaper app with curated collections, search, and one-tap set functionality.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-retrofit">Retrofit</span>
                         <span class="tag tag-android">Android</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -307,14 +311,14 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Food Recipes</h3>
-                    <p class="proj-desc">Recipe discovery app with ingredients, cooking steps, and filters for different dietary preferences.</p>
+                    <p class="proj-desc" data-i18n="projects.foodRecipes">Recipe discovery app with ingredients, cooking steps, and filters for different dietary preferences.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-retrofit">Retrofit</span>
                         <span class="tag tag-room">Room</span>
                         <span class="tag tag-mvvm">MVVM</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -325,13 +329,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">ValoGuide &amp; Stats</h3>
-                    <p class="proj-desc">Valorant companion app — browse game info, agent guides, and view your personal match statistics.</p>
+                    <p class="proj-desc" data-i18n="projects.valorGuide">Valorant companion app — browse game info, agent guides, and view your personal match statistics.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-retrofit">Retrofit</span>
                         <span class="tag tag-mvvm">MVVM</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -342,13 +346,13 @@
                 </div>
                 <div class="proj-body">
                     <h3 class="proj-name">Password Generator</h3>
-                    <p class="proj-desc">Secure password generator with customizable length, character sets, and one-tap clipboard copy.</p>
+                    <p class="proj-desc" data-i18n="projects.passwordGenerator">Secure password generator with customizable length, character sets, and one-tap clipboard copy.</p>
                     <div class="proj-tags">
                         <span class="tag tag-kotlin">Kotlin</span>
                         <span class="tag tag-compose">Compose</span>
                         <span class="tag tag-android">Android</span>
                     </div>
-                    <span class="proj-link">View details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
+                    <span class="proj-link"><span data-i18n="common.viewDetails">View details</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></span>
                 </div>
             </a>
 
@@ -360,10 +364,10 @@
 <section class="section" id="contact">
     <div class="container">
         <div class="contact-inner">
-            <p class="section-label">Get In Touch</p>
-            <h2 class="section-title">Let's <span class="gradient-text">Work Together</span></h2>
+            <p class="section-label" data-i18n="contact.label">Get In Touch</p>
+            <h2 class="section-title" data-i18n-html="contact.title">Let's <span class="gradient-text">Work Together</span></h2>
             <div class="contact-card fade-up">
-                <p class="contact-desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+                <p class="contact-desc" data-i18n="contact.desc">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
                 <div class="contact-links">
 
                     <a href="mailto:a.ayar94@gmail.com" class="contact-link">
@@ -371,7 +375,7 @@
                             <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                         </div>
                         <div>
-                            <div class="cl-label">Email</div>
+                            <div class="cl-label" data-i18n="contact.email">Email</div>
                             <div class="cl-value">a.ayar94@gmail.com</div>
                         </div>
                     </a>
@@ -405,14 +409,14 @@
 <!-- Footer -->
 <footer>
     <div class="container">
-        <p>© 2026 Adem Ayar — Designed &amp; built from scratch</p>
+        <p data-i18n-html="footer">© 2026 Adem Ayar — Designed &amp; built from scratch</p>
     </div>
 </footer>
 
 <script>
     // Typewriter effect
     const roles = ['Android Developer', 'Kotlin Engineer', 'Mobile App Builder', 'KMM Enthusiast'];
-    let rIdx = 0, cIdx = 0, deleting = false;
+    let rIdx = 0, cIdx = 0, deleting = false, twTimer = null;
     const tw = document.getElementById('typewriter');
 
     function type() {
@@ -422,15 +426,24 @@
 
         if (!deleting && cIdx === word.length) {
             deleting = true;
-            return setTimeout(type, 1800);
+            twTimer = setTimeout(type, 1800);
+            return;
         }
         if (deleting && cIdx === 0) {
             deleting = false;
             rIdx = (rIdx + 1) % roles.length;
         }
-        setTimeout(type, deleting ? 55 : 95);
+        twTimer = setTimeout(type, deleting ? 55 : 95);
     }
     type();
+
+    window.updateTypewriterRoles = function(newRoles) {
+        clearTimeout(twTimer);
+        roles.length = 0;
+        newRoles.forEach(r => roles.push(r));
+        rIdx = 0; cIdx = 0; deleting = false;
+        if (tw) { tw.textContent = ''; type(); }
+    };
 
     // Mobile menu
     const hamburger = document.getElementById('hamburger');
@@ -461,5 +474,6 @@
     });
 </script>
 
+<script src="assets/js/i18n.js"></script>
 </body>
 </html>

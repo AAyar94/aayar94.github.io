@@ -856,4 +856,39 @@ footer {
     .contact-card { padding: 32px 20px; }
     .about-stats  { gap: 20px; }
     .hero-title   { font-size: 38px; }
+    .lang-toggle  { margin-left: 8px; }
+}
+
+/* ---- Language Toggle ---- */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 20px;
+}
+
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--glass-border);
+    color: var(--text-2);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--t);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.lang-btn:hover {
+    color: var(--text);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.lang-btn.active {
+    background: var(--grad);
+    border-color: transparent;
+    color: #fff;
 }
