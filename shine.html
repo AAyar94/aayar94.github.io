@@ -41,7 +41,7 @@
             <span data-i18n="common.backToProjects">Back to Projects</span>
         </a>
         <h1 class="proj-title"><span class="gradient-text">Shine</span></h1>
-        <p class="proj-subtitle">Control the brightness and volume of external monitors from your Mac — with your keyboard's own brightness and volume keys, over DDC/CI.</p>
+        <p class="proj-subtitle" data-i18n-html="detail.shine.subtitle">Control the brightness and volume of external monitors from your Mac — with your keyboard's own brightness and volume keys, over DDC/CI.</p>
         <div class="proj-hero-tags">
             <span class="tag tag-swift">Swift</span>
             <span class="tag tag-swiftui">SwiftUI</span>
@@ -49,7 +49,7 @@
             <span class="tag tag-plugin">DDC/CI</span>
         </div>
         <div class="proj-actions">
-            <a href="index.html#projects" class="btn btn-outline">All Projects</a>
+            <a href="index.html#projects" class="btn btn-outline" data-i18n="common.allProjects">All Projects</a>
         </div>
     </div>
 </section>
@@ -61,10 +61,10 @@
                 <img src="assets/imgs/shine_icon.png" alt="Shine app icon" style="max-width:260px;border-radius:28px;">
             </div>
             <div>
-                <p class="section-label">Overview</p>
-                <h2 class="section-title">Native keys,<br><span class="gradient-text">any monitor</span></h2>
-                <p class="overview-desc">Third-party monitors ignore the brightness and volume keys on a Mac keyboard. Shine fixes that. It lives in your menu bar and speaks the DDC/CI protocol to external displays, so your keyboard's own keys adjust the monitor under your pointer — with a macOS-style on-screen HUD, just like the built-in display.</p>
-                <ul class="feature-list">
+                <p class="section-label" data-i18n="common.overview">Overview</p>
+                <h2 class="section-title" data-i18n-html="detail.shine.ov1Title">Native keys,<br><span class="gradient-text">any monitor</span></h2>
+                <p class="overview-desc" data-i18n-html="detail.shine.ov1Desc">Third-party monitors ignore the brightness and volume keys on a Mac keyboard. Shine fixes that. It lives in your menu bar and speaks the DDC/CI protocol to external displays, so your keyboard's own keys adjust the monitor under your pointer — with a macOS-style on-screen HUD, just like the built-in display.</p>
+                <ul class="feature-list" data-i18n-html="detail.shine.ov1Feat">
                     <li class="feature-item"><span class="feature-dot"></span>Brightness control for external monitors via DDC/CI</li>
                     <li class="feature-item"><span class="feature-dot"></span>Volume &amp; mute control for monitor speakers</li>
                     <li class="feature-item"><span class="feature-dot"></span>Native keyboard keys — brightness follows the mouse pointer, volume follows the audio output</li>
@@ -84,10 +84,10 @@
                 <img src="assets/imgs/shine_icon_512.png" alt="Shine" style="max-width:220px;border-radius:24px;">
             </div>
             <div style="direction:ltr">
-                <p class="section-label">How It Works</p>
-                <h2 class="section-title">Talking to displays<br><span class="gradient-text">the hard way</span></h2>
-                <p class="overview-desc">Shine communicates over the DDC/CI protocol (VESA MCCS): brightness is VCP code <code>0x10</code>, speaker volume <code>0x62</code>, and mute <code>0x8D</code>. On Apple Silicon the I2C channel is reached through the private <code>IOAVService</code> API, resolved at runtime. Media keys are intercepted with a <code>CGEventTap</code>, which is why the app needs Accessibility permission.</p>
-                <ul class="feature-list">
+                <p class="section-label" data-i18n="common.howItWorks">How It Works</p>
+                <h2 class="section-title" data-i18n-html="detail.shine.ov2Title">Talking to displays<br><span class="gradient-text">the hard way</span></h2>
+                <p class="overview-desc" data-i18n-html="detail.shine.ov2Desc">Shine communicates over the DDC/CI protocol (VESA MCCS): brightness is VCP code <code>0x10</code>, speaker volume <code>0x62</code>, and mute <code>0x8D</code>. On Apple Silicon the I2C channel is reached through the private <code>IOAVService</code> API, resolved at runtime. Media keys are intercepted with a <code>CGEventTap</code>, which is why the app needs Accessibility permission.</p>
+                <ul class="feature-list" data-i18n-html="detail.shine.ov2Feat">
                     <li class="feature-item"><span class="feature-dot"></span>Apple Silicon, macOS 14 (Sonoma) or later</li>
                     <li class="feature-item"><span class="feature-dot"></span>Works over HDMI, DisplayPort &amp; USB-C</li>
                     <li class="feature-item"><span class="feature-dot"></span>Runtime-resolved <code>IOAVService</code> I2C access</li>
@@ -101,8 +101,8 @@
 <section class="section">
     <div class="container">
         <div class="section-header">
-            <p class="section-label">Tech Stack</p>
-            <h2 class="section-title">Technologies Used</h2>
+            <p class="section-label" data-i18n="common.techStack">Tech Stack</p>
+            <h2 class="section-title" data-i18n="common.technologiesUsed">Technologies Used</h2>
         </div>
         <div class="skills-grid fade-up">
             <span class="skill-badge"><span class="skill-dot" style="background:#fdba74"></span>Swift</span>
