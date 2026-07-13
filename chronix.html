@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chronix — Countdown & event timer for Android by Adem Ayar">
+    <title>Chronix — Adem Ayar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/glass.css">
+</head>
+<body>
+<div class="bg-orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="nav-logo">AA</a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-toggle">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="tr">TR</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-link" data-i18n="nav.home">Home</a>
+    <a href="index.html#projects" class="mobile-link" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
+</div>
+
+<section class="proj-hero">
+    <div class="container">
+        <a href="index.html#projects" class="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"/></svg>
+            <span data-i18n="common.backToProjects">Back to Projects</span>
+        </a>
+        <h1 class="proj-title"><span class="gradient-text">Chronix</span></h1>
+        <p class="proj-subtitle">Countdown &amp; event timer for Android — track the days to the moments that matter, right from your home screen, with calendar import and reminders.</p>
+        <div class="proj-hero-tags">
+            <span class="tag tag-kotlin">Kotlin</span>
+            <span class="tag tag-compose">Compose</span>
+            <span class="tag tag-mvvm">Clean Architecture</span>
+            <span class="tag tag-hilt">Hilt</span>
+            <span class="tag tag-widget">Widgets</span>
+        </div>
+        <div class="proj-actions">
+            <a href="chronix-privacy-policy.html" class="btn btn-outline">Privacy Policy</a>
+            <a href="index.html#projects" class="btn btn-outline">All Projects</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="container">
+        <div class="overview-grid fade-up">
+            <div class="overview-img-wrap">
+                <img src="assets/imgs/chronix_home.png" alt="Chronix home screen">
+            </div>
+            <div>
+                <p class="section-label">Overview</p>
+                <h2 class="section-title">Count down to<br><span class="gradient-text">what matters</span></h2>
+                <p class="overview-desc">Chronix turns important dates — birthdays, deadlines, holidays, trips — into live countdowns you can glance at any time. Add events by hand or import them straight from your device calendar, pin them to your home screen as widgets, and get a reminder before they arrive. Everything is stored locally on your device.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Create countdowns for any date and watch the days tick down</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Import events directly from your device calendar (read-only)</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Home-screen widgets in multiple sizes and configurations</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Local reminder notifications, re-scheduled after reboot</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Material 3 design with light &amp; dark themes and 7 languages</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Fully offline — your data never leaves the device</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="container">
+        <div class="overview-grid fade-up" style="direction:rtl">
+            <div class="overview-img-wrap" style="direction:ltr">
+                <img src="assets/imgs/chronix_detail.png" alt="Chronix countdown detail">
+            </div>
+            <div style="direction:ltr">
+                <p class="section-label">Architecture</p>
+                <h2 class="section-title">Built to<br><span class="gradient-text">scale cleanly</span></h2>
+                <p class="overview-desc">Chronix is engineered on Clean Architecture with a fully modularized, feature-based structure. Build logic is centralized through Gradle Convention Plugins and a Version Catalog, keeping every module consistent and duplication-free. Navigation uses the type-safe Navigation3 library through a custom NavigationManager.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Data / Domain / Presentation separation per feature module</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Hilt dependency injection with scoped components</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Type-safe Navigation3 with a custom NavigationManager</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Convention Plugins &amp; Version Catalog for build logic</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Unit tested with JUnit, MockK &amp; Truth</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-label">Tech Stack</p>
+            <h2 class="section-title">Technologies Used</h2>
+        </div>
+        <div class="skills-grid fade-up">
+            <span class="skill-badge"><span class="skill-dot" style="background:#a78bfa"></span>Kotlin</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#67e8f9"></span>Jetpack Compose</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#a5b4fc"></span>Clean Architecture</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#5eead4"></span>Multi-Module</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#a78bfa"></span>Dagger-Hilt</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#93c5fd"></span>Navigation3</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#67e8f9"></span>Coroutines &amp; Flow</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#6ee7b7"></span>Glance Widgets</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#fdba74"></span>Retrofit</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#c4b5fd"></span>Material 3</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#fde047"></span>JUnit &amp; MockK</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#86efac"></span>Convention Plugins</span>
+        </div>
+    </div>
+</section>
+
+<footer><div class="container"><p>© 2026 Adem Ayar — <a href="index.html" style="color:var(--cyan);text-decoration:none;" data-i18n="common.backToPortfolio">Back to Portfolio</a></p></div></footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); mobileNav.classList.toggle('open'); });
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => { hamburger.classList.remove('active'); mobileNav.classList.remove('open'); }));
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach((el, i) => { el.style.transitionDelay = `${(i % 3) * 0.08}s`; observer.observe(el); });
+</script>
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>
