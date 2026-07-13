@@ -44,7 +44,9 @@ const translations = {
       settowally: 'Free high-resolution wallpaper app with curated collections, search, and one-tap set functionality.',
       foodRecipes: 'Recipe discovery app with ingredients, cooking steps, and filters for different dietary preferences.',
       valorGuide: 'Valorant companion app — browse game info, agent guides, and view your personal match statistics.',
-      passwordGenerator: 'Secure password generator with customizable length, character sets, and one-tap clipboard copy.'
+      passwordGenerator: 'Secure password generator with customizable length, character sets, and one-tap clipboard copy.',
+      chronix: 'Countdown &amp; event timer for Android with home-screen widgets, calendar import, and reminders — built on Clean Architecture with Jetpack Compose.',
+      shine: 'macOS menu-bar app to control external monitor brightness &amp; volume with your keyboard keys over DDC/CI, built with Swift and SwiftUI.'
     },
     contact: {
       label: 'Get In Touch',
@@ -102,7 +104,9 @@ const translations = {
       settowally: 'Seçilmiş koleksiyonlar, arama ve tek dokunuşla ayarlama özelliğine sahip ücretsiz yüksek çözünürlüklü duvar kağıdı uygulaması.',
       foodRecipes: 'Malzemeler, pişirme adımları ve farklı diyet tercihlerine göre filtreler içeren tarif keşif uygulaması.',
       valorGuide: 'Valorant arkadaş uygulaması — oyun bilgilerini ve ajan rehberlerini incele, kişisel maç istatistiklerini görüntüle.',
-      passwordGenerator: 'Özelleştirilebilir uzunluk, karakter setleri ve tek dokunuşla pano kopyalama özelliklerine sahip güvenli şifre oluşturucu.'
+      passwordGenerator: 'Özelleştirilebilir uzunluk, karakter setleri ve tek dokunuşla pano kopyalama özelliklerine sahip güvenli şifre oluşturucu.',
+      chronix: 'Android için geri sayım ve etkinlik zamanlayıcı — ana ekran widget’ları, takvim içe aktarma ve hatırlatıcılarla; Jetpack Compose ile Temiz Mimari üzerine inşa edildi.',
+      shine: 'Harici monitör parlaklığını ve sesini klavye tuşlarınızla DDC/CI üzerinden kontrol eden macOS menü çubuğu uygulaması; Swift ve SwiftUI ile geliştirildi.'
     },
     contact: {
       label: 'İletişime Geç',

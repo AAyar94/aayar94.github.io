@@ -565,6 +565,11 @@ body {
 .tag-mvvm    { background: rgba(99,102,241,0.14);  color: #a5b4fc; }
 .tag-maps    { background: rgba(20,184,166,0.14);  color: #5eead4; }
 .tag-plugin  { background: rgba(239,68,68,0.14);   color: #fca5a5; }
+.tag-swift   { background: rgba(249,115,22,0.15);  color: #fdba74; }
+.tag-swiftui { background: rgba(59,130,246,0.15);  color: #93c5fd; }
+.tag-macos   { background: rgba(148,163,184,0.16); color: #cbd5e1; }
+.tag-widget  { background: rgba(16,185,129,0.15);  color: #6ee7b7; }
+.tag-hilt    { background: rgba(20,184,166,0.14);  color: #5eead4; }
 
 .proj-link {
     display: inline-flex;

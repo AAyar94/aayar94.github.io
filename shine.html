@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shine — Control external monitor brightness & volume on macOS, by Adem Ayar">
+    <title>Shine — Adem Ayar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/glass.css">
+</head>
+<body>
+<div class="bg-orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+
+<nav class="navbar">
+    <div class="container">
+        <a href="index.html" class="nav-logo">AA</a>
+        <ul class="nav-links">
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="index.html#projects" data-i18n="nav.projects">Projects</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+        <div class="lang-toggle">
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="tr">TR</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="mobile-link" data-i18n="nav.home">Home</a>
+    <a href="index.html#projects" class="mobile-link" data-i18n="nav.projects">Projects</a>
+    <a href="index.html#contact" class="mobile-link" data-i18n="nav.contact">Contact</a>
+</div>
+
+<section class="proj-hero">
+    <div class="container">
+        <a href="index.html#projects" class="back-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"/></svg>
+            <span data-i18n="common.backToProjects">Back to Projects</span>
+        </a>
+        <h1 class="proj-title"><span class="gradient-text">Shine</span></h1>
+        <p class="proj-subtitle">Control the brightness and volume of external monitors from your Mac — with your keyboard's own brightness and volume keys, over DDC/CI.</p>
+        <div class="proj-hero-tags">
+            <span class="tag tag-swift">Swift</span>
+            <span class="tag tag-swiftui">SwiftUI</span>
+            <span class="tag tag-macos">macOS</span>
+            <span class="tag tag-plugin">DDC/CI</span>
+        </div>
+        <div class="proj-actions">
+            <a href="index.html#projects" class="btn btn-outline">All Projects</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="container">
+        <div class="overview-grid fade-up">
+            <div class="overview-img-wrap" style="display:flex;align-items:center;justify-content:center;padding:48px;">
+                <img src="assets/imgs/shine_icon.png" alt="Shine app icon" style="max-width:260px;border-radius:28px;">
+            </div>
+            <div>
+                <p class="section-label">Overview</p>
+                <h2 class="section-title">Native keys,<br><span class="gradient-text">any monitor</span></h2>
+                <p class="overview-desc">Third-party monitors ignore the brightness and volume keys on a Mac keyboard. Shine fixes that. It lives in your menu bar and speaks the DDC/CI protocol to external displays, so your keyboard's own keys adjust the monitor under your pointer — with a macOS-style on-screen HUD, just like the built-in display.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Brightness control for external monitors via DDC/CI</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Volume &amp; mute control for monitor speakers</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Native keyboard keys — brightness follows the mouse pointer, volume follows the audio output</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Multi-monitor aware — displays matched to DDC ports by EDID</li>
+                    <li class="feature-item"><span class="feature-dot"></span>macOS-style on-screen HUD when using the keys</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Lives in the menu bar; the icon can be hidden entirely</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:0">
+    <div class="container">
+        <div class="overview-grid fade-up" style="direction:rtl">
+            <div class="overview-img-wrap" style="direction:ltr;display:flex;align-items:center;justify-content:center;padding:48px;">
+                <img src="assets/imgs/shine_icon_512.png" alt="Shine" style="max-width:220px;border-radius:24px;">
+            </div>
+            <div style="direction:ltr">
+                <p class="section-label">How It Works</p>
+                <h2 class="section-title">Talking to displays<br><span class="gradient-text">the hard way</span></h2>
+                <p class="overview-desc">Shine communicates over the DDC/CI protocol (VESA MCCS): brightness is VCP code <code>0x10</code>, speaker volume <code>0x62</code>, and mute <code>0x8D</code>. On Apple Silicon the I2C channel is reached through the private <code>IOAVService</code> API, resolved at runtime. Media keys are intercepted with a <code>CGEventTap</code>, which is why the app needs Accessibility permission.</p>
+                <ul class="feature-list">
+                    <li class="feature-item"><span class="feature-dot"></span>Apple Silicon, macOS 14 (Sonoma) or later</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Works over HDMI, DisplayPort &amp; USB-C</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Runtime-resolved <code>IOAVService</code> I2C access</li>
+                    <li class="feature-item"><span class="feature-dot"></span>Free &amp; open source, MIT licensed</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-label">Tech Stack</p>
+            <h2 class="section-title">Technologies Used</h2>
+        </div>
+        <div class="skills-grid fade-up">
+            <span class="skill-badge"><span class="skill-dot" style="background:#fdba74"></span>Swift</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#93c5fd"></span>SwiftUI</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#cbd5e1"></span>AppKit</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#5eead4"></span>DDC/CI (VESA MCCS)</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#a5b4fc"></span>IOKit / IOAVService</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#67e8f9"></span>CoreGraphics (CGEventTap)</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#f9a8d4"></span>CoreAudio</span>
+            <span class="skill-badge"><span class="skill-dot" style="background:#86efac"></span>Menu-Bar App</span>
+        </div>
+    </div>
+</section>
+
+<footer><div class="container"><p>© 2026 Adem Ayar — <a href="index.html" style="color:var(--cyan);text-decoration:none;" data-i18n="common.backToPortfolio">Back to Portfolio</a></p></div></footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); mobileNav.classList.toggle('open'); });
+    document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => { hamburger.classList.remove('active'); mobileNav.classList.remove('open'); }));
+    const observer = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }), { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach((el, i) => { el.style.transitionDelay = `${(i % 3) * 0.08}s`; observer.observe(el); });
+</script>
+<script src="assets/js/i18n.js"></script>
+</body>
+</html>
