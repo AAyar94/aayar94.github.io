@@ -1,0 +1,35 @@
+{
+  "title": "Crypto Tracker",
+  "subtitle": "Live cryptocurrency tracker with coin details, price charts, and an adaptive multi-pane layout for phones and tablets.",
+  "tags": ["Kotlin", "Compose", "MVI", "Retrofit"],
+  "actions": [
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Modern Android",
+      "titleHighlight": "best practices",
+      "description": "Built as a reference project to explore Android's latest best practices. Crypto Tracker pulls live coin data and displays it with a clean list-detail UI. On tablets, it uses Adaptive Navigation for a proper multi-pane experience.",
+      "features": [
+        "Live cryptocurrency list with price & change data",
+        "Detail view with price chart per coin",
+        "Adaptive Navigation — single/dual pane based on screen size",
+        "MVI architecture for predictable state management",
+        "Koin for lightweight dependency injection"
+      ],
+      "image": "images/projects/crypto_screenshot_multi.png",
+      "imageAlt": "Crypto Tracker screenshots",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Jetpack Compose", "color": "#67e8f9" },
+    { "title": "MVI Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Koin DI", "color": "#86efac" },
+    { "title": "Adaptive Navigation", "color": "#5eead4" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" }
+  ]
+}

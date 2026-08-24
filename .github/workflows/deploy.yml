@@ -51,9 +51,29 @@ jobs:
       - name: Add SPA fallback for GitHub Pages
         run: cp web/build/index.html web/build/404.html
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: web/build
-          publish_branch: gh-pages
+      # GitHub Pages serves this repo straight from main's root, so the
+      # build output has to live there too. Sync it in, deleting anything
+      # stale from a previous build, without touching the source tree or
+      # repo config (rsync's --exclude also protects matches from --delete).
+      - name: Publish build to repo root
+        run: |
+          rsync -a --delete \
+            --exclude='/.git' \
+            --exclude='/.github' \
+            --exclude='/.idea' \
+            --exclude='/web' \
+            --exclude='/README.md' \
+            --exclude='/.gitignore' \
+            web/build/ ./
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to publish"
+          else
+            git commit -m "Publish build from ${{ github.sha }}"
+            git push
+          fi

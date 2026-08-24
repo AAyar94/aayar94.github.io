@@ -1,0 +1,36 @@
+{
+  "title": "ValoGuide & Stats",
+  "subtitle": "Valorant arkadaş uygulaması — ajan rehberlerine, silahlara, haritalara göz atın ve kişisel maç istatistiklerinizi görüntüleyin.",
+  "tags": ["Kotlin", "MVVM", "Retrofit", "Android"],
+  "actions": [
+    { "label": "GitHub'da Görüntüle", "href": "https://github.com/AAyar94/Valorant_Guide_And_Stats", "variant": "primary", "icon": "github", "external": true },
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Valorant",
+      "titleHighlight": "arkadaş uygulamanız",
+      "description": "Android için kapsamlı bir Valorant arkadaş uygulaması. Her ajanı yetenekleri ve rolüyle inceleyin, tüm silahları ve haritaları keşfedin ve mevcut sezonu gözden geçirin. Rütbenizin, seviyenizin ve son maç geçmişinizin canlı bir özetini almak için oyun içi kullanıcı adınızı girin.",
+      "features": [
+        "Yetenek & rol açıklamalarıyla tam ajan kadrosu",
+        "Silah istatistikleri & harita rehberleri",
+        "Mevcut & geçmiş sezon özeti",
+        "Oyun içi kullanıcı adına göre oyuncu istatistiği arama",
+        "WhatsApp & sosyal medyaya oyun içi çıkartma paylaşımı"
+      ],
+      "image": "images/projects/valorantgallery.svg",
+      "imageAlt": "ValoGuide gallery",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "MVVM Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Glide", "color": "#86efac" },
+    { "title": "Room Database", "color": "#fde047" }
+  ]
+}

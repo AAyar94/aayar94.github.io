@@ -1,0 +1,88 @@
+{
+    "projects": [
+        {
+            "slug": "chronix",
+            "image": "images/projects/chronix_home.png",
+            "title": "Chronix",
+            "bodyText": "Countdown & event timer for Android with home-screen widgets, calendar import, and reminders — built on Clean Architecture with Jetpack Compose.",
+            "tags": ["Kotlin", "Compose", "Widgets", "Hilt"]
+        },
+        {
+            "slug": "shine",
+            "image": "images/projects/shine_icon.png",
+            "title": "Shine",
+            "bodyText": "macOS menu-bar app to control external monitor brightness & volume with your keyboard keys over DDC/CI, built with Swift and SwiftUI.",
+            "tags": ["Swift", "SwiftUI", "macOS"]
+        },
+        {
+            "slug": "smartcodesorter",
+            "image": "images/projects/smart_code_sorter_x.png",
+            "title": "SmartCodeSorter",
+            "bodyText": "IntelliJ IDEA & Android Studio plugin that automatically organizes Kotlin class members by structure and conventions.",
+            "tags": ["Kotlin", "Plugin SDK"]
+        },
+        {
+            "slug": "noteskmm",
+            "image": "images/projects/kmm_notes_mockup.png",
+            "title": "KMM Notes",
+            "bodyText": "Cross-platform notes app for Android & iOS built with Kotlin Multiplatform — sharing business logic across both platforms.",
+            "tags": ["Kotlin", "KMM", "Android"]
+        },
+        {
+            "slug": "crypto",
+            "image": "images/projects/crypto_screenshot_multi.png",
+            "title": "Crypto Tracker",
+            "bodyText": "Live cryptocurrency tracker with coin details, price charts, and adaptive UI for phones and tablets.",
+            "tags": ["Kotlin", "Compose", "Retrofit", "MVI"]
+        },
+        {
+            "slug": "aquatick",
+            "image": "images/projects/aquatick_mockup.png",
+            "title": "Aquatick",
+            "bodyText": "Daily hydration tracker that calculates your personal water intake goal and logs progress throughout the day.",
+            "tags": ["Kotlin", "Compose", "Room"]
+        },
+        {
+            "slug": "calorietracker",
+            "image": "images/projects/CalorieTrackerMockup.png",
+            "title": "Calorie Tracker",
+            "bodyText": "Nutrition app to set daily calorie goals, track meals, and monitor macronutrient intake throughout the day.",
+            "tags": ["Kotlin", "Compose", "MVVM"]
+        },
+        {
+            "slug": "earthquakes",
+            "image": "images/projects/earthquakes_mockup.png",
+            "title": "Last Earthquakes",
+            "bodyText": "Real-time tracker for the last 100 earthquakes in Turkey with interactive map view and risk zone visualization.",
+            "tags": ["Kotlin", "Retrofit", "Maps"]
+        },
+        {
+            "slug": "settowally",
+            "image": "images/projects/settowally_mockup.png",
+            "title": "Settowally",
+            "bodyText": "Free high-resolution wallpaper app with curated collections, search, and one-tap set functionality.",
+            "tags": ["Kotlin", "Retrofit", "Android"]
+        },
+        {
+            "slug": "foodrecipes",
+            "image": "images/projects/food_recipes_mockup.png",
+            "title": "Food Recipes",
+            "bodyText": "Recipe discovery app with ingredients, cooking steps, and filters for different dietary preferences.",
+            "tags": ["Kotlin", "Retrofit", "Room", "MVVM"]
+        },
+        {
+            "slug": "valorguide",
+            "image": "images/projects/valorguide_image.png",
+            "title": "ValoGuide & Stats",
+            "bodyText": "Valorant companion app — browse game info, agent guides, and view your personal match statistics.",
+            "tags": ["Kotlin", "Retrofit", "MVVM"]
+        },
+        {
+            "slug": "passwordgenerator",
+            "image": "images/projects/password_manager_mockup1.png",
+            "title": "Password Generator",
+            "bodyText": "Secure password generator with customizable length, character sets, and one-tap clipboard copy.",
+            "tags": ["Kotlin", "Compose", "Android"]
+        }
+    ]
+}

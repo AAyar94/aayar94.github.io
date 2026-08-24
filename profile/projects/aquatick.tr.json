@@ -1,0 +1,41 @@
+{
+  "title": "Aquatick",
+  "subtitle": "İçecek türü grafikleri, hatırlatıcılar ve daha iyi su içme alışkanlıkları için sağlık makaleleri içeren günlük hidrasyon takip uygulaması.",
+  "tags": ["Kotlin", "Compose", "MVVM", "Room", "Retrofit"],
+  "actions": [
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Her gün",
+      "titleHighlight": "susuz kalmayın",
+      "description": "Aquatick, günlük sıvı alımınızı içecek türüne göre ayırarak grafiklerle takip etmenize yardımcı olur. Kişisel günlük hedefinizi hesaplar, gün boyunca hatırlatıcılar gönderir ve kalıcı hidrasyon alışkanlıkları oluşturmanız için sağlık makaleleri sunar.",
+      "features": [
+        "Farklı içecek türlerini grafik görselleştirmesiyle (Vico) ayrı ayrı takip edin",
+        "Kişiselleştirilmiş günlük hidrasyon hedefi hesaplaması",
+        "WorkManager ile arka plan hatırlatıcıları",
+        "Retrofit ile çekilen seçilmiş sağlık makaleleri",
+        "Şık bir arayüz deneyimi için Lottie animasyonları",
+        "Firebase analitiği & çok modüllü mimari"
+      ],
+      "image": "images/projects/aquatick_mockup.png",
+      "imageAlt": "Aquatick mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Jetpack Compose", "color": "#67e8f9" },
+    { "title": "MVVM / Multi-Module", "color": "#a5b4fc" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Retrofit", "color": "#fdba74" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Firebase", "color": "#fca5a5" },
+    { "title": "WorkManager", "color": "#86efac" },
+    { "title": "Lottie", "color": "#f9a8d4" },
+    { "title": "Vico Charts", "color": "#5eead4" },
+    { "title": "JUnit Tests", "color": "#fde047" }
+  ]
+}

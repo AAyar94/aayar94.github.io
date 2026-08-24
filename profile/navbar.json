@@ -1,0 +1,30 @@
+{
+    "logo" : {
+        "source": "images/logo.svg",
+        "height" : 40,
+        "width" : 40
+    },
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Resume",
+            "href": "/cv/AdemAyarCV.pdf",
+            "type": "link"
+        }
+    ]
+}

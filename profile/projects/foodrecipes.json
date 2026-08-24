@@ -1,0 +1,36 @@
+{
+  "title": "Food Recipes",
+  "subtitle": "Recipe discovery app with ingredients, step-by-step cooking instructions, and filters for dietary preferences.",
+  "tags": ["Kotlin", "MVVM", "Retrofit", "Room"],
+  "actions": [
+    { "label": "View on GitHub", "href": "https://github.com/AAyar94/Food_Recipes", "variant": "primary", "icon": "github", "external": true },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Discover recipes",
+      "titleHighlight": "for every diet",
+      "description": "Explore thousands of recipes across categories like Vegan, Vegetarian, Desserts, Main Dishes, and Drinks. Each recipe includes a full ingredient list, step-by-step cooking instructions, and nutritional info. Results are cached locally so they work offline too.",
+      "features": [
+        "Multi-category browsing: Vegan, Vegetarian, Desserts, Drinks & more",
+        "Full ingredient lists with measurements",
+        "Step-by-step cooking instructions",
+        "Diet type filter (gluten-free, ketogenic, etc.)",
+        "Offline caching with Room database"
+      ],
+      "image": "images/projects/food_recipes_mockup.png",
+      "imageAlt": "Food Recipes mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "MVVM / Clean Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Glide", "color": "#86efac" }
+  ]
+}
