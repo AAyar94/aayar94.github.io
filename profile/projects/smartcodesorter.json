@@ -1,0 +1,56 @@
+{
+  "title": "SmartCodeSorter",
+  "subtitle": "IntelliJ IDEA & Android Studio plugin that automatically organizes Kotlin class members by structure and conventions — with zero configuration.",
+  "tags": ["Kotlin", "IntelliJ Plugin SDK"],
+  "actions": [
+    { "label": "JetBrains Marketplace", "href": "https://plugins.jetbrains.com/plugin/31219", "variant": "primary", "icon": "external", "external": true },
+    { "label": "View License", "href": "/smartcodesorter-license.html", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Clean Kotlin code,",
+      "titleHighlight": "automatically",
+      "description": "SmartCodeSorter keeps your Kotlin class structure consistent without any manual effort. Install it, press a shortcut, and your class members, constructor parameters, and nested classes are instantly organized following Kotlin conventions.",
+      "features": [
+        "Sort class members (fields, methods, nested classes) in one keystroke",
+        "Constructor parameter sorting for cleaner class definitions",
+        "Sort on Save — auto-sort every time you save a file",
+        "Shortcut: **⌥⌘S** (macOS) / **Code → Smart Code Sorter**",
+        "Zero configuration — works out of the box",
+        "Compatible with IntelliJ IDEA & Android Studio"
+      ],
+      "image": "images/projects/smart_code_sorter_x.png",
+      "imageAlt": "SmartCodeSorter plugin",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "IntelliJ Platform Plugin SDK", "color": "#fca5a5" },
+    { "title": "PSI (Program Structure Interface)", "color": "#86efac" },
+    { "title": "Gradle", "color": "#94a3b8" }
+  ],
+  "howToUse": {
+    "labelKey": "howToUse",
+    "title": "Get Started",
+    "cards": [
+      {
+        "title": "Manual Sort",
+        "steps": [
+          "Open any Kotlin file in IntelliJ IDEA or Android Studio",
+          "Press **⌥⌘S** (macOS)",
+          "Or go to **Code → Smart Code Sorter → Sort Kotlin Code**"
+        ]
+      },
+      {
+        "title": "Sort on Save",
+        "steps": [
+          "Go to **Code → Smart Code Sorter → Sort on Save**",
+          "Toggle the option on",
+          "Your code is sorted automatically every time you save"
+        ]
+      }
+    ]
+  }
+}

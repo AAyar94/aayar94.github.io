@@ -1,0 +1,58 @@
+{
+  "title": "Chronix",
+  "subtitle": "Android için geri sayım & etkinlik zamanlayıcı — önemli anlara kalan günleri, takvim içe aktarma ve hatırlatıcılarla doğrudan ana ekranınızdan takip edin.",
+  "tags": ["Kotlin", "Compose", "Clean Architecture", "Hilt", "Widgets"],
+  "actions": [
+    { "label": "Gizlilik Politikası", "href": "/chronix-privacy-policy.html", "variant": "outline" },
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Önemli olana",
+      "titleHighlight": "geri sayın",
+      "description": "Chronix, önemli tarihleri — doğum günleri, son teslim tarihleri, tatiller, geziler — istediğiniz an göz atabileceğiniz canlı geri sayımlara dönüştürür. Etkinlikleri elle ekleyin ya da doğrudan cihaz takviminizden içe aktarın, widget olarak ana ekranınıza sabitleyin ve gelmeden önce hatırlatma alın. Her şey cihazınızda yerel olarak saklanır.",
+      "features": [
+        "Herhangi bir tarih için geri sayım oluşturun ve günlerin azalışını izleyin",
+        "Etkinlikleri doğrudan cihaz takviminizden içe aktarın (salt okunur)",
+        "Birden çok boyut ve yapılandırmada ana ekran widget'ları",
+        "Yeniden başlatmanın ardından yeniden zamanlanan yerel hatırlatma bildirimleri",
+        "Aydınlık & karanlık temalar ve 7 dil ile Material 3 tasarımı",
+        "Tamamen çevrimdışı — verileriniz cihazdan asla çıkmaz"
+      ],
+      "image": "images/projects/chronix_home.png",
+      "imageAlt": "Chronix home screen",
+      "reverse": false
+    },
+    {
+      "labelKey": "architecture",
+      "titleBefore": "Temiz biçimde",
+      "titleHighlight": "ölçeklenmek üzere kuruldu",
+      "description": "Chronix, tamamen modüler, özellik tabanlı bir yapıyla Clean Architecture üzerine inşa edilmiştir. Derleme mantığı, Gradle Convention Plugins ve bir Version Catalog aracılığıyla merkezileştirilir; böylece her modül tutarlı ve tekrarsız kalır. Gezinme, özel bir NavigationManager üzerinden tür güvenli Navigation3 kütüphanesini kullanır.",
+      "features": [
+        "Her özellik modülü için Data / Domain / Presentation ayrımı",
+        "Kapsamlı bileşenlerle Hilt bağımlılık enjeksiyonu",
+        "Özel bir NavigationManager ile tür güvenli Navigation3",
+        "Derleme mantığı için Convention Plugins & Version Catalog",
+        "JUnit, MockK & Truth ile birim testleri"
+      ],
+      "image": "images/projects/chronix_detail.png",
+      "imageAlt": "Chronix countdown detail",
+      "reverse": true
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Jetpack Compose", "color": "#67e8f9" },
+    { "title": "Clean Architecture", "color": "#a5b4fc" },
+    { "title": "Multi-Module", "color": "#5eead4" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Navigation3", "color": "#93c5fd" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Glance Widgets", "color": "#6ee7b7" },
+    { "title": "Retrofit", "color": "#fdba74" },
+    { "title": "Material 3", "color": "#c4b5fd" },
+    { "title": "JUnit & MockK", "color": "#fde047" },
+    { "title": "Convention Plugins", "color": "#86efac" }
+  ]
+}

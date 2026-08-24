@@ -1,0 +1,36 @@
+{
+  "title": "Calorie Tracker",
+  "subtitle": "Track your daily calorie intake and macronutrients — carbs, protein, and fat — with visual breakdown charts.",
+  "tags": ["Kotlin", "Compose", "MVVM", "Room", "Retrofit"],
+  "actions": [
+    { "label": "View on GitHub", "href": "https://github.com/AAyar94/CaloryTracker", "variant": "primary", "icon": "github", "external": true },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Know what you",
+      "titleHighlight": "put in your body",
+      "description": "Set your daily calorie goal and track every meal with a full macronutrient breakdown. Carbs, protein, and fat are displayed in individual visual charts so you can see exactly how your nutrition stacks up against your targets each day.",
+      "features": [
+        "Set personalized daily calorie and macro goals",
+        "Log meals and track carbs, protein & fat separately",
+        "Visual chart breakdown per macronutrient",
+        "Clean MVVM + Clean Architecture structure",
+        "Offline-first with Room database caching"
+      ],
+      "image": "images/projects/CalorieTrackerMockup.png",
+      "imageAlt": "Calorie Tracker mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Jetpack Compose", "color": "#67e8f9" },
+    { "title": "MVVM / Clean Architecture", "color": "#a5b4fc" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Retrofit", "color": "#fdba74" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" }
+  ]
+}

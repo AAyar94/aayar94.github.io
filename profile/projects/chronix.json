@@ -1,0 +1,58 @@
+{
+  "title": "Chronix",
+  "subtitle": "Countdown & event timer for Android — track the days to the moments that matter, right from your home screen, with calendar import and reminders.",
+  "tags": ["Kotlin", "Compose", "Clean Architecture", "Hilt", "Widgets"],
+  "actions": [
+    { "label": "Privacy Policy", "href": "/chronix-privacy-policy.html", "variant": "outline" },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Count down to",
+      "titleHighlight": "what matters",
+      "description": "Chronix turns important dates — birthdays, deadlines, holidays, trips — into live countdowns you can glance at any time. Add events by hand or import them straight from your device calendar, pin them to your home screen as widgets, and get a reminder before they arrive. Everything is stored locally on your device.",
+      "features": [
+        "Create countdowns for any date and watch the days tick down",
+        "Import events directly from your device calendar (read-only)",
+        "Home-screen widgets in multiple sizes and configurations",
+        "Local reminder notifications, re-scheduled after reboot",
+        "Material 3 design with light & dark themes and 7 languages",
+        "Fully offline — your data never leaves the device"
+      ],
+      "image": "images/projects/chronix_home.png",
+      "imageAlt": "Chronix home screen",
+      "reverse": false
+    },
+    {
+      "labelKey": "architecture",
+      "titleBefore": "Built to",
+      "titleHighlight": "scale cleanly",
+      "description": "Chronix is engineered on Clean Architecture with a fully modularized, feature-based structure. Build logic is centralized through Gradle Convention Plugins and a Version Catalog, keeping every module consistent and duplication-free. Navigation uses the type-safe Navigation3 library through a custom NavigationManager.",
+      "features": [
+        "Data / Domain / Presentation separation per feature module",
+        "Hilt dependency injection with scoped components",
+        "Type-safe Navigation3 with a custom NavigationManager",
+        "Convention Plugins & Version Catalog for build logic",
+        "Unit tested with JUnit, MockK & Truth"
+      ],
+      "image": "images/projects/chronix_detail.png",
+      "imageAlt": "Chronix countdown detail",
+      "reverse": true
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Jetpack Compose", "color": "#67e8f9" },
+    { "title": "Clean Architecture", "color": "#a5b4fc" },
+    { "title": "Multi-Module", "color": "#5eead4" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Navigation3", "color": "#93c5fd" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Glance Widgets", "color": "#6ee7b7" },
+    { "title": "Retrofit", "color": "#fdba74" },
+    { "title": "Material 3", "color": "#c4b5fd" },
+    { "title": "JUnit & MockK", "color": "#fde047" },
+    { "title": "Convention Plugins", "color": "#86efac" }
+  ]
+}

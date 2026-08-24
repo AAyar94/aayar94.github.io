@@ -1,0 +1,37 @@
+{
+  "title": "Settowally",
+  "subtitle": "Karanlık & aydınlık mod desteği ve tablete özel optimize edilmiş düzene sahip reklamsız yüksek çözünürlüklü duvar kağıdı uygulaması.",
+  "tags": ["Kotlin", "Android", "Retrofit", "Room"],
+  "actions": [
+    { "label": "GitHub'da Görüntüle", "href": "https://github.com/AAyar94/SettoWally_Kotlin", "variant": "primary", "icon": "github", "external": true },
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Güzel duvar kağıtları,",
+      "titleHighlight": "sıfır reklam",
+      "description": "Reklam veya dikkat dağıtıcı olmadan ücretsiz yüksek çözünürlüklü duvar kağıtlarına göz atın ve indirin. Favorilerinizi çevrimdışı erişim için uygulama içinde kaydedin. Settowally, karanlık ve aydınlık modu tam olarak destekler ve büyük ekranlar için tablete optimize edilmiş çift bölmeli bir düzen sunar.",
+      "features": [
+        "Ücretsiz HD duvar kağıtlarına göz atın & indirin",
+        "Favorileri Room veritabanıyla yerel olarak kaydedin",
+        "Tam karanlık & aydınlık mod desteği",
+        "Tablete optimize edilmiş çift bölmeli düzen",
+        "Coil ile hızlı görsel yükleme"
+      ],
+      "image": "images/projects/settowally_mockup.png",
+      "imageAlt": "Settowally mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "MVVM Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Coil Image Loading", "color": "#86efac" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Dark / Light Mode", "color": "#94a3b8" }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "title": "KMM Notes",
+  "subtitle": "Kotlin Multiplatform ile geliştirilmiş Android & iOS için platformlar arası notlar uygulaması — iş mantığını her iki platformda paylaşır.",
+  "tags": ["Kotlin", "KMM", "Android", "MVVM"],
+  "actions": [
+    { "label": "GitHub'da Görüntüle", "href": "https://github.com/AAyar94/NotesKMM", "variant": "primary", "icon": "github", "external": true },
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Tek kod tabanı,",
+      "titleHighlight": "iki platform",
+      "description": "Kotlin Multiplatform ile geliştirilen, Android ve iOS'ta yerel olarak çalışan hızlı ve temiz bir not uygulaması. Paylaşılan Kotlin modülü tüm iş mantığını ve veri kalıcılığını yönetirken her platform kendi yerel arayüzüne sahip olur.",
+      "features": [
+        "Öncelik seviyeleriyle (yüksek, orta, düşük) not oluşturma ve düzenleme",
+        "Tüm notlarda gerçek zamanlı arama",
+        "KMM ile Android & iOS için paylaşılan iş mantığı",
+        "SQLDelight ile önce çevrimdışı veri kalıcılığı",
+        "Dagger-Hilt ile bağımlılık enjeksiyonu (Android)"
+      ],
+      "image": "images/projects/kmm_notes_mockup.png",
+      "imageAlt": "KMM Notes mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Kotlin Multiplatform", "color": "#f9a8d4" },
+    { "title": "MVVM Architecture", "color": "#a5b4fc" },
+    { "title": "SQLDelight", "color": "#fde047" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Android SDK", "color": "#86efac" },
+    { "title": "Swift (iOS UI)", "color": "#fca5a5" }
+  ]
+}

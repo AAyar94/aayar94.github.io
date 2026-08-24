@@ -1,0 +1,53 @@
+{
+  "title": "Shine",
+  "subtitle": "Control the brightness and volume of external monitors from your Mac — with your keyboard's own brightness and volume keys, over DDC/CI.",
+  "tags": ["Swift", "SwiftUI", "macOS", "DDC/CI"],
+  "actions": [
+    { "label": "View on GitHub", "href": "https://github.com/AAyar94/Shine", "variant": "primary", "icon": "github", "external": true },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Native keys,",
+      "titleHighlight": "any monitor",
+      "description": "Third-party monitors ignore the brightness and volume keys on a Mac keyboard. Shine fixes that. It lives in your menu bar and speaks the DDC/CI protocol to external displays, so your keyboard's own keys adjust the monitor under your pointer — with a macOS-style on-screen HUD, just like the built-in display.",
+      "features": [
+        "Brightness control for external monitors via DDC/CI",
+        "Volume & mute control for monitor speakers",
+        "Native keyboard keys — brightness follows the mouse pointer, volume follows the audio output",
+        "Multi-monitor aware — displays matched to DDC ports by EDID",
+        "macOS-style on-screen HUD when using the keys",
+        "Lives in the menu bar; the icon can be hidden entirely"
+      ],
+      "image": "images/projects/shine_icon.png",
+      "imageAlt": "Shine app icon",
+      "reverse": false
+    },
+    {
+      "labelKey": "howItWorks",
+      "titleBefore": "Talking to displays",
+      "titleHighlight": "the hard way",
+      "description": "Shine communicates over the DDC/CI protocol (VESA MCCS): brightness is VCP code `0x10`, speaker volume `0x62`, and mute `0x8D`. On Apple Silicon the I2C channel is reached through the private `IOAVService` API, resolved at runtime. Media keys are intercepted with a `CGEventTap`, which is why the app needs Accessibility permission.",
+      "features": [
+        "Apple Silicon, macOS 14 (Sonoma) or later",
+        "Works over HDMI, DisplayPort & USB-C",
+        "Runtime-resolved `IOAVService` I2C access",
+        "Free & open source, MIT licensed"
+      ],
+      "image": "images/projects/shine_icon_512.png",
+      "imageAlt": "Shine",
+      "reverse": true
+    }
+  ],
+  "techStack": [
+    { "title": "Swift", "color": "#fdba74" },
+    { "title": "SwiftUI", "color": "#93c5fd" },
+    { "title": "AppKit", "color": "#cbd5e1" },
+    { "title": "DDC/CI (VESA MCCS)", "color": "#5eead4" },
+    { "title": "IOKit / IOAVService", "color": "#a5b4fc" },
+    { "title": "CoreGraphics (CGEventTap)", "color": "#67e8f9" },
+    { "title": "CoreAudio", "color": "#f9a8d4" },
+    { "title": "Menu-Bar App", "color": "#86efac" }
+  ]
+}

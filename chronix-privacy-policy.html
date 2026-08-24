@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Chronix</title>
+    <style>
+        :root {
+            --primary: #6442D6;
+            --on-primary: #FFFFFF;
+            --surface: #FDF7FF;
+            --surface-container: #F2ECF7;
+            --on-surface: #1C1B20;
+            --on-surface-variant: #48454E;
+            --outline: #79767F;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--on-primary);
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        h2:first-of-type { margin-top: 0; }
+
+        p, li {
+            font-size: 0.95rem;
+            color: var(--on-surface-variant);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li { margin-bottom: 6px; }
+
+        strong { color: var(--on-surface); }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--outline);
+            color: var(--on-surface-variant);
+        }
+
+        th {
+            background: var(--surface-container);
+            color: var(--on-surface);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.8rem;
+            color: var(--outline);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #C9BFFF;
+                --on-primary: #1B0064;
+                --surface: #141218;
+                --surface-container: #211F26;
+                --on-surface: #E6E0E9;
+                --on-surface-variant: #CAC4D0;
+                --outline: #938F99;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Privacy Policy</h1>
+    <p>Chronix &mdash; Last updated: July 12, 2026</p>
+</header>
+
+<main>
+
+    <h2>1. Introduction</h2>
+    <p>
+        Welcome to <strong>Chronix</strong> ("we," "our," or "us"). This privacy policy explains how we collect, use,
+        and protect information when you use our Android application (the "App"). By using Chronix, you agree to the
+        practices described in this policy.
+    </p>
+
+    <h2>2. Information We Collect</h2>
+    <p>Chronix is designed to work locally on your device. We collect the following categories of information:</p>
+
+    <h3>2.1 Calendar Data</h3>
+    <p>
+        Chronix requests read-only access to your device calendar (<code>READ_CALENDAR</code> permission) solely to
+        allow you to import events as countdowns. Calendar data is processed on-device and is <strong>not</strong>
+        transmitted to any external server.
+    </p>
+
+    <h3>2.2 Notification Data</h3>
+    <p>
+        The App may send local notifications to remind you of upcoming countdowns
+        (<code>POST_NOTIFICATIONS</code> permission). Notification content is generated locally from data you create
+        within the App.
+    </p>
+
+    <h3>2.3 Device &amp; Usage Data</h3>
+    <p>
+        When you install or use Chronix, we may automatically collect limited technical information, including:
+    </p>
+    <ul>
+        <li>Device model, operating system version, and screen size</li>
+        <li>App version and crash logs</li>
+        <li>Basic usage analytics (e.g., screens visited, feature interactions)</li>
+    </ul>
+    <p>This data is anonymized and used solely to improve App quality and user experience.</p>
+
+    <h3>2.4 Data Stored Locally</h3>
+    <p>
+        Your countdown events, preferences, widget configurations, and theme settings are stored locally on your device
+        using Android's SharedPreferences and internal storage. This data does <strong>not</strong> leave your device
+        unless you explicitly enable a sync or backup feature.
+    </p>
+
+    <h2>3. How We Use Your Information</h2>
+    <p>We use the information collected for the following purposes:</p>
+    <ul>
+        <li><strong>Provide core functionality</strong> &mdash; creating, displaying, and managing countdowns</li>
+        <li><strong>Calendar import</strong> &mdash; reading calendar events to add as countdowns</li>
+        <li><strong>Reminders</strong> &mdash; scheduling and delivering local notifications</li>
+        <li><strong>Widgets</strong> &mdash; displaying countdown data on your home screen</li>
+        <li><strong>App improvement</strong> &mdash; analyzing anonymized usage data to fix bugs and enhance features</li>
+        <li><strong>Compliance</strong> &mdash; fulfilling legal obligations where applicable</li>
+    </ul>
+
+    <h2>4. Permissions Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>INTERNET</code></td>
+                <td>Analytics and optional remote services (if enabled)</td>
+            </tr>
+            <tr>
+                <td><code>READ_CALENDAR</code></td>
+                <td>Import calendar events as countdowns</td>
+            </tr>
+            <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Send countdown reminder notifications</td>
+            </tr>
+            <tr>
+                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                <td>Re-schedule reminders after device restart</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Data Sharing &amp; Third-Party Services</h2>
+    <p>
+        Chronix does <strong>not</strong> sell, trade, or rent your personal information. We may use third-party
+        services for limited purposes:
+    </p>
+    <ul>
+        <li><strong>Analytics</strong> &mdash; anonymized usage statistics to improve the App</li>
+    </ul>
+    <p>
+        These third-party services have their own privacy policies. We encourage you to review them.
+        No calendar data or countdown content is shared with third parties.
+    </p>
+
+    <h2>6. Data Security</h2>
+    <p>
+        We take reasonable measures to protect your information. All data is stored locally on your device.
+        We do not operate servers that store user data. Network connections (if used) are encrypted via TLS.
+        However, no method of electronic storage is 100% secure.
+    </p>
+
+    <h2>7. Data Retention</h2>
+    <p>
+        Your data remains on your device as long as you have the App installed. You may delete your data at any time
+        by uninstalling the App or clearing its data from Android Settings. Anonymized analytics data may be retained
+        in aggregated form for analytical purposes.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+        Chronix is not directed to children under the age of 13. We do not knowingly collect personal information
+        from children. If you believe a child has provided us with personal information, please contact us and
+        we will take steps to delete such information.
+    </p>
+
+    <h2>9. Your Rights</h2>
+    <p>Depending on your jurisdiction, you may have the following rights:</p>
+    <ul>
+        <li><strong>Access</strong> &mdash; request a copy of the data we hold about you</li>
+        <li><strong>Deletion</strong> &mdash; request deletion of your personal data</li>
+        <li><strong>Correction</strong> &mdash; request correction of inaccurate data</li>
+        <li><strong>Portability</strong> &mdash; request your data in a portable format</li>
+        <li><strong>Objection</strong> &mdash; object to processing of your personal data</li>
+    </ul>
+    <p>
+        To exercise these rights, please contact us using the information below.
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+        We may update this privacy policy from time to time. Any changes will be posted on this page with an updated
+        "Last updated" date. We encourage you to review this policy periodically. Continued use of the App after
+        changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>11. Contact Us</h2>
+    <p>
+        If you have any questions about this privacy policy or our practices, please contact us at:
+    </p>
+    <p>
+        <strong>Email:</strong> <a href="mailto:support@vnsapp.com">support@vnsapp.com</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/mustafayigitt/Chronix/issues">github.com/mustafayigitt/Chronix</a>
+    </p>
+
+</main>
+
+<footer>
+    &copy; 2026 Chronix. All rights reserved.
+</footer>
+
+</body>
+</html>
