@@ -1,0 +1,30 @@
+{
+    "logo" : {
+        "source": "images/logo.svg",
+        "height" : 40,
+        "width" : 40
+    },
+    "sections": [
+        {
+            "title": "Ana Sayfa",
+            "href": "/"
+        },
+        {
+            "title": "Hakkımda",
+            "href": "/about"
+        },
+        {
+            "title": "Yetenekler",
+            "href": "/skills"
+        },
+        {
+            "title": "Projeler",
+            "href": "/projects"
+        },
+        {
+            "title": "CV",
+            "href": "/cv/AdemAyarCV.pdf",
+            "type": "link"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/ademayar94/"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/aayar94"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:a.ayar94@gmail.com"
+        }
+    ]
+}

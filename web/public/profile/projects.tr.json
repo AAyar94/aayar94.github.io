@@ -1,0 +1,88 @@
+{
+    "projects": [
+        {
+            "slug": "chronix",
+            "image": "images/projects/chronix_home.png",
+            "title": "Chronix",
+            "bodyText": "Android için geri sayım ve etkinlik zamanlayıcı — ana ekran widget'ları, takvim içe aktarma ve hatırlatıcılarla; Jetpack Compose ile Temiz Mimari üzerine inşa edildi.",
+            "tags": ["Kotlin", "Compose", "Widgets", "Hilt"]
+        },
+        {
+            "slug": "shine",
+            "image": "images/projects/shine_icon.png",
+            "title": "Shine",
+            "bodyText": "Harici monitör parlaklığını ve sesini klavye tuşlarınızla DDC/CI üzerinden kontrol eden macOS menü çubuğu uygulaması; Swift ve SwiftUI ile geliştirildi.",
+            "tags": ["Swift", "SwiftUI", "macOS"]
+        },
+        {
+            "slug": "smartcodesorter",
+            "image": "images/projects/smart_code_sorter_x.png",
+            "title": "SmartCodeSorter",
+            "bodyText": "Kotlin sınıf üyelerini yapı ve kurallara göre otomatik düzenleyen IntelliJ IDEA & Android Studio eklentisi.",
+            "tags": ["Kotlin", "Plugin SDK"]
+        },
+        {
+            "slug": "noteskmm",
+            "image": "images/projects/kmm_notes_mockup.png",
+            "title": "KMM Notes",
+            "bodyText": "Kotlin Multiplatform ile oluşturulmuş, iş mantığını her iki platformda paylaşan Android & iOS için platformlar arası notlar uygulaması.",
+            "tags": ["Kotlin", "KMM", "Android"]
+        },
+        {
+            "slug": "crypto",
+            "image": "images/projects/crypto_screenshot_multi.png",
+            "title": "Crypto Tracker",
+            "bodyText": "Canlı kripto para takip uygulaması — coin detayları, fiyat grafikleri ve telefon ile tablet için uyarlanabilir arayüz.",
+            "tags": ["Kotlin", "Compose", "Retrofit", "MVI"]
+        },
+        {
+            "slug": "aquatick",
+            "image": "images/projects/aquatick_mockup.png",
+            "title": "Aquatick",
+            "bodyText": "Kişisel su tüketimi hedefini hesaplayan ve gün boyunca ilerlemeyi kaydeden günlük hidrasyon takip uygulaması.",
+            "tags": ["Kotlin", "Compose", "Room"]
+        },
+        {
+            "slug": "calorietracker",
+            "image": "images/projects/CalorieTrackerMockup.png",
+            "title": "Calorie Tracker",
+            "bodyText": "Günlük kalori hedefi belirleme, öğün takibi ve makro besin alımını izleme için beslenme uygulaması.",
+            "tags": ["Kotlin", "Compose", "MVVM"]
+        },
+        {
+            "slug": "earthquakes",
+            "image": "images/projects/earthquakes_mockup.png",
+            "title": "Last Earthquakes",
+            "bodyText": "Türkiye'deki son 100 depremi interaktif harita görünümü ve risk bölgesi görselleştirmesiyle gösteren gerçek zamanlı takip uygulaması.",
+            "tags": ["Kotlin", "Retrofit", "Maps"]
+        },
+        {
+            "slug": "settowally",
+            "image": "images/projects/settowally_mockup.png",
+            "title": "Settowally",
+            "bodyText": "Seçilmiş koleksiyonlar, arama ve tek dokunuşla ayarlama özelliğine sahip ücretsiz yüksek çözünürlüklü duvar kağıdı uygulaması.",
+            "tags": ["Kotlin", "Retrofit", "Android"]
+        },
+        {
+            "slug": "foodrecipes",
+            "image": "images/projects/food_recipes_mockup.png",
+            "title": "Food Recipes",
+            "bodyText": "Malzemeler, pişirme adımları ve farklı diyet tercihlerine göre filtreler içeren tarif keşif uygulaması.",
+            "tags": ["Kotlin", "Retrofit", "Room", "MVVM"]
+        },
+        {
+            "slug": "valorguide",
+            "image": "images/projects/valorguide_image.png",
+            "title": "ValoGuide & Stats",
+            "bodyText": "Valorant arkadaş uygulaması — oyun bilgilerini ve ajan rehberlerini incele, kişisel maç istatistiklerini görüntüle.",
+            "tags": ["Kotlin", "Retrofit", "MVVM"]
+        },
+        {
+            "slug": "passwordgenerator",
+            "image": "images/projects/password_manager_mockup1.png",
+            "title": "Password Generator",
+            "bodyText": "Özelleştirilebilir uzunluk, karakter setleri ve tek dokunuşla pano kopyalama özelliklerine sahip güvenli şifre oluşturucu.",
+            "tags": ["Kotlin", "Compose", "Android"]
+        }
+    ]
+}

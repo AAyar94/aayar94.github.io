@@ -1,0 +1,36 @@
+{
+  "title": "Last Earthquakes",
+  "subtitle": "Real-time tracker for the last 100 earthquakes in Turkey with interactive map view, sorting, and risk zone visualization.",
+  "tags": ["Kotlin", "MVVM", "Retrofit", "Maps SDK", "Room"],
+  "actions": [
+    { "label": "View on GitHub", "href": "https://github.com/AAyar94/Earthquakes", "variant": "primary", "icon": "github", "external": true },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Stay informed",
+      "titleHighlight": "about seismic activity",
+      "description": "A real-time app showing the last 100 earthquakes recorded in Turkey. Tap any event to see its epicenter on the map along with depth and magnitude details. You can also view the Turkey seismic risk map.",
+      "features": [
+        "Last 100 earthquakes fetched in real time",
+        "Sort by magnitude (asc/desc) or chronologically",
+        "Interactive Google Maps view with epicenter marker",
+        "Depth, magnitude, and location details per event",
+        "Turkey seismic risk zone map overlay"
+      ],
+      "image": "images/projects/earthquakes_mockup.png",
+      "imageAlt": "Last Earthquakes mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "MVVM Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Google Maps SDK", "color": "#5eead4" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" }
+  ]
+}

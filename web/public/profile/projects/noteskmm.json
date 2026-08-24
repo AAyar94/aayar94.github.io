@@ -1,0 +1,37 @@
+{
+  "title": "KMM Notes",
+  "subtitle": "Cross-platform notes app for Android & iOS built with Kotlin Multiplatform — sharing business logic across both platforms.",
+  "tags": ["Kotlin", "KMM", "Android", "MVVM"],
+  "actions": [
+    { "label": "View on GitHub", "href": "https://github.com/AAyar94/NotesKMM", "variant": "primary", "icon": "github", "external": true },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "One codebase,",
+      "titleHighlight": "two platforms",
+      "description": "A fast, clean note-taking app built with Kotlin Multiplatform that runs natively on both Android and iOS. The shared Kotlin module handles all business logic and data persistence, while each platform gets its own native UI.",
+      "features": [
+        "Create and edit notes with priority levels (high, medium, low)",
+        "Real-time search across all notes",
+        "Shared business logic for Android & iOS via KMM",
+        "Offline-first persistence with SQLDelight",
+        "Dependency injection with Dagger-Hilt (Android)"
+      ],
+      "image": "images/projects/kmm_notes_mockup.png",
+      "imageAlt": "KMM Notes mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Kotlin Multiplatform", "color": "#f9a8d4" },
+    { "title": "MVVM Architecture", "color": "#a5b4fc" },
+    { "title": "SQLDelight", "color": "#fde047" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Android SDK", "color": "#86efac" },
+    { "title": "Swift (iOS UI)", "color": "#fca5a5" }
+  ]
+}

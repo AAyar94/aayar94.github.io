@@ -1,0 +1,53 @@
+{
+  "title": "Shine",
+  "subtitle": "Harici monitörlerin parlaklığını ve sesini Mac'inizden — klavyenizin kendi parlaklık ve ses tuşlarıyla, DDC/CI üzerinden — kontrol edin.",
+  "tags": ["Swift", "SwiftUI", "macOS", "DDC/CI"],
+  "actions": [
+    { "label": "GitHub'da Görüntüle", "href": "https://github.com/AAyar94/Shine", "variant": "primary", "icon": "github", "external": true },
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Yerel tuşlar,",
+      "titleHighlight": "her monitör",
+      "description": "Üçüncü taraf monitörler, Mac klavyesindeki parlaklık ve ses tuşlarını görmezden gelir. Shine bunu çözer. Menü çubuğunuzda yaşar ve harici ekranlarla DDC/CI protokolüyle konuşur; böylece klavyenizin kendi tuşları, imlecinizin altındaki monitörü — tıpkı dahili ekran gibi macOS tarzı bir ekran HUD'uyla — ayarlar.",
+      "features": [
+        "DDC/CI ile harici monitörler için parlaklık kontrolü",
+        "Monitör hoparlörleri için ses & sessize alma kontrolü",
+        "Yerel klavye tuşları — parlaklık fare imlecini, ses ise ses çıkışını izler",
+        "Çoklu monitör farkındalığı — ekranlar EDID ile DDC bağlantı noktalarına eşlenir",
+        "Tuşları kullanırken macOS tarzı ekran HUD'u",
+        "Menü çubuğunda yaşar; simge tamamen gizlenebilir"
+      ],
+      "image": "images/projects/shine_icon.png",
+      "imageAlt": "Shine app icon",
+      "reverse": false
+    },
+    {
+      "labelKey": "howItWorks",
+      "titleBefore": "Ekranlarla",
+      "titleHighlight": "zor yoldan konuşmak",
+      "description": "Shine, DDC/CI protokolü (VESA MCCS) üzerinden iletişim kurar: parlaklık VCP kodu `0x10`, hoparlör sesi `0x62` ve sessize alma `0x8D`'dir. Apple Silicon'da I2C kanalına, çalışma zamanında çözümlenen özel `IOAVService` API'si aracılığıyla erişilir. Medya tuşları bir `CGEventTap` ile yakalanır; bu yüzden uygulama Erişilebilirlik izni gerektirir.",
+      "features": [
+        "Apple Silicon, macOS 14 (Sonoma) veya üzeri",
+        "HDMI, DisplayPort & USB-C üzerinden çalışır",
+        "Çalışma zamanında çözümlenen `IOAVService` I2C erişimi",
+        "Ücretsiz & açık kaynak, MIT lisanslı"
+      ],
+      "image": "images/projects/shine_icon_512.png",
+      "imageAlt": "Shine",
+      "reverse": true
+    }
+  ],
+  "techStack": [
+    { "title": "Swift", "color": "#fdba74" },
+    { "title": "SwiftUI", "color": "#93c5fd" },
+    { "title": "AppKit", "color": "#cbd5e1" },
+    { "title": "DDC/CI (VESA MCCS)", "color": "#5eead4" },
+    { "title": "IOKit / IOAVService", "color": "#a5b4fc" },
+    { "title": "CoreGraphics (CGEventTap)", "color": "#67e8f9" },
+    { "title": "CoreAudio", "color": "#f9a8d4" },
+    { "title": "Menu-Bar App", "color": "#86efac" }
+  ]
+}

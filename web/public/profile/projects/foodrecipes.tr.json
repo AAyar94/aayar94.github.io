@@ -1,0 +1,36 @@
+{
+  "title": "Food Recipes",
+  "subtitle": "Malzemeler, adım adım pişirme talimatları ve diyet tercihleri için filtreler içeren tarif keşif uygulaması.",
+  "tags": ["Kotlin", "MVVM", "Retrofit", "Room"],
+  "actions": [
+    { "label": "GitHub'da Görüntüle", "href": "https://github.com/AAyar94/Food_Recipes", "variant": "primary", "icon": "github", "external": true },
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Her diyet için",
+      "titleHighlight": "tarifler keşfedin",
+      "description": "Vegan, Vejetaryen, Tatlılar, Ana Yemekler ve İçecekler gibi kategorilerdeki binlerce tarifi keşfedin. Her tarif; eksiksiz bir malzeme listesi, adım adım pişirme talimatları ve besin değeri bilgisi içerir. Sonuçlar yerel olarak önbelleğe alınır, böylece çevrimdışı da çalışır.",
+      "features": [
+        "Çok kategorili gezinme: Vegan, Vejetaryen, Tatlılar, İçecekler & daha fazlası",
+        "Ölçüleriyle birlikte eksiksiz malzeme listeleri",
+        "Adım adım pişirme talimatları",
+        "Diyet türü filtresi (glutensiz, ketojenik vb.)",
+        "Room veritabanı ile çevrimdışı önbellekleme"
+      ],
+      "image": "images/projects/food_recipes_mockup.png",
+      "imageAlt": "Food Recipes mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "MVVM / Clean Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Glide", "color": "#86efac" }
+  ]
+}

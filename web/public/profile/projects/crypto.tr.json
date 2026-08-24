@@ -1,0 +1,35 @@
+{
+  "title": "Crypto Tracker",
+  "subtitle": "Coin detayları, fiyat grafikleri ve telefon ile tabletler için uyarlanabilir çok bölmeli düzene sahip canlı kripto para takip uygulaması.",
+  "tags": ["Kotlin", "Compose", "MVI", "Retrofit"],
+  "actions": [
+    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Modern Android",
+      "titleHighlight": "en iyi uygulamaları",
+      "description": "Android'in en güncel en iyi uygulamalarını keşfetmek için bir referans projesi olarak geliştirildi. Crypto Tracker canlı coin verilerini çeker ve temiz bir liste-detay arayüzüyle gösterir. Tabletlerde, gerçek bir çok bölmeli deneyim için Adaptive Navigation kullanır.",
+      "features": [
+        "Fiyat & değişim verileriyle canlı kripto para listesi",
+        "Her coin için fiyat grafikli detay görünümü",
+        "Adaptive Navigation — ekran boyutuna göre tek/çift bölme",
+        "Öngörülebilir durum yönetimi için MVI mimarisi",
+        "Hafif bağımlılık enjeksiyonu için Koin"
+      ],
+      "image": "images/projects/crypto_screenshot_multi.png",
+      "imageAlt": "Crypto Tracker screenshots",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "Jetpack Compose", "color": "#67e8f9" },
+    { "title": "MVI Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Koin DI", "color": "#86efac" },
+    { "title": "Adaptive Navigation", "color": "#5eead4" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" }
+  ]
+}

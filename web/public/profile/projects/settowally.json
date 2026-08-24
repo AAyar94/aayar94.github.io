@@ -1,0 +1,37 @@
+{
+  "title": "Settowally",
+  "subtitle": "Ad-free high-resolution wallpaper app with dark & light mode support and a dedicated tablet-optimized layout.",
+  "tags": ["Kotlin", "Android", "Retrofit", "Room"],
+  "actions": [
+    { "label": "View on GitHub", "href": "https://github.com/AAyar94/SettoWally_Kotlin", "variant": "primary", "icon": "github", "external": true },
+    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Beautiful wallpapers,",
+      "titleHighlight": "zero ads",
+      "description": "Browse and download free high-resolution wallpapers without any ads or distractions. Save your favourites inside the app for offline access. Settowally fully supports dark and light mode, and features a tablet-optimized dual-pane layout for larger screens.",
+      "features": [
+        "Browse & download free HD wallpapers",
+        "Save favourites locally with Room database",
+        "Full dark & light mode support",
+        "Tablet-optimized dual-pane layout",
+        "Fast image loading with Coil"
+      ],
+      "image": "images/projects/settowally_mockup.png",
+      "imageAlt": "Settowally mockup",
+      "reverse": false
+    }
+  ],
+  "techStack": [
+    { "title": "Kotlin", "color": "#a78bfa" },
+    { "title": "MVVM Architecture", "color": "#a5b4fc" },
+    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+    { "title": "Room Database", "color": "#fde047" },
+    { "title": "Coil Image Loading", "color": "#86efac" },
+    { "title": "Coroutines & Flow", "color": "#67e8f9" },
+    { "title": "Dagger-Hilt", "color": "#a78bfa" },
+    { "title": "Dark / Light Mode", "color": "#94a3b8" }
+  ]
+}

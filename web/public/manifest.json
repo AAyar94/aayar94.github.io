@@ -1,0 +1,15 @@
+{
+  "short_name": "Adem Ayar",
+  "name": "Adem Ayar - Portfolio",
+  "icons": [
+    {
+      "src": "images/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#09090b",
+  "background_color": "#09090b"
+}
