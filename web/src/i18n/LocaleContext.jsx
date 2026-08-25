@@ -5,13 +5,37 @@ import PropTypes from 'prop-types';
 
 const LocaleContext = createContext({ lang: 'en', setLang: () => {} });
 
+const SUPPORTED_LANGS = ['en', 'tr'];
+const FALLBACK_LANG = 'en';
+
+// Falls back to English when the browser reports a language we don't ship.
+function detectBrowserLang() {
+  try {
+    const candidates = window.navigator.languages && window.navigator.languages.length
+      ? window.navigator.languages
+      : [window.navigator.language];
+
+    const match = candidates
+      .map((tag) => tag?.split('-')[0]?.toLowerCase())
+      .find((code) => SUPPORTED_LANGS.includes(code));
+
+    return match || FALLBACK_LANG;
+  } catch {
+    return FALLBACK_LANG;
+  }
+}
+
 // localStorage can be unavailable (test environments, restrictive browser
 // contexts) — read/write defensively rather than letting it crash the app.
+// A previously chosen language always wins; only a first-time visitor gets
+// the browser/device language, with English as the fallback.
 function readStoredLang() {
   try {
-    return window.localStorage.getItem('lang') || 'en';
+    const stored = window.localStorage.getItem('lang');
+    if (stored && SUPPORTED_LANGS.includes(stored)) return stored;
+    return detectBrowserLang();
   } catch {
-    return 'en';
+    return detectBrowserLang();
   }
 }
 
