@@ -5,20 +5,22 @@ import { Fade } from 'react-awesome-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import { useLocale, localizePath } from '../i18n/LocaleContext';
 import '../css/skills.css';
 
 function Skills(props) {
   const { header } = props;
+  const { lang } = useLocale();
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch(endpoints.skills, {
+    fetch(localizePath(endpoints.skills, lang), {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => err);
-  }, []);
+  }, [lang]);
 
   return (
     <>

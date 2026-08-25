@@ -1,0 +1,34 @@
+{
+    "skills": [
+        {
+            "title": "Dil & Mimari",
+            "items": [
+                { "title": "Kotlin", "color": "#a78bfa" },
+                { "title": "Java", "color": "#f9a8d4" },
+                { "title": "MVVM / Clean Architecture", "color": "#a5b4fc" },
+                { "title": "Coroutines & Flow", "color": "#67e8f9" }
+            ]
+        },
+        {
+            "title": "Android & Arayüz",
+            "items": [
+                { "title": "Android SDK", "color": "#86efac" },
+                { "title": "Jetpack Compose", "color": "#67e8f9" },
+                { "title": "Material Design 3", "color": "#fde047" },
+                { "title": "Kotlin Multiplatform", "color": "#f9a8d4" }
+            ]
+        },
+        {
+            "title": "Kütüphaneler & Araçlar",
+            "items": [
+                { "title": "Room Database", "color": "#fde047" },
+                { "title": "Retrofit / OkHttp", "color": "#fdba74" },
+                { "title": "Hilt & Dependency Injection", "color": "#a78bfa" },
+                { "title": "Google Maps SDK", "color": "#5eead4" },
+                { "title": "REST API'ler", "color": "#67e8f9" },
+                { "title": "IntelliJ Plugin SDK", "color": "#fca5a5" },
+                { "title": "Git", "color": "#94a3b8" }
+            ]
+        }
+    ]
+}

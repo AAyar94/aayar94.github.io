@@ -4,6 +4,7 @@
             "title": "Language & Architecture",
             "items": [
                 { "title": "Kotlin", "color": "#a78bfa" },
+                { "title": "Java", "color": "#f9a8d4" },
                 { "title": "MVVM / Clean Architecture", "color": "#a5b4fc" },
                 { "title": "Coroutines & Flow", "color": "#67e8f9" }
             ]
