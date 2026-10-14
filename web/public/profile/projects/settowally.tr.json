@@ -1,23 +1,48 @@
 {
   "title": "Settowally",
-  "subtitle": "Karanlık & aydınlık mod desteği ve tablete özel optimize edilmiş düzene sahip reklamsız yüksek çözünürlüklü duvar kağıdı uygulaması.",
-  "tags": ["Kotlin", "Android", "Retrofit", "Room"],
+  "subtitle": "Arama, filtreler ve favoriler sunan, Material 3 Expressive tasarımlı ve tablete uyumlu ücretsiz yüksek çözünürlüklü duvar kâğıdı uygulaması.",
+  "tags": [
+    "Kotlin",
+    "Compose",
+    "Navigation 3",
+    "Hilt",
+    "Room"
+  ],
   "actions": [
-    { "label": "GitHub'da Görüntüle", "href": "https://github.com/AAyar94/SettoWally_Kotlin", "variant": "primary", "icon": "github", "external": true },
-    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+    {
+      "label": "Google Play'de İndir",
+      "href": "https://play.google.com/store/apps/details?id=com.settowally.settowally",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "GitHub'da Gör",
+      "href": "https://github.com/AAyar94/Settowally",
+      "variant": "outline",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "Tüm Projeler",
+      "href": "/projects",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
       "labelKey": "overview",
       "titleBefore": "Güzel duvar kağıtları,",
       "titleHighlight": "sıfır reklam",
-      "description": "Reklam veya dikkat dağıtıcı olmadan ücretsiz yüksek çözünürlüklü duvar kağıtlarına göz atın ve indirin. Favorilerinizi çevrimdışı erişim için uygulama içinde kaydedin. Settowally, karanlık ve aydınlık modu tam olarak destekler ve büyük ekranlar için tablete optimize edilmiş çift bölmeli bir düzen sunar.",
+      "description": "Pexels'tan yüksek çözünürlüklü duvar kâğıtlarını gezin ve indirin, filtre ve arama geçmişiyle arayın, tek dokunuşla duvar kâğıdı yapın. Favorilerinizi uygulama içinde saklayın. Settowally koyu ve açık temayı destekler, tablet ekranlarına özel bir düzenle uyum sağlar.",
       "features": [
-        "Ücretsiz HD duvar kağıtlarına göz atın & indirin",
-        "Favorileri Room veritabanıyla yerel olarak kaydedin",
-        "Tam karanlık & aydınlık mod desteği",
-        "Tablete optimize edilmiş çift bölmeli düzen",
-        "Coil ile hızlı görsel yükleme"
+        "Ücretsiz yüksek çözünürlüklü duvar kâğıtlarını gezin ve indirin (Pexels API)",
+        "Filtreler ve silinebilir arama geçmişiyle arama",
+        "Paylaşılan öğe geçişli fotoğraf detayı ve tek dokunuşla duvar kâğıdı yapma",
+        "Room ile yerel olarak saklanan favoriler",
+        "Haze blur efektli Material 3 Expressive tasarım, koyu ve açık tema",
+        "Tablete uyumlu düzenler, Türkçe ve İngilizce",
+        "GitHub Actions ile yayınlanan sürümler"
       ],
       "image": "images/projects/settowally_mockup.png",
       "imageAlt": "Settowally mockup",
@@ -25,13 +50,53 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "MVVM Architecture", "color": "#a5b4fc" },
-    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
-    { "title": "Room Database", "color": "#fde047" },
-    { "title": "Coil Image Loading", "color": "#86efac" },
-    { "title": "Coroutines & Flow", "color": "#67e8f9" },
-    { "title": "Dagger-Hilt", "color": "#a78bfa" },
-    { "title": "Dark / Light Mode", "color": "#94a3b8" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Material 3 Expressive",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "MVVM (UiState / UiAction / UiEffect)",
+      "color": "#86efac"
+    },
+    {
+      "title": "Navigation 3",
+      "color": "#fde047"
+    },
+    {
+      "title": "Dagger-Hilt",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Room Database",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Retrofit / OkHttp",
+      "color": "#5eead4"
+    },
+    {
+      "title": "Coil Image Loading",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Haze Blur",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Firebase Crashlytics",
+      "color": "#a5b4fc"
+    }
   ]
 }

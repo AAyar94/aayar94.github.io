@@ -1,10 +1,24 @@
 {
-  "title": "SmartCodeSorter",
+  "title": "Smart Code Sorter X",
   "subtitle": "IntelliJ IDEA & Android Studio plugin that automatically organizes Kotlin class members by structure and conventions — with zero configuration.",
-  "tags": ["Kotlin", "IntelliJ Plugin SDK"],
+  "tags": [
+    "Kotlin",
+    "IntelliJ Plugin SDK",
+    "K2"
+  ],
   "actions": [
-    { "label": "JetBrains Marketplace", "href": "https://plugins.jetbrains.com/plugin/31219", "variant": "primary", "icon": "external", "external": true },
-    { "label": "View License", "href": "/smartcodesorter-license.html", "variant": "outline" }
+    {
+      "label": "JetBrains Marketplace",
+      "href": "https://plugins.jetbrains.com/plugin/31219",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "View License",
+      "href": "/smartcodesorter-license.html",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
@@ -13,12 +27,14 @@
       "titleHighlight": "automatically",
       "description": "SmartCodeSorter keeps your Kotlin class structure consistent without any manual effort. Install it, press a shortcut, and your class members, constructor parameters, and nested classes are instantly organized following Kotlin conventions.",
       "features": [
-        "Sort class members (fields, methods, nested classes) in one keystroke",
-        "Constructor parameter sorting for cleaner class definitions",
-        "Sort on Save — auto-sort every time you save a file",
+        "Sort class members (properties, init blocks, functions, nested classes) in one keystroke",
+        "Sort primary constructor parameters by group, then alphabetically",
+        "Sort on Save — auto-sort every time you save a Kotlin file",
+        "Pin any declaration in place with **// @nosort**",
+        "Settings panel: reorder property categories and toggle alphabetical function sorting",
+        "Summary balloon after each sort, e.g. \"moved 3 properties, reordered 5 functions\"",
         "Shortcut: **⌥⌘S** (macOS) / **Code → Smart Code Sorter**",
-        "Zero configuration — works out of the box",
-        "Compatible with IntelliJ IDEA & Android Studio"
+        "Supports K2 mode; works in IntelliJ IDEA & Android Studio"
       ],
       "image": "images/projects/smart_code_sorter_x.png",
       "imageAlt": "SmartCodeSorter plugin",
@@ -26,10 +42,30 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "IntelliJ Platform Plugin SDK", "color": "#fca5a5" },
-    { "title": "PSI (Program Structure Interface)", "color": "#86efac" },
-    { "title": "Gradle", "color": "#94a3b8" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "IntelliJ Platform Plugin SDK",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "PSI (Program Structure Interface)",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Kotlin K2 Analysis API",
+      "color": "#86efac"
+    },
+    {
+      "title": "Gradle",
+      "color": "#fde047"
+    },
+    {
+      "title": "JUnit",
+      "color": "#fdba74"
+    }
   ],
   "howToUse": {
     "labelKey": "howToUse",

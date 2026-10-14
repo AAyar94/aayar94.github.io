@@ -1,23 +1,42 @@
 {
   "title": "Aquatick",
-  "subtitle": "Daily hydration tracker with beverage type charts, reminders, and health articles to build better water habits.",
-  "tags": ["Kotlin", "Compose", "MVVM", "Room", "Retrofit"],
+  "subtitle": "Hydration tracker with a personal daily goal, heat-map history, charts and a Wear OS companion app.",
+  "tags": [
+    "Kotlin",
+    "Compose",
+    "Wear OS",
+    "Supabase",
+    "Clean Architecture"
+  ],
   "actions": [
-    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+    {
+      "label": "View on GitHub",
+      "href": "https://github.com/AAyar94/Aquatick",
+      "variant": "primary",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "All Projects",
+      "href": "/projects",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
       "labelKey": "overview",
       "titleBefore": "Stay hydrated,",
       "titleHighlight": "every day",
-      "description": "Aquatick helps you track your daily fluid intake broken down by drink type, visualized as charts. It calculates your personal daily goal, sends reminders throughout the day, and offers health articles to build lasting hydration habits.",
+      "description": "Aquatick works out your daily water goal from your profile, lets you log drinks from the phone or your watch, and shows your progress as a heat-map calendar with a day timeline and charts. Reminders keep you on track through the day.",
       "features": [
-        "Track different beverage types separately with chart visualization (Vico)",
-        "Personalized daily hydration goal calculation",
-        "Background reminders via WorkManager",
-        "Curated health articles fetched via Retrofit",
-        "Lottie animations for a polished UI experience",
-        "Firebase analytics & multi-module architecture"
+        "Daily goal calculated from gender, weight, height and activity level",
+        "Log drinks by type, with undo and remove",
+        "Heat-map history calendar with a per-day timeline",
+        "Analysis tab with bar charts (Vico) and stat tiles",
+        "Wear OS app that syncs drinks between watch and phone",
+        "Reminder notifications and unit settings applied app-wide",
+        "Sign-in and data storage with Supabase",
+        "Midnight Tide design system shared by phone and watch"
       ],
       "image": "images/projects/aquatick_mockup.png",
       "imageAlt": "Aquatick mockup",
@@ -25,17 +44,53 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "Jetpack Compose", "color": "#67e8f9" },
-    { "title": "MVVM / Multi-Module", "color": "#a5b4fc" },
-    { "title": "Dagger-Hilt", "color": "#a78bfa" },
-    { "title": "Room Database", "color": "#fde047" },
-    { "title": "Retrofit", "color": "#fdba74" },
-    { "title": "Coroutines & Flow", "color": "#67e8f9" },
-    { "title": "Firebase", "color": "#fca5a5" },
-    { "title": "WorkManager", "color": "#86efac" },
-    { "title": "Lottie", "color": "#f9a8d4" },
-    { "title": "Vico Charts", "color": "#5eead4" },
-    { "title": "JUnit Tests", "color": "#fde047" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Clean Architecture / Multi-Module",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Dagger-Hilt",
+      "color": "#86efac"
+    },
+    {
+      "title": "Room Database",
+      "color": "#fde047"
+    },
+    {
+      "title": "Supabase",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Navigation 3",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Wear OS (Data Layer)",
+      "color": "#5eead4"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Vico Charts",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "JUnit & MockK",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "GitHub Actions",
+      "color": "#a5b4fc"
+    }
   ]
 }

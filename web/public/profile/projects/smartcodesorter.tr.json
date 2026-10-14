@@ -1,10 +1,24 @@
 {
-  "title": "SmartCodeSorter",
+  "title": "Smart Code Sorter X",
   "subtitle": "Kotlin sınıf üyelerini yapı ve kurallara göre otomatik düzenleyen IntelliJ IDEA & Android Studio eklentisi — sıfır yapılandırmayla.",
-  "tags": ["Kotlin", "IntelliJ Plugin SDK"],
+  "tags": [
+    "Kotlin",
+    "IntelliJ Plugin SDK",
+    "K2"
+  ],
   "actions": [
-    { "label": "JetBrains Marketplace", "href": "https://plugins.jetbrains.com/plugin/31219", "variant": "primary", "icon": "external", "external": true },
-    { "label": "Lisansı Gör", "href": "/smartcodesorter-license.html", "variant": "outline" }
+    {
+      "label": "JetBrains Marketplace",
+      "href": "https://plugins.jetbrains.com/plugin/31219",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "Lisansı Gör",
+      "href": "/smartcodesorter-license.html",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
@@ -13,12 +27,14 @@
       "titleHighlight": "otomatik olarak",
       "description": "SmartCodeSorter, hiçbir manuel çaba gerektirmeden Kotlin sınıf yapınızı tutarlı tutar. Kurun, bir kısayola basın; sınıf üyeleriniz, yapıcı parametreleriniz ve iç içe sınıflarınız Kotlin kurallarına göre anında düzenlensin.",
       "features": [
-        "Sınıf üyelerini (alanlar, metotlar, iç içe sınıflar) tek tuşla sıralayın",
-        "Daha temiz sınıf tanımları için yapıcı parametresi sıralaması",
-        "Kaydederken Sırala — her dosya kaydında otomatik sıralama",
+        "Sınıf üyelerini (property, init blokları, fonksiyonlar, iç sınıflar) tek tuşla sıralayın",
+        "Primary constructor parametrelerini gruplara göre, ardından alfabetik sıralayın",
+        "Kaydederken Sırala — Kotlin dosyası her kaydedildiğinde otomatik sıralama",
+        "**// @nosort** ile herhangi bir bildirimi yerinde sabitleyin",
+        "Ayar paneli: property kategorilerini yeniden sıralayın, alfabetik fonksiyon sıralamasını açıp kapatın",
+        "Her sıralamadan sonra özet bildirimi, örn. \"3 property taşındı, 5 fonksiyon yeniden sıralandı\"",
         "Kısayol: **⌥⌘S** (macOS) / **Code → Smart Code Sorter**",
-        "Sıfır yapılandırma — kutudan çıktığı gibi çalışır",
-        "IntelliJ IDEA & Android Studio ile uyumlu"
+        "K2 modunu destekler; IntelliJ IDEA ve Android Studio ile çalışır"
       ],
       "image": "images/projects/smart_code_sorter_x.png",
       "imageAlt": "SmartCodeSorter plugin",
@@ -26,10 +42,30 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "IntelliJ Platform Plugin SDK", "color": "#fca5a5" },
-    { "title": "PSI (Program Structure Interface)", "color": "#86efac" },
-    { "title": "Gradle", "color": "#94a3b8" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "IntelliJ Platform Plugin SDK",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "PSI (Program Structure Interface)",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Kotlin K2 Analysis API",
+      "color": "#86efac"
+    },
+    {
+      "title": "Gradle",
+      "color": "#fde047"
+    },
+    {
+      "title": "JUnit",
+      "color": "#fdba74"
+    }
   ],
   "howToUse": {
     "labelKey": "howToUse",
