@@ -3,31 +3,175 @@
         {
             "title": "Language & Architecture",
             "items": [
-                { "title": "Kotlin", "color": "#a78bfa" },
-                { "title": "Java", "color": "#f9a8d4" },
-                { "title": "MVVM / Clean Architecture", "color": "#a5b4fc" },
-                { "title": "Coroutines & Flow", "color": "#67e8f9" }
+                {
+                    "title": "Kotlin",
+                    "color": "#a78bfa"
+                },
+                {
+                    "title": "Java",
+                    "color": "#67e8f9"
+                },
+                {
+                    "title": "MVVM / MVI / Clean Architecture",
+                    "color": "#a5b4fc"
+                },
+                {
+                    "title": "Coroutines & Flow",
+                    "color": "#86efac"
+                },
+                {
+                    "title": "Multi-module & Convention Plugins",
+                    "color": "#fde047"
+                }
             ]
         },
         {
             "title": "Android & UI",
             "items": [
-                { "title": "Android SDK", "color": "#86efac" },
-                { "title": "Jetpack Compose", "color": "#67e8f9" },
-                { "title": "Material Design 3", "color": "#fde047" },
-                { "title": "Kotlin Multiplatform", "color": "#f9a8d4" }
+                {
+                    "title": "Android SDK",
+                    "color": "#a78bfa"
+                },
+                {
+                    "title": "Jetpack Compose",
+                    "color": "#67e8f9"
+                },
+                {
+                    "title": "Material Design 3",
+                    "color": "#a5b4fc"
+                },
+                {
+                    "title": "Navigation 3",
+                    "color": "#86efac"
+                },
+                {
+                    "title": "Glance & Wear OS",
+                    "color": "#fde047"
+                },
+                {
+                    "title": "XML / ViewBinding",
+                    "color": "#fdba74"
+                },
+                {
+                    "title": "Kotlin Multiplatform",
+                    "color": "#f9a8d4"
+                },
+                {
+                    "title": "SwiftUI (basics)",
+                    "color": "#5eead4"
+                }
             ]
         },
         {
-            "title": "Libraries & Tools",
+            "title": "Data & Networking",
             "items": [
-                { "title": "Room Database", "color": "#fde047" },
-                { "title": "Retrofit / OkHttp", "color": "#fdba74" },
-                { "title": "Hilt & Dependency Injection", "color": "#a78bfa" },
-                { "title": "Google Maps SDK", "color": "#5eead4" },
-                { "title": "REST APIs", "color": "#67e8f9" },
-                { "title": "IntelliJ Plugin SDK", "color": "#fca5a5" },
-                { "title": "Git", "color": "#94a3b8" }
+                {
+                    "title": "Room & DataStore",
+                    "color": "#a78bfa"
+                },
+                {
+                    "title": "Retrofit / OkHttp",
+                    "color": "#67e8f9"
+                },
+                {
+                    "title": "Ktor",
+                    "color": "#a5b4fc"
+                },
+                {
+                    "title": "WebSocket",
+                    "color": "#86efac"
+                },
+                {
+                    "title": "Paging 3",
+                    "color": "#fde047"
+                },
+                {
+                    "title": "Supabase",
+                    "color": "#fdba74"
+                },
+                {
+                    "title": "Firebase",
+                    "color": "#f9a8d4"
+                }
+            ]
+        },
+        {
+            "title": "Media & Real-time",
+            "items": [
+                {
+                    "title": "AWS IVS",
+                    "color": "#a78bfa"
+                },
+                {
+                    "title": "WebRTC",
+                    "color": "#67e8f9"
+                },
+                {
+                    "title": "Media3 / ExoPlayer",
+                    "color": "#a5b4fc"
+                },
+                {
+                    "title": "CameraX",
+                    "color": "#86efac"
+                },
+                {
+                    "title": "Google Maps SDK",
+                    "color": "#fde047"
+                }
+            ]
+        },
+        {
+            "title": "Performance & Quality",
+            "items": [
+                {
+                    "title": "Baseline Profile & Macrobenchmark",
+                    "color": "#a78bfa"
+                },
+                {
+                    "title": "R8 / ProGuard",
+                    "color": "#67e8f9"
+                },
+                {
+                    "title": "JUnit, MockK & Turbine",
+                    "color": "#a5b4fc"
+                },
+                {
+                    "title": "Roborazzi (screenshot tests)",
+                    "color": "#86efac"
+                },
+                {
+                    "title": "Detekt",
+                    "color": "#fde047"
+                }
+            ]
+        },
+        {
+            "title": "Tools & Release",
+            "items": [
+                {
+                    "title": "Git / GitLab",
+                    "color": "#a78bfa"
+                },
+                {
+                    "title": "GitHub Actions",
+                    "color": "#67e8f9"
+                },
+                {
+                    "title": "Google Play Console & Billing",
+                    "color": "#a5b4fc"
+                },
+                {
+                    "title": "IntelliJ Platform SDK",
+                    "color": "#86efac"
+                },
+                {
+                    "title": "Hilt & Koin",
+                    "color": "#fde047"
+                },
+                {
+                    "title": "React / Vite (web)",
+                    "color": "#fdba74"
+                }
             ]
         }
     ]
