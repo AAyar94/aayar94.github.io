@@ -1,6 +1,11 @@
 {
     "name": "Adem Ayar",
-    "roles": ["Android Geliştirici", "Kotlin Mühendisi", "Mobil Uygulama Geliştiricisi", "KMM Meraklısı"],
+    "roles": [
+        "Android Geliştirici",
+        "Kotlin Mühendisi",
+        "Mobil Uygulama Geliştiricisi",
+        "Kotlin Multiplatform Geliştiricisi"
+    ],
     "tagline": "Kotlin ve Jetpack Compose ile temiz, performanslı mobil deneyimler geliştirmeye tutkulu Android Geliştirici.",
     "imWord": "",
     "viewMyWork": "Projelerimi Gör",
