@@ -23,8 +23,12 @@
         },
         {
             "title": "CV",
-            "href": "/cv/AdemAyarCV.pdf",
-            "type": "link"
+            "type": "dropdown",
+            "items": [
+                { "title": "CV — Tasarımlı (TR)", "href": "/cv/AdemAyarCV.pdf" },
+                { "title": "CV — ATS uyumlu (TR)", "href": "/cv/AdemAyarCV_ATS_TR.pdf" },
+                { "title": "CV — ATS uyumlu (EN)", "href": "/cv/AdemAyarCV_ATS_EN.pdf" }
+            ]
         }
     ]
 }

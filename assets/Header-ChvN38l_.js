@@ -1,1 +1,0 @@
-import{n as e,s as t,t as n}from"./jsx-runtime-CF72uaaz.js";import{t as r}from"./prop-types-fWHJMH1Y.js";import"./index-Dq0W0vGK.js";e();var i=t(r(),1),a=t(n(),1);function o(e){let{title:t}=e;return(0,a.jsx)(`div`,{className:`header`,children:t})}o.propTypes={title:i.default.string.isRequired};export{o as default};
