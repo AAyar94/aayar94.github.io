@@ -1,0 +1,23 @@
+{
+    "intro": "Pick the version that fits where you are sending it. The designed CV is made for people; the ATS-friendly versions are plain, single-column text built to be parsed reliably by applicant tracking systems.",
+    "items": [
+        {
+            "title": "Designed CV",
+            "badge": "TR · 2 pages",
+            "description": "The full visual version with photo, projects and skills. Best for recruiters and direct emails.",
+            "href": "/cv/AdemAyarCV.pdf"
+        },
+        {
+            "title": "ATS-friendly CV",
+            "badge": "EN · 2 pages",
+            "description": "Plain text, standard headings, no photo or colors. Best for job portals and international applications.",
+            "href": "/cv/AdemAyarCV_ATS_EN.pdf"
+        },
+        {
+            "title": "ATS-friendly CV (Turkish)",
+            "badge": "TR · 2 pages",
+            "description": "The same plain layout in Turkish, suited to Turkish job portals.",
+            "href": "/cv/AdemAyarCV_ATS_TR.pdf"
+        }
+    ]
+}

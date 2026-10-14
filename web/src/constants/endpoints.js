@@ -6,6 +6,7 @@ const endpoints = {
   about: 'profile/about.json',
   skills: 'profile/skills.json',
   projects: 'profile/projects.json',
+  resume: 'profile/resume.json',
 };
 
 export default endpoints;

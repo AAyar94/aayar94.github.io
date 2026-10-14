@@ -1,0 +1,23 @@
+{
+    "intro": "CV’yi göndereceğiniz yere uygun sürümü seçin. Tasarımlı CV insanlar için hazırlandı; ATS uyumlu sürümler, başvuru takip sistemlerinin güvenilir biçimde okuyabilmesi için düz, tek sütunlu metinden oluşuyor.",
+    "items": [
+        {
+            "title": "Tasarımlı CV",
+            "badge": "TR · 2 sayfa",
+            "description": "Fotoğraf, projeler ve yeteneklerle tam görsel sürüm. İşe alım uzmanlarına ve doğrudan e-postalara uygun.",
+            "href": "/cv/AdemAyarCV.pdf"
+        },
+        {
+            "title": "ATS uyumlu CV",
+            "badge": "TR · 2 sayfa",
+            "description": "Düz metin, standart başlıklar; fotoğraf ve renk yok. İş portalları için uygun.",
+            "href": "/cv/AdemAyarCV_ATS_TR.pdf"
+        },
+        {
+            "title": "ATS uyumlu CV (English)",
+            "badge": "EN · 2 sayfa",
+            "description": "Aynı düz düzenin İngilizcesi; yurt dışı başvurular için uygun.",
+            "href": "/cv/AdemAyarCV_ATS_EN.pdf"
+        }
+    ]
+}
