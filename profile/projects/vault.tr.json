@@ -1,0 +1,113 @@
+{
+  "title": "Vault",
+  "subtitle": "Kotlin Multiplatform ile geliştirilen, Android ve iOS için kişisel bütçe takip uygulaması.",
+  "tags": [
+    "Kotlin",
+    "KMP",
+    "Compose",
+    "SwiftUI"
+  ],
+  "actions": [
+    {
+      "label": "GitHub'da Gör",
+      "href": "https://github.com/AAyar94/Vault",
+      "variant": "primary",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "Tüm Projeler",
+      "href": "/projects",
+      "variant": "outline"
+    }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Paranın nereye",
+      "titleHighlight": "gittiğini bil",
+      "description": "Vault gelir ve giderleri, bütçeleri ve birikim hedeflerini tek yerde takip eder; paranızın nereye gittiğini gösteren analizler sunar. Domain modelleri, use case'ler ve tercihler ortak bir Kotlin Multiplatform modülünde yaşar; Android uygulaması Jetpack Compose ile, iOS uygulaması SwiftUI ile geliştirilir.",
+      "features": [
+        "Hızlı işlem ekleme akışıyla gelir ve giderleri takip edin",
+        "İşlem geçmişinizi gösteren Aktivite sekmesi",
+        "İlerleme takibiyle bütçeler ve birikim hedefleri",
+        "Harcama dağılımını gösteren analiz ekranı",
+        "Room ile yerel öncelikli depolama ve isteğe bağlı Firebase senkronizasyonu",
+        "Google ile giriş (Credential Manager) ve biyometrik kilit",
+        "Android'de (Glance) ve iOS'ta (WidgetKit) ana ekran widget'ları",
+        "İki platformda ortak yüzen sekme çubuğu tasarım dili"
+      ],
+      "image": "images/projects/vault_mockup.png",
+      "imageAlt": "Vault ekranları",
+      "reverse": false
+    },
+    {
+      "labelKey": "architecture",
+      "titleBefore": "Tek ortak çekirdek,",
+      "titleHighlight": "iki yerel arayüz",
+      "description": "İş mantığı Kotlin'de bir kez yazılır ve platformlar arasında paylaşılır; her platform tamamen yerel bir arayüz kullanır: Android'de Jetpack Compose, iOS'ta SwiftUI.",
+      "features": [
+        "Domain modelleri, use case'ler ve tercihler ortak modülde",
+        "Android'de Koin ile bağımlılık yönetimi",
+        "Room üzerinde yerel öncelikli veri katmanı",
+        "İki platform için tek tasarım dili"
+      ],
+      "images": [
+        "images/projects/vault_add.png",
+        "images/projects/vault_goals.png"
+      ],
+      "imageAlt": "Vault işlem ekleme ve hedefler",
+      "reverse": true
+    }
+  ],
+  "techStack": [
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Kotlin Multiplatform",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "SwiftUI",
+      "color": "#86efac"
+    },
+    {
+      "title": "Room Database",
+      "color": "#fde047"
+    },
+    {
+      "title": "Koin",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Firebase Auth & Firestore",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Credential Manager",
+      "color": "#5eead4"
+    },
+    {
+      "title": "Biometric",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Glance / WidgetKit",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "DataStore",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#a5b4fc"
+    }
+  ]
+}

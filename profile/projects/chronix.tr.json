@@ -1,10 +1,31 @@
 {
   "title": "Chronix",
-  "subtitle": "Android için geri sayım & etkinlik zamanlayıcı — önemli anlara kalan günleri, takvim içe aktarma ve hatırlatıcılarla doğrudan ana ekranınızdan takip edin.",
-  "tags": ["Kotlin", "Compose", "Clean Architecture", "Hilt", "Widgets"],
+  "subtitle": "Android için geri sayım ve etkinlik sayacı — önemli anlara kalan günleri ana ekranınızdan takip edin; takvimden içe aktarma, hatırlatıcılar ve yedekleme ile.",
+  "tags": [
+    "Kotlin",
+    "Compose",
+    "Clean Architecture",
+    "Hilt",
+    "Widgets"
+  ],
   "actions": [
-    { "label": "Gizlilik Politikası", "href": "/chronix-privacy-policy.html", "variant": "outline" },
-    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+    {
+      "label": "Google Play'de İndir",
+      "href": "https://play.google.com/store/apps/details?id=com.vnsapp.chronix",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "Gizlilik Politikası",
+      "href": "/chronix-privacy-policy.html",
+      "variant": "outline"
+    },
+    {
+      "label": "Tüm Projeler",
+      "href": "/projects",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
@@ -14,11 +35,12 @@
       "description": "Chronix, önemli tarihleri — doğum günleri, son teslim tarihleri, tatiller, geziler — istediğiniz an göz atabileceğiniz canlı geri sayımlara dönüştürür. Etkinlikleri elle ekleyin ya da doğrudan cihaz takviminizden içe aktarın, widget olarak ana ekranınıza sabitleyin ve gelmeden önce hatırlatma alın. Her şey cihazınızda yerel olarak saklanır.",
       "features": [
         "Herhangi bir tarih için geri sayım oluşturun ve günlerin azalışını izleyin",
-        "Etkinlikleri doğrudan cihaz takviminizden içe aktarın (salt okunur)",
-        "Birden çok boyut ve yapılandırmada ana ekran widget'ları",
-        "Yeniden başlatmanın ardından yeniden zamanlanan yerel hatırlatma bildirimleri",
-        "Aydınlık & karanlık temalar ve 7 dil ile Material 3 tasarımı",
-        "Tamamen çevrimdışı — verileriniz cihazdan asla çıkmaz"
+        "Etkinlikleri doğrudan cihaz takviminizden içe aktarın (yalnızca okuma)",
+        "2×2, 4×2, 4×4 ve sayaç boyutlarında ana ekran widget'ları",
+        "Yeniden başlatmadan sonra yeniden planlanan hatırlatıcı ve kilometre taşı bildirimleri",
+        "Geri sayımlarınızı yedekleyin, geri yükleyin ve kart olarak paylaşın",
+        "Açık ve koyu temalı, 7 dil destekli editoryal \"Ink\" tasarım",
+        "Geri sayımlarınız cihazınızda yerel olarak saklanır"
       ],
       "image": "images/projects/chronix_home.png",
       "imageAlt": "Chronix home screen",
@@ -34,7 +56,7 @@
         "Kapsamlı bileşenlerle Hilt bağımlılık enjeksiyonu",
         "Özel bir NavigationManager ile tür güvenli Navigation3",
         "Derleme mantığı için Convention Plugins & Version Catalog",
-        "JUnit, MockK & Truth ile birim testleri"
+        "JUnit, MockK, Turbine ve Roborazzi ile birim ve ekran görüntüsü (golden) testleri; Detekt statik analizi"
       ],
       "image": "images/projects/chronix_detail.png",
       "imageAlt": "Chronix countdown detail",
@@ -42,17 +64,69 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "Jetpack Compose", "color": "#67e8f9" },
-    { "title": "Clean Architecture", "color": "#a5b4fc" },
-    { "title": "Multi-Module", "color": "#5eead4" },
-    { "title": "Dagger-Hilt", "color": "#a78bfa" },
-    { "title": "Navigation3", "color": "#93c5fd" },
-    { "title": "Coroutines & Flow", "color": "#67e8f9" },
-    { "title": "Glance Widgets", "color": "#6ee7b7" },
-    { "title": "Retrofit", "color": "#fdba74" },
-    { "title": "Material 3", "color": "#c4b5fd" },
-    { "title": "JUnit & MockK", "color": "#fde047" },
-    { "title": "Convention Plugins", "color": "#86efac" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Clean Architecture",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Multi-Module",
+      "color": "#86efac"
+    },
+    {
+      "title": "Dagger-Hilt",
+      "color": "#fde047"
+    },
+    {
+      "title": "Navigation 3",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Room Database",
+      "color": "#5eead4"
+    },
+    {
+      "title": "WorkManager",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Glance Widgets",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Google Play Billing",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Firebase",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Material 3",
+      "color": "#86efac"
+    },
+    {
+      "title": "JUnit, MockK & Roborazzi",
+      "color": "#fde047"
+    },
+    {
+      "title": "Detekt",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Convention Plugins",
+      "color": "#f9a8d4"
+    }
   ]
 }

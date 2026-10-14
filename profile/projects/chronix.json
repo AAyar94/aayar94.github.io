@@ -1,10 +1,31 @@
 {
   "title": "Chronix",
-  "subtitle": "Countdown & event timer for Android — track the days to the moments that matter, right from your home screen, with calendar import and reminders.",
-  "tags": ["Kotlin", "Compose", "Clean Architecture", "Hilt", "Widgets"],
+  "subtitle": "Countdown & event timer for Android — track the days to the moments that matter, right from your home screen, with calendar import, reminders and backup.",
+  "tags": [
+    "Kotlin",
+    "Compose",
+    "Clean Architecture",
+    "Hilt",
+    "Widgets"
+  ],
   "actions": [
-    { "label": "Privacy Policy", "href": "/chronix-privacy-policy.html", "variant": "outline" },
-    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+    {
+      "label": "Get it on Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.vnsapp.chronix",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/chronix-privacy-policy.html",
+      "variant": "outline"
+    },
+    {
+      "label": "All Projects",
+      "href": "/projects",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
@@ -15,10 +36,11 @@
       "features": [
         "Create countdowns for any date and watch the days tick down",
         "Import events directly from your device calendar (read-only)",
-        "Home-screen widgets in multiple sizes and configurations",
-        "Local reminder notifications, re-scheduled after reboot",
-        "Material 3 design with light & dark themes and 7 languages",
-        "Fully offline — your data never leaves the device"
+        "Home-screen widgets in 2×2, 4×2, 4×4 and timer sizes",
+        "Reminders and milestone notifications, re-scheduled after reboot",
+        "Back up and restore your countdowns, and share them as a card",
+        "Editorial \"Ink\" design with light & dark themes and 7 languages",
+        "Your countdowns are stored locally on your device"
       ],
       "image": "images/projects/chronix_home.png",
       "imageAlt": "Chronix home screen",
@@ -34,7 +56,7 @@
         "Hilt dependency injection with scoped components",
         "Type-safe Navigation3 with a custom NavigationManager",
         "Convention Plugins & Version Catalog for build logic",
-        "Unit tested with JUnit, MockK & Truth"
+        "Unit and screenshot (golden) tests with JUnit, MockK, Turbine and Roborazzi; Detekt static analysis"
       ],
       "image": "images/projects/chronix_detail.png",
       "imageAlt": "Chronix countdown detail",
@@ -42,17 +64,69 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "Jetpack Compose", "color": "#67e8f9" },
-    { "title": "Clean Architecture", "color": "#a5b4fc" },
-    { "title": "Multi-Module", "color": "#5eead4" },
-    { "title": "Dagger-Hilt", "color": "#a78bfa" },
-    { "title": "Navigation3", "color": "#93c5fd" },
-    { "title": "Coroutines & Flow", "color": "#67e8f9" },
-    { "title": "Glance Widgets", "color": "#6ee7b7" },
-    { "title": "Retrofit", "color": "#fdba74" },
-    { "title": "Material 3", "color": "#c4b5fd" },
-    { "title": "JUnit & MockK", "color": "#fde047" },
-    { "title": "Convention Plugins", "color": "#86efac" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Clean Architecture",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Multi-Module",
+      "color": "#86efac"
+    },
+    {
+      "title": "Dagger-Hilt",
+      "color": "#fde047"
+    },
+    {
+      "title": "Navigation 3",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Room Database",
+      "color": "#5eead4"
+    },
+    {
+      "title": "WorkManager",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Glance Widgets",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Google Play Billing",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Firebase",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Material 3",
+      "color": "#86efac"
+    },
+    {
+      "title": "JUnit, MockK & Roborazzi",
+      "color": "#fde047"
+    },
+    {
+      "title": "Detekt",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Convention Plugins",
+      "color": "#f9a8d4"
+    }
   ]
 }

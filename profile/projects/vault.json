@@ -1,0 +1,113 @@
+{
+  "title": "Vault",
+  "subtitle": "Personal budget tracker for Android and iOS, built on Kotlin Multiplatform.",
+  "tags": [
+    "Kotlin",
+    "KMP",
+    "Compose",
+    "SwiftUI"
+  ],
+  "actions": [
+    {
+      "label": "View on GitHub",
+      "href": "https://github.com/AAyar94/Vault",
+      "variant": "primary",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "All Projects",
+      "href": "/projects",
+      "variant": "outline"
+    }
+  ],
+  "sections": [
+    {
+      "labelKey": "overview",
+      "titleBefore": "Know where your",
+      "titleHighlight": "money goes",
+      "description": "Vault tracks income and expenses, budgets and savings goals in one place, with insights that show where your money goes. Domain models, use cases and preferences live in a shared Kotlin Multiplatform module; the Android app is built with Jetpack Compose and the iOS app with SwiftUI.",
+      "features": [
+        "Track income and expenses with a quick add-transaction flow",
+        "Activity tab with your transaction history",
+        "Budgets and savings goals with progress tracking",
+        "Insights screen with spending breakdowns",
+        "Local-first storage with Room and optional Firebase sync",
+        "Google sign-in (Credential Manager) and biometric lock",
+        "Home-screen widgets on Android (Glance) and iOS (WidgetKit)",
+        "One floating tab bar design language across both platforms"
+      ],
+      "image": "images/projects/vault_mockup.png",
+      "imageAlt": "Vault screens",
+      "reverse": false
+    },
+    {
+      "labelKey": "architecture",
+      "titleBefore": "One shared core,",
+      "titleHighlight": "two native UIs",
+      "description": "Business logic is written once in Kotlin and shared between platforms, while each platform keeps a fully native UI: Jetpack Compose on Android, SwiftUI on iOS.",
+      "features": [
+        "Domain models, use cases and preferences in a shared module",
+        "Koin dependency injection on Android",
+        "Local-first data layer on Room",
+        "A single design language for both platforms"
+      ],
+      "images": [
+        "images/projects/vault_add.png",
+        "images/projects/vault_goals.png"
+      ],
+      "imageAlt": "Vault add transaction and goals",
+      "reverse": true
+    }
+  ],
+  "techStack": [
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Kotlin Multiplatform",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "SwiftUI",
+      "color": "#86efac"
+    },
+    {
+      "title": "Room Database",
+      "color": "#fde047"
+    },
+    {
+      "title": "Koin",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Firebase Auth & Firestore",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Credential Manager",
+      "color": "#5eead4"
+    },
+    {
+      "title": "Biometric",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Glance / WidgetKit",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "DataStore",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#a5b4fc"
+    }
+  ]
+}

@@ -1,23 +1,42 @@
 {
   "title": "Aquatick",
-  "subtitle": "İçecek türü grafikleri, hatırlatıcılar ve daha iyi su içme alışkanlıkları için sağlık makaleleri içeren günlük hidrasyon takip uygulaması.",
-  "tags": ["Kotlin", "Compose", "MVVM", "Room", "Retrofit"],
+  "subtitle": "Kişisel günlük hedef, ısı haritası geçmişi, grafikler ve Wear OS eşlikçi uygulamasıyla su takip uygulaması.",
+  "tags": [
+    "Kotlin",
+    "Compose",
+    "Wear OS",
+    "Supabase",
+    "Clean Architecture"
+  ],
   "actions": [
-    { "label": "Tüm Projeler", "href": "/projects", "variant": "outline" }
+    {
+      "label": "GitHub'da Gör",
+      "href": "https://github.com/AAyar94/Aquatick",
+      "variant": "primary",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "Tüm Projeler",
+      "href": "/projects",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
       "labelKey": "overview",
       "titleBefore": "Her gün",
       "titleHighlight": "susuz kalmayın",
-      "description": "Aquatick, günlük sıvı alımınızı içecek türüne göre ayırarak grafiklerle takip etmenize yardımcı olur. Kişisel günlük hedefinizi hesaplar, gün boyunca hatırlatıcılar gönderir ve kalıcı hidrasyon alışkanlıkları oluşturmanız için sağlık makaleleri sunar.",
+      "description": "Aquatick, profil bilgilerinizden günlük su hedefinizi hesaplar, içecekleri telefondan veya saatinizden kaydetmenizi sağlar ve ilerlemenizi ısı haritası takvimi, gün zaman çizelgesi ve grafiklerle gösterir. Hatırlatıcılar gün boyunca sizi yolda tutar.",
       "features": [
-        "Farklı içecek türlerini grafik görselleştirmesiyle (Vico) ayrı ayrı takip edin",
-        "Kişiselleştirilmiş günlük hidrasyon hedefi hesaplaması",
-        "WorkManager ile arka plan hatırlatıcıları",
-        "Retrofit ile çekilen seçilmiş sağlık makaleleri",
-        "Şık bir arayüz deneyimi için Lottie animasyonları",
-        "Firebase analitiği & çok modüllü mimari"
+        "Günlük hedef; cinsiyet, kilo, boy ve aktivite seviyesinden hesaplanır",
+        "İçecekleri türüne göre kaydedin; geri alın veya silin",
+        "Gün bazlı zaman çizelgesi olan ısı haritası geçmiş takvimi",
+        "Çubuk grafikler (Vico) ve istatistik kartlarıyla analiz sekmesi",
+        "İçecekleri saat ile telefon arasında senkronize eden Wear OS uygulaması",
+        "Hatırlatıcı bildirimleri ve uygulama genelinde geçerli birim ayarları",
+        "Supabase ile kullanıcı girişi ve veri depolama",
+        "Telefon ve saatte ortak kullanılan Midnight Tide tasarım sistemi"
       ],
       "image": "images/projects/aquatick_mockup.png",
       "imageAlt": "Aquatick mockup",
@@ -25,17 +44,53 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "Jetpack Compose", "color": "#67e8f9" },
-    { "title": "MVVM / Multi-Module", "color": "#a5b4fc" },
-    { "title": "Dagger-Hilt", "color": "#a78bfa" },
-    { "title": "Room Database", "color": "#fde047" },
-    { "title": "Retrofit", "color": "#fdba74" },
-    { "title": "Coroutines & Flow", "color": "#67e8f9" },
-    { "title": "Firebase", "color": "#fca5a5" },
-    { "title": "WorkManager", "color": "#86efac" },
-    { "title": "Lottie", "color": "#f9a8d4" },
-    { "title": "Vico Charts", "color": "#5eead4" },
-    { "title": "JUnit Tests", "color": "#fde047" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Clean Architecture / Multi-Module",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "Dagger-Hilt",
+      "color": "#86efac"
+    },
+    {
+      "title": "Room Database",
+      "color": "#fde047"
+    },
+    {
+      "title": "Supabase",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Navigation 3",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Wear OS (Data Layer)",
+      "color": "#5eead4"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Vico Charts",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "JUnit & MockK",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "GitHub Actions",
+      "color": "#a5b4fc"
+    }
   ]
 }

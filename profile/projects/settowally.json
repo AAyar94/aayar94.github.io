@@ -1,23 +1,48 @@
 {
   "title": "Settowally",
-  "subtitle": "Ad-free high-resolution wallpaper app with dark & light mode support and a dedicated tablet-optimized layout.",
-  "tags": ["Kotlin", "Android", "Retrofit", "Room"],
+  "subtitle": "Free high-resolution wallpaper app with search, filters and favorites, a Material 3 Expressive design and tablet-optimized layouts.",
+  "tags": [
+    "Kotlin",
+    "Compose",
+    "Navigation 3",
+    "Hilt",
+    "Room"
+  ],
   "actions": [
-    { "label": "View on GitHub", "href": "https://github.com/AAyar94/SettoWally_Kotlin", "variant": "primary", "icon": "github", "external": true },
-    { "label": "All Projects", "href": "/projects", "variant": "outline" }
+    {
+      "label": "Get it on Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.settowally.settowally",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "View on GitHub",
+      "href": "https://github.com/AAyar94/Settowally",
+      "variant": "outline",
+      "icon": "github",
+      "external": true
+    },
+    {
+      "label": "All Projects",
+      "href": "/projects",
+      "variant": "outline"
+    }
   ],
   "sections": [
     {
       "labelKey": "overview",
       "titleBefore": "Beautiful wallpapers,",
       "titleHighlight": "zero ads",
-      "description": "Browse and download free high-resolution wallpapers without any ads or distractions. Save your favourites inside the app for offline access. Settowally fully supports dark and light mode, and features a tablet-optimized dual-pane layout for larger screens.",
+      "description": "Browse and download high-resolution wallpapers from Pexels, search with filters and history, and set a wallpaper with one tap. Save your favorites inside the app. Settowally supports dark and light mode and adapts to tablets with a dedicated layout.",
       "features": [
-        "Browse & download free HD wallpapers",
-        "Save favourites locally with Room database",
-        "Full dark & light mode support",
-        "Tablet-optimized dual-pane layout",
-        "Fast image loading with Coil"
+        "Browse and download free high-resolution wallpapers (Pexels API)",
+        "Search with filters and a clearable search history",
+        "Photo details with shared-element transitions and one-tap set as wallpaper",
+        "Favorites saved locally with Room",
+        "Material 3 Expressive design with Haze blur effects, dark & light mode",
+        "Tablet-optimized layouts, Turkish and English",
+        "Release builds shipped through GitHub Actions"
       ],
       "image": "images/projects/settowally_mockup.png",
       "imageAlt": "Settowally mockup",
@@ -25,13 +50,53 @@
     }
   ],
   "techStack": [
-    { "title": "Kotlin", "color": "#a78bfa" },
-    { "title": "MVVM Architecture", "color": "#a5b4fc" },
-    { "title": "Retrofit / OkHttp", "color": "#fdba74" },
-    { "title": "Room Database", "color": "#fde047" },
-    { "title": "Coil Image Loading", "color": "#86efac" },
-    { "title": "Coroutines & Flow", "color": "#67e8f9" },
-    { "title": "Dagger-Hilt", "color": "#a78bfa" },
-    { "title": "Dark / Light Mode", "color": "#94a3b8" }
+    {
+      "title": "Kotlin",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Jetpack Compose",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Material 3 Expressive",
+      "color": "#a5b4fc"
+    },
+    {
+      "title": "MVVM (UiState / UiAction / UiEffect)",
+      "color": "#86efac"
+    },
+    {
+      "title": "Navigation 3",
+      "color": "#fde047"
+    },
+    {
+      "title": "Dagger-Hilt",
+      "color": "#fdba74"
+    },
+    {
+      "title": "Room Database",
+      "color": "#f9a8d4"
+    },
+    {
+      "title": "Retrofit / OkHttp",
+      "color": "#5eead4"
+    },
+    {
+      "title": "Coil Image Loading",
+      "color": "#fca5a5"
+    },
+    {
+      "title": "Haze Blur",
+      "color": "#a78bfa"
+    },
+    {
+      "title": "Coroutines & Flow",
+      "color": "#67e8f9"
+    },
+    {
+      "title": "Firebase Crashlytics",
+      "color": "#a5b4fc"
+    }
   ]
 }
