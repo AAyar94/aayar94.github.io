@@ -23,8 +23,12 @@
         },
         {
             "title": "Resume",
-            "href": "/cv/AdemAyarCV.pdf",
-            "type": "link"
+            "type": "dropdown",
+            "items": [
+                { "title": "Resume — Designed (TR)", "href": "/cv/AdemAyarCV.pdf" },
+                { "title": "Resume — ATS-friendly (EN)", "href": "/cv/AdemAyarCV_ATS_EN.pdf" },
+                { "title": "Resume — ATS-friendly (TR)", "href": "/cv/AdemAyarCV_ATS_TR.pdf" }
+            ]
         }
     ]
 }
