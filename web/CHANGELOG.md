@@ -17,6 +17,9 @@ old theme/classes need migrating — see `docs/MIGRATION.md`.
   `public/` now use a normal navigation (`src/utils/staticPage.js`).
 
 ### Added
+- Chronix privacy policy updated for the app's current behaviour (optional
+  analytics and crash reports, Premium purchase, backups) plus a Turkish version,
+  `chronix-privacy-policy.tr.html`, linked from the Turkish project page.
 - Modern **bento** layout across every section (Home, About, Skills, Projects,
   Experience, Education).
 - Design-token system — colour, spacing, radius, shadow, motion and font tokens
