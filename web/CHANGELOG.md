@@ -10,6 +10,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 A major UI overhaul. The visual layer is rebuilt, so custom styles based on the
 old theme/classes need migrating — see `docs/MIGRATION.md`.
 
+### Fixed
+- The "Privacy Policy" (Chronix) and license (Smart Code Sorter) buttons on the
+  project pages opened "Project not found": they were router links, so the legacy
+  `/:slug.html` alias route caught the static `.html` URL. Links to files in
+  `public/` now use a normal navigation (`src/utils/staticPage.js`).
+
 ### Added
 - Modern **bento** layout across every section (Home, About, Skills, Projects,
   Experience, Education).

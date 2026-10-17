@@ -5,6 +5,7 @@ import InlineText from './InlineText';
 import { GithubIcon, ExternalIcon } from './icons';
 import FallbackSpinner from './FallbackSpinner';
 import { useLocale, localizePath } from '../i18n/LocaleContext';
+import isStaticPageHref from '../utils/staticPage';
 import '../css/skills.css';
 import '../css/project-detail.css';
 
@@ -37,7 +38,19 @@ function Action({ action }) {
   const icon = action.icon === 'github' ? <GithubIcon /> : action.icon === 'external' ? <ExternalIcon /> : null;
   const className = `btn-pill ${action.variant === 'primary' ? 'btn-accent' : 'btn-ghost'} project-action`;
 
-  if (action.href.startsWith('/') && !action.external) {
+  const isInternal = action.href.startsWith('/') && !action.external;
+
+  if (isInternal && isStaticPageHref(action.href)) {
+    // A real file in public/ (e.g. the privacy policy), so a plain navigation.
+    return (
+      <a className={className} href={action.href}>
+        {icon}
+        {action.label}
+      </a>
+    );
+  }
+
+  if (isInternal) {
     return (
       <Link className={className} to={action.href}>
         {icon}
