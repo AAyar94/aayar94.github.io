@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gizlilik Politikası — Chronix</title>
+    <style>
+        :root {
+            --primary: #6442D6;
+            --on-primary: #FFFFFF;
+            --surface: #FDF7FF;
+            --surface-container: #F2ECF7;
+            --on-surface: #1C1B20;
+            --on-surface-variant: #48454E;
+            --outline: #79767F;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--on-primary);
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        h2:first-of-type { margin-top: 0; }
+
+        p, li {
+            font-size: 0.95rem;
+            color: var(--on-surface-variant);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li { margin-bottom: 6px; }
+
+        strong { color: var(--on-surface); }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--outline);
+            color: var(--on-surface-variant);
+        }
+
+        th {
+            background: var(--surface-container);
+            color: var(--on-surface);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.8rem;
+            color: var(--outline);
+        }
+
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--on-surface);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, monospace;
+            font-size: 0.85em;
+        }
+
+        header a {
+            color: var(--on-primary);
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #C9BFFF;
+                --on-primary: #1B0064;
+                --surface: #141218;
+                --surface-container: #211F26;
+                --on-surface: #E6E0E9;
+                --on-surface-variant: #CAC4D0;
+                --outline: #938F99;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gizlilik Politikası</h1>
+    <p>Chronix &mdash; Son güncelleme: 17 Ekim 2026</p>
+    <p class="lang-switch"><a href="/chronix-privacy-policy.html" hreflang="en">English</a></p>
+</header>
+
+<main>
+
+    <h2>1. Giriş</h2>
+    <p>
+        <strong>Chronix</strong>'e hoş geldiniz ("biz" veya "bizim"). Bu gizlilik politikası, Android uygulamamızı
+        ("Uygulama") kullandığınızda Chronix'in hangi bilgileri işlediğini, cihazınızdan neyin çıktığını ve sahip
+        olduğunuz seçenekleri açıklar. Chronix'i kullanarak bu politikadaki uygulamaları kabul etmiş olursunuz.
+    </p>
+    <p>
+        Kısaca: Chronix'te <strong>hesap, reklam ve reklam kimliği yoktur</strong>. Geri sayımlarınız cihazınızda
+        kalır. Uygulama anonim kullanım istatistikleri ve çökme raporları gönderebilir; ikisini de
+        <strong>Ayarlar &rarr; Gizlilik</strong> bölümünden kapatabilirsiniz.
+    </p>
+
+    <h2>2. Topladığımız Bilgiler</h2>
+
+    <h3>2.1 Sizin oluşturduğunuz veriler</h3>
+    <p>
+        Geri sayımlarınız (başlık, tarih, not, kategori, renk, hatırlatıcı, tekrar kuralı) ve tercihleriniz yalnızca
+        cihazınızdaki Uygulama'nın özel depolama alanında tutulur. Bize veya herhangi bir sunucuya
+        <strong>gönderilmez</strong>.
+    </p>
+
+    <h3>2.2 Takvim verileri</h3>
+    <p>
+        <strong>Takvimden içe aktar</strong>'ı seçerseniz Chronix takviminize salt okunur erişim ister
+        (<code>READ_CALENDAR</code>). Etkinlikler cihazınızda okunur ve size gösterilir; yalnızca seçtiğiniz etkinlikler
+        geri sayım olarak Chronix'e kopyalanır. Takvim verileri hiçbir yere <strong>iletilmez</strong>. Bu özelliği
+        Ayarlar'dan gizleyebilir, izni Android Ayarları'ndan istediğiniz zaman geri alabilirsiniz.
+    </p>
+
+    <h3>2.3 Bildirimler ve alarmlar</h3>
+    <p>
+        Hatırlatıcılar ve kilometre taşı bildirimleri cihazınızda yerel olarak zamanlanır ve iletilir. Chronix bildirim
+        iznini, tam zamanlı alarmları ve açılış alıcısını yalnızca hatırlatıcıların zamanında gelmesi ve yeniden
+        başlatmadan sonra tekrar kurulması için kullanır.
+    </p>
+
+    <h3>2.4 Kullanım analizi (isteğe bağlı)</h3>
+    <p>
+        Chronix, özelliklerin nasıl kullanıldığını anlamak için <strong>Firebase Analytics</strong>'i (Google)
+        kullanır. Bir geri sayımın oluşturulması, düzenlenmesi, sona ermesi veya silinmesi gibi anonim olayları;
+        kategorisini, kaç gün kaldığını ve hatırlatıcısı olup olmadığını ya da tekrar edip etmediğini kaydeder.
+        Firebase ayrıca rastgele bir uygulama kurulum kimliği, uygulama sürümü, cihaz modeli, Android sürümü, dil ve
+        yaklaşık bölge gibi bazı teknik bilgileri kendiliğinden toplar.
+    </p>
+    <p>
+        Chronix geri sayım başlıklarınızı, notlarınızı veya tarihlerinizi, takvim içeriğinizi, kişilerinizi ve reklam
+        kimliğinizi <strong>göndermez</strong>. Reklam kişiselleştirme kapalıdır. Kullanım analizi varsayılan olarak
+        açıktır ve <strong>Ayarlar &rarr; Gizlilik &rarr; Kullanım analizi</strong>'nden kapatılabilir; kapatıldığında
+        analiz verisi toplanmaz.
+    </p>
+
+    <h3>2.5 Çökme raporları (isteğe bağlı)</h3>
+    <p>
+        Chronix, çökmeleri bulup düzeltmek için <strong>Firebase Crashlytics</strong>'i (Google) kullanır. Bir çökme
+        raporu; hata izi, uygulama sürümü, cihaz modeli, Android sürümü ve çökme anındaki cihaz durumu gibi teknik
+        ayrıntıları ve uygulama kurulum kimliğini içerir. Çökme raporları varsayılan olarak açıktır ve
+        <strong>Ayarlar &rarr; Gizlilik &rarr; Çökme raporları</strong>'ndan kapatılabilir.
+    </p>
+
+    <h3>2.6 Satın almalar</h3>
+    <p>
+        Premium, <strong>Google Play</strong> üzerinden yapılan tek seferlik bir satın almadır. Ödemeyi Google işler;
+        Chronix yalnızca Premium'u açabilmek için satın almanın var olup olmadığını öğrenir. Chronix kart veya ödeme
+        bilgilerinizi hiçbir zaman görmez ve saklamaz.
+    </p>
+
+    <h3>2.7 Sizin başlattığınız yedekleme ve paylaşım</h3>
+    <p>
+        <strong>Geri sayımları dışa aktar</strong> seçtiğiniz bir konuma dosya kaydeder, <strong>Geri sayımları içe
+        aktar</strong> ise seçtiğiniz bir dosyayı okur. Bir geri sayımı görsel veya metin olarak paylaştığınızda, yalnızca
+        Android paylaşım ekranında seçtiğiniz uygulamaya gider. Chronix bu dosyaları veya görselleri kendisi iletmez.
+    </p>
+
+    <h2>3. Bilgilerinizi Nasıl Kullanıyoruz</h2>
+    <ul>
+        <li><strong>Temel işlevler</strong> &mdash; ana ekran widget'ları, Hızlı Ayarlar karosu ve uygulama kısayolları dahil geri sayımları oluşturma, gösterme ve yönetme</li>
+        <li><strong>Takvimden içe aktarma</strong> &mdash; geri sayım olarak eklemeyi seçtiğiniz takvim etkinliklerini okuma</li>
+        <li><strong>Hatırlatıcılar</strong> &mdash; yerel bildirimleri zamanlama ve iletme</li>
+        <li><strong>Premium</strong> &mdash; satın almanızı Google Play üzerinden doğrulama</li>
+        <li><strong>Uygulamayı geliştirme</strong> &mdash; hataları gidermek ve özellikleri geliştirmek için anonim kullanım verilerini ve çökme raporlarını inceleme (yalnızca bu anahtarlar açıkken)</li>
+        <li><strong>Uyum</strong> &mdash; geçerli olduğu yerde yasal yükümlülükleri yerine getirme</li>
+    </ul>
+
+    <h2>4. İzinlerin Özeti</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>İzin</th>
+                <th>Amaç</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>INTERNET</code></td>
+                <td>Anonim analiz, çökme raporları ve Google Play satın almaları</td>
+            </tr>
+            <tr>
+                <td><code>READ_CALENDAR</code></td>
+                <td>Seçtiğiniz takvim etkinliklerini geri sayım olarak içe aktarma (isteğe bağlı)</td>
+            </tr>
+            <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Geri sayım hatırlatıcı ve kilometre taşı bildirimleri gönderme</td>
+            </tr>
+            <tr>
+                <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                <td>Hatırlatıcıları belirlediğiniz tam saatte iletme</td>
+            </tr>
+            <tr>
+                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                <td>Cihaz yeniden başladıktan sonra hatırlatıcıları yeniden kurma</td>
+            </tr>
+            <tr>
+                <td><code>BILLING</code></td>
+                <td>Premium'un Google Play üzerinden satın alınması</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Veri Paylaşımı ve Üçüncü Taraf Hizmetleri</h2>
+    <p>
+        Chronix kişisel bilgilerinizi <strong>satmaz</strong>, takas etmez veya kiralamaz ve reklam göstermez.
+        Yukarıdaki sınırlı amaçlar için şu üçüncü taraf hizmetlerini kullanırız:
+    </p>
+    <ul>
+        <li><strong>Firebase Analytics ve Firebase Crashlytics</strong> (Google LLC) &mdash; anonim kullanım istatistikleri ve çökme raporları, isteğe bağlı. Bkz. <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik bilgileri</a>.</li>
+        <li><strong>Google Play</strong> (Google LLC) &mdash; satın almalar. Bkz. <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a>.</li>
+    </ul>
+    <p>
+        Takvim verileri veya geri sayım içerikleri üçüncü taraflarla paylaşılmaz.
+    </p>
+
+    <h2>6. Veri Güvenliği</h2>
+    <p>
+        Geri sayımlarınız cihazınızda yerel olarak saklanır ve Android'in uygulama kum havuzuyla korunur. Geri sayım
+        verilerinizi saklayan sunucular işletmiyoruz. Firebase'e ve Google Play'e giden veriler şifreli bağlantılar
+        (TLS) üzerinden iletilir. Ancak hiçbir elektronik depolama veya iletim yöntemi %100 güvenli değildir.
+    </p>
+
+    <h2>7. Verilerin Saklanması ve Cihaz Yedeği</h2>
+    <p>
+        Geri sayım verileriniz Uygulama yüklü olduğu sürece cihazınızda kalır. Uygulamayı kaldırarak veya Android
+        Ayarları'ndan verilerini temizleyerek istediğiniz zaman silebilirsiniz. Chronix'in veritabanı Google bulut
+        yedeğinin dışında tutulur; Android'in cihazdan cihaza aktarımıyla yeni bir telefon kurduğunuzda veriler ona
+        kopyalanabilir. Google'ın elindeki analiz ve çökme verileri Firebase'in standart saklama ayarlarına göre tutulur.
+        Bir gizlilik anahtarını kapatmak yeni veri toplanmasını durdurur.
+    </p>
+
+    <h2>8. Çocukların Gizliliği</h2>
+    <p>
+        Chronix 13 yaşın altındaki çocuklara yönelik değildir. Çocuklardan bilerek kişisel bilgi toplamayız. Bir
+        çocuğun bize kişisel bilgi verdiğini düşünüyorsanız lütfen bizimle iletişime geçin; bu bilgiyi silmek için
+        gerekli adımları atarız.
+    </p>
+
+    <h2>9. Haklarınız ve Seçenekleriniz</h2>
+    <p>
+        Kullanım analizini ve çökme raporlarını Ayarlar &rarr; Gizlilik bölümünden istediğiniz zaman kapatabilir,
+        takvim ve bildirim izinlerini Android Ayarları'ndan geri alabilir ve Uygulama verilerini temizleyerek tüm
+        yerel verileri silebilirsiniz. Chronix'te hesap yoktur; bu nedenle hakkınızda tutabileceğimiz veriler,
+        kimliğinize değil rastgele bir kurulum kimliğine bağlı olan yukarıdaki anonim analiz ve çökme verileriyle
+        sınırlıdır. Bulunduğunuz yargı alanına bağlı olarak ayrıca şu haklara sahip olabilirsiniz:
+    </p>
+    <ul>
+        <li><strong>Erişim</strong> &mdash; hakkınızda tuttuğumuz verilerin bir kopyasını isteme</li>
+        <li><strong>Silme</strong> &mdash; verilerinizin silinmesini isteme</li>
+        <li><strong>Düzeltme</strong> &mdash; hatalı verilerin düzeltilmesini isteme</li>
+        <li><strong>Taşınabilirlik</strong> &mdash; verilerinizi taşınabilir biçimde isteme</li>
+        <li><strong>İtiraz</strong> &mdash; verilerinizin işlenmesine itiraz etme</li>
+    </ul>
+    <p>
+        Bu hakları kullanmak için lütfen aşağıdaki bilgilerle bizimle iletişime geçin.
+    </p>
+
+    <h2>10. Bu Politikadaki Değişiklikler</h2>
+    <p>
+        Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada güncellenmiş "Son güncelleme"
+        tarihiyle yayımlanır. Politikayı düzenli olarak gözden geçirmenizi öneririz. Değişikliklerden sonra
+        Uygulama'yı kullanmaya devam etmeniz, güncellenmiş politikayı kabul ettiğiniz anlamına gelir.
+    </p>
+
+    <h2>11. İletişim</h2>
+    <p>
+        Bu gizlilik politikası veya uygulamalarımız hakkında sorularınız varsa lütfen bizimle şuradan iletişime geçin:
+    </p>
+    <p>
+        <strong>E-posta:</strong> <a href="mailto:support@vnsapp.com">support@vnsapp.com</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/AAyar94/Chronix/issues">github.com/AAyar94/Chronix</a>
+    </p>
+</main>
+<footer>
+    &copy; 2026 Chronix. Tüm hakları saklıdır.
+</footer>
+</body>
+</html>
