@@ -20,6 +20,9 @@ old theme/classes need migrating — see `docs/MIGRATION.md`.
 - Chronix privacy policy updated for the app's current behaviour (optional
   analytics and crash reports, Premium purchase, backups) plus a Turkish version,
   `chronix-privacy-policy.tr.html`, linked from the Turkish project page.
+- Chronix privacy policy (English and Turkish) updated again for accounts (guest
+  or Google), syncing countdowns to a server (Supabase), deleting the account in
+  the app (`#delete-account`) and the iOS app.
 - Modern **bento** layout across every section (Home, About, Skills, Projects,
   Experience, Education).
 - Design-token system — colour, spacing, radius, shadow, motion and font tokens
