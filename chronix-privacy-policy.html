@@ -148,7 +148,7 @@
 
 <header>
     <h1>Privacy Policy</h1>
-    <p>Chronix &mdash; Last updated: October 17, 2026</p>
+    <p>Chronix &mdash; Last updated: October 26, 2026</p>
     <p class="lang-switch"><a href="/chronix-privacy-policy.tr.html" hreflang="tr">Türkçe</a></p>
 </header>
 
@@ -157,79 +157,112 @@
     <h2>1. Introduction</h2>
     <p>
         Welcome to <strong>Chronix</strong> ("we," "our," or "us"). This privacy policy explains what information
-        Chronix handles when you use our Android application (the "App"), what leaves your device, and the choices you
-        have. By using Chronix, you agree to the practices described in this policy.
+        Chronix handles when you use our Android and iOS applications (the "App"), what leaves your device, and the
+        choices you have. By using Chronix, you agree to the practices described in this policy.
     </p>
     <p>
-        In short: Chronix has <strong>no account, no ads and no advertising ID</strong>. Your countdowns stay on your
-        device. The App can send anonymous usage statistics and crash reports, and you can switch both off in
-        <strong>Settings &rarr; Privacy</strong>.
+        In short: Chronix has <strong>no ads and no advertising ID</strong>. You use it as a <strong>guest</strong> or
+        sign in with <strong>Google</strong>. Your countdowns are kept on your device and, so that they can follow you
+        between your devices, on our server. You can <strong>delete your account and its data inside the App</strong>
+        (<a href="#delete-account">how</a>). On Android the App can also send anonymous usage statistics and crash
+        reports, and you can switch both off in <strong>Settings &rarr; Privacy</strong>.
     </p>
 
     <h2>2. Information We Collect</h2>
 
-    <h3>2.1 Data you create</h3>
+    <h3>2.1 Your account</h3>
     <p>
-        Your countdowns (titles, dates, notes, categories, colors, reminders, repeat rules) and your preferences are
-        stored only in the App's private storage on your device. They are <strong>not</strong> sent to us or to any
-        server.
+        When you first open the App you continue as a <strong>guest</strong> or sign in with <strong>Google</strong>.
+    </p>
+    <ul>
+        <li><strong>Guest</strong> &mdash; the App creates an anonymous account identified only by a random ID. It has
+            no name, email address or password.</li>
+        <li><strong>Google sign-in</strong> &mdash; Google tells the App your email address and a Google account
+            identifier. Our sign-in provider may also store the other basic profile details Google returns (such as your
+            name and profile picture) as part of the sign-in record; Chronix does not use or show them. Chronix never
+            sees your Google password.</li>
+    </ul>
+    <p>
+        If you add Google to a guest account, your countdowns stay with you. If that Google account already has a
+        Chronix account, you are signed in to it and the countdowns on this device are added to it.
     </p>
 
-    <h3>2.2 Calendar data</h3>
+    <h3>2.2 Your countdowns (data you create)</h3>
+    <p>
+        Your countdowns (title, date and time, time zone, category, color, icon, notes, pinned and archived state,
+        reminder and repeat settings) are stored in the App's private storage on your device <strong>and</strong>, so
+        that they can appear on your other devices, on our server under your account. This applies to guests too.
+        When you delete a countdown, a deletion mark is kept on the server so that your other devices learn about the
+        deletion.
+    </p>
+    <p>
+        Not synced: your settings, theme and widget configuration, which calendar event a countdown came from, and
+        whether you bought Premium. One account can hold up to 1,000 countdowns.
+    </p>
+
+    <h3>2.3 Calendar data</h3>
     <p>
         If you choose <strong>Import from calendar</strong>, Chronix asks for read-only access to your calendar
-        (<code>READ_CALENDAR</code>). Events are read on your device and shown to you; only the events you select are
-        copied into Chronix as countdowns. Calendar data is <strong>not</strong> transmitted anywhere. You can hide
-        this feature in Settings and revoke the permission at any time in Android Settings.
+        (<code>READ_CALENDAR</code> on Android, calendar access on iOS). Events are read on your device and shown to
+        you; only the events you select are copied into Chronix as countdowns. Your calendar itself is
+        <strong>not</strong> transmitted anywhere, but a countdown you create from an event is a countdown like any
+        other and is synced as described above. You can hide this feature in Settings and revoke the permission at any
+        time in your device's settings.
     </p>
 
-    <h3>2.3 Notifications and alarms</h3>
+    <h3>2.4 Notifications and alarms</h3>
     <p>
-        Reminders and milestone notifications are scheduled and delivered locally on your device. Chronix uses the
-        notification permission, exact alarms and a boot receiver only so reminders arrive on time and are
-        re-scheduled after a restart.
+        Reminders and milestone notifications are scheduled and delivered locally on your device. On Android, Chronix
+        uses the notification permission, exact alarms and a boot receiver only so reminders arrive on time and are
+        re-scheduled after a restart. On iOS it uses local notifications.
     </p>
 
-    <h3>2.4 Usage analytics (optional)</h3>
+    <h3>2.5 Usage analytics (Android, optional)</h3>
     <p>
-        Chronix uses <strong>Firebase Analytics</strong> (Google) to understand how features are used. It records
-        anonymous events such as a countdown being created, edited, reached or deleted, together with its category,
-        how many days away it is, and whether it has a reminder or repeats. Firebase also collects some technical
-        information automatically, such as a random app-installation identifier, app version, device model, Android
-        version and language, and approximate region.
+        The Android app uses <strong>Firebase Analytics</strong> (Google) to understand how features are used. It
+        records anonymous events such as a countdown being created, edited, reached or deleted, together with its
+        category, how many days away it is, and whether it has a reminder or repeats. Firebase also collects some
+        technical information automatically, such as a random app-installation identifier, app version, device model,
+        Android version and language, and approximate region.
     </p>
     <p>
         Chronix does <strong>not</strong> send your countdown titles, notes or dates, your calendar content, your
         contacts, or your advertising ID. Ad personalization is disabled. Usage analytics is on by default and can be
         switched off in <strong>Settings &rarr; Privacy &rarr; Usage analytics</strong>; once off, no analytics data is
-        collected.
+        collected. The iOS app does not collect usage analytics at this time.
     </p>
 
-    <h3>2.5 Crash reports (optional)</h3>
+    <h3>2.6 Crash reports (Android, optional)</h3>
     <p>
-        Chronix uses <strong>Firebase Crashlytics</strong> (Google) to find and fix crashes. A crash report contains
-        technical details such as the stack trace, the app version, device model, Android version, and the state of
-        the device at the time of the crash, together with the app-installation identifier. Crash reports are on by
-        default and can be switched off in <strong>Settings &rarr; Privacy &rarr; Crash reports</strong>.
+        The Android app uses <strong>Firebase Crashlytics</strong> (Google) to find and fix crashes. A crash report
+        contains technical details such as the stack trace, the app version, device model, Android version, and the
+        state of the device at the time of the crash, together with the app-installation identifier. A syncing problem
+        that is more than a missing network connection is also recorded as a technical error report: the kind of
+        error and its message, never your countdowns. Crash reports are on by default and can be switched off in
+        <strong>Settings &rarr; Privacy &rarr; Crash reports</strong>. The iOS app does not collect crash reports at
+        this time.
     </p>
 
-    <h3>2.6 Purchases</h3>
+    <h3>2.7 Purchases</h3>
     <p>
-        Premium is a one-time purchase handled by <strong>Google Play</strong>. Google processes the payment; Chronix
-        only learns whether the purchase exists so it can unlock Premium. Chronix never sees or stores your card or
-        payment details.
+        On Android, Premium is a one-time purchase handled by <strong>Google Play</strong>. Google processes the
+        payment; Chronix only learns whether the purchase exists so it can unlock Premium. Chronix never sees or stores
+        your card or payment details. Premium is tied to the store account, not to your Chronix account, and is not
+        synced. Premium is not offered on iOS yet.
     </p>
 
-    <h3>2.7 Backups and sharing you start</h3>
+    <h3>2.8 Backups and sharing you start</h3>
     <p>
-        <strong>Export countdowns</strong> saves a file to a location you choose, and <strong>Import countdowns</strong>
-        reads a file you choose. When you share a countdown as an image or text, it goes only to the app you pick in
-        Android's share sheet. Chronix does not transmit these files or images itself.
+        On Android, <strong>Export countdowns</strong> saves a file to a location you choose, and
+        <strong>Import countdowns</strong> reads a file you choose. When you share a countdown as an image or text, it
+        goes only to the app you pick in your device's share sheet. Chronix does not transmit these files or images
+        itself.
     </p>
 
     <h2>3. How We Use Your Information</h2>
     <ul>
-        <li><strong>Provide core functionality</strong> &mdash; creating, displaying and managing countdowns, including home screen widgets, the Quick Settings tile and launcher shortcuts</li>
+        <li><strong>Provide core functionality</strong> &mdash; creating, displaying and managing countdowns, including home screen widgets, the Quick Settings tile and launcher shortcuts on Android</li>
+        <li><strong>Accounts and sync</strong> &mdash; signing you in and keeping your countdowns the same on your devices</li>
         <li><strong>Calendar import</strong> &mdash; reading calendar events you choose to add as countdowns</li>
         <li><strong>Reminders</strong> &mdash; scheduling and delivering local notifications</li>
         <li><strong>Premium</strong> &mdash; confirming your purchase through Google Play</li>
@@ -247,27 +280,27 @@
         </thead>
         <tbody>
             <tr>
-                <td><code>INTERNET</code></td>
-                <td>Anonymous analytics, crash reports and Google Play purchases</td>
+                <td><code>INTERNET</code> (Android)</td>
+                <td>Sign-in, syncing your countdowns, anonymous analytics, crash reports and Google Play purchases</td>
             </tr>
             <tr>
-                <td><code>READ_CALENDAR</code></td>
+                <td><code>READ_CALENDAR</code> (Android), Calendars (iOS)</td>
                 <td>Import calendar events you choose as countdowns (optional)</td>
             </tr>
             <tr>
-                <td><code>POST_NOTIFICATIONS</code></td>
+                <td><code>POST_NOTIFICATIONS</code> (Android), Notifications (iOS)</td>
                 <td>Send countdown reminder and milestone notifications</td>
             </tr>
             <tr>
-                <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                <td><code>SCHEDULE_EXACT_ALARM</code> (Android)</td>
                 <td>Deliver reminders at the exact time you set</td>
             </tr>
             <tr>
-                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                <td><code>RECEIVE_BOOT_COMPLETED</code> (Android)</td>
                 <td>Re-schedule reminders after the device restarts</td>
             </tr>
             <tr>
-                <td><code>BILLING</code></td>
+                <td><code>BILLING</code> (Android)</td>
                 <td>Google Play purchase of Premium</td>
             </tr>
         </tbody>
@@ -275,31 +308,50 @@
 
     <h2>5. Data Sharing &amp; Third-Party Services</h2>
     <p>
-        Chronix does <strong>not</strong> sell, trade or rent your personal information, and it shows no ads. We use
-        these third-party services for the limited purposes above:
+        Chronix does <strong>not</strong> sell, trade or rent your personal information, and it shows no ads. These
+        service providers process data on our behalf for the limited purposes above:
     </p>
     <ul>
-        <li><strong>Firebase Analytics and Firebase Crashlytics</strong> (Google LLC) &mdash; anonymous usage statistics and crash reports, optional. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>.</li>
-        <li><strong>Google Play</strong> (Google LLC) &mdash; purchases. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li><strong>Supabase</strong> &mdash; hosts your account and your synced countdowns (in Europe). See the <a href="https://supabase.com/privacy" rel="noopener">Supabase privacy policy</a>.</li>
+        <li><strong>Google Sign-In</strong> (Google LLC) &mdash; signing in with your Google account, only if you choose it. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li><strong>Firebase Analytics and Firebase Crashlytics</strong> (Google LLC) &mdash; anonymous usage statistics and crash reports on Android, optional. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>.</li>
+        <li><strong>Google Play</strong> (Google LLC) &mdash; purchases on Android.</li>
     </ul>
     <p>
-        No calendar data or countdown content is shared with third parties.
+        We do not share your calendar data or the content of your countdowns with anyone else.
     </p>
 
     <h2>6. Data Security</h2>
     <p>
-        Your countdowns are stored locally on your device and protected by Android's app sandbox. We do not operate
-        servers that store your countdown data. Data sent to Firebase and Google Play travels over encrypted
-        connections (TLS). However, no method of electronic storage or transmission is 100% secure.
+        Your countdowns are stored on your device, protected by the operating system's app sandbox, and on our server,
+        where access rules let each account read and change only its own countdowns. The sign-in session kept on your
+        device is stored encrypted (Android Keystore, iOS Keychain) and is excluded from device backups. Data travels
+        over encrypted connections (TLS). However, no method of electronic storage or transmission is 100% secure.
     </p>
 
-    <h2>7. Data Retention and Device Backup</h2>
+    <h2>7. Data Retention, Deleting Your Account and Device Backup</h2>
     <p>
-        Your countdown data remains on your device as long as the App is installed. You can delete it at any time by
-        uninstalling the App or clearing its data in Android Settings. Chronix's database is excluded from Google
-        cloud backup; when you set up a new phone with Android's device-to-device transfer, the data may be copied to
-        it. Analytics and crash data held by Google is kept under Firebase's standard retention settings. Switching a
-        privacy switch off stops new collection.
+        Your account and its countdowns stay on our server until you delete them. Countdowns also remain on your
+        device as long as the App is installed; you can delete them there by uninstalling the App or clearing its data.
+        On Android, the database, the sign-in session and the sync position are excluded from Google cloud backup; when
+        you set up a new phone with device-to-device transfer, the countdown database may be copied to it, but you
+        sign in again. Analytics and crash data held by Google is kept under Firebase's standard retention settings.
+        Switching a privacy switch off stops new collection.
+    </p>
+
+    <h3 id="delete-account">7.1 Deleting your account</h3>
+    <p>
+        You can delete your account and its data at any time <strong>in the App</strong>:
+        <strong>Settings &rarr; Account &rarr; Delete account</strong>, then confirm. This permanently deletes your
+        account and all the countdowns stored under it on our server. It cannot be undone. Countdowns that are on the
+        device you used stay there until you remove them, and anonymous analytics and crash data (which is tied to a
+        random installation identifier, not to your account) is not removed by deleting the account.
+    </p>
+    <p>
+        If you cannot open the App, email <a href="mailto:support@vnsapp.com">support@vnsapp.com</a> from the email
+        address of your Google account and ask us to delete your Chronix account; we will do so within 30 days. A guest
+        account has no email address that identifies it, so it can only be deleted in the App on the device where it
+        was created.
     </p>
 
     <h2>8. Children's Privacy</h2>
@@ -311,15 +363,16 @@
 
     <h2>9. Your Rights and Choices</h2>
     <p>
-        You can switch usage analytics and crash reports off at any time in Settings &rarr; Privacy, revoke the
-        calendar and notification permissions in Android Settings, and delete all local data by clearing the App's
-        data. Chronix has no accounts, so the data we could hold about you is limited to the anonymous analytics and
-        crash data described above, which is tied to a random installation identifier rather than to your identity.
-        Depending on your jurisdiction you may also have the right to:
+        You can use Chronix as a guest instead of signing in with Google, switch usage analytics and crash reports off
+        in Settings &rarr; Privacy on Android, revoke the calendar and notification permissions in your device's
+        settings, and delete your account in the App. On Android, <strong>Export countdowns</strong> gives you a copy of
+        your countdowns in a file. The personal data we hold about you is limited to your account (a random ID and, if
+        you signed in with Google, your email address), your countdowns, and the anonymous analytics and crash data
+        described above. Depending on your jurisdiction you may also have the right to:
     </p>
     <ul>
         <li><strong>Access</strong> &mdash; request a copy of data we hold about you</li>
-        <li><strong>Deletion</strong> &mdash; request deletion of your data</li>
+        <li><strong>Deletion</strong> &mdash; request deletion of your data (see <a href="#delete-account">Deleting your account</a>)</li>
         <li><strong>Correction</strong> &mdash; request correction of inaccurate data</li>
         <li><strong>Portability</strong> &mdash; request your data in a portable format</li>
         <li><strong>Objection</strong> &mdash; object to processing of your data</li>
