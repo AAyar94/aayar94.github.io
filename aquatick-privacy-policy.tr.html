@@ -164,8 +164,8 @@
     <p>
         Kısaca: Aquatick'te <strong>reklam, reklam kimliği, analitik ve çökme raporlama hizmeti yoktur</strong>.
         Uygulamanın tamamını misafir olarak kullanabilirsiniz; içki kaydınız ve profiliniz bu durumda cihazınızda
-        kalır. Hesap yalnızca isteğe bağlı <strong>bulut yedekleme</strong> için gerekir; yedeklemeyi istediğiniz zaman
-        kapatabilir, hesabınızla birlikte silebilirsiniz.
+        kalır. Google ile giriş yalnızca isteğe bağlı <strong>bulut yedekleme</strong> için gerekir; bu bir Premium özelliğidir.
+        Yedeklemeyi istediğiniz zaman kapatabilir, hesabınızla birlikte silebilirsiniz.
     </p>
 
     <h2>2. Topladığımız Bilgiler</h2>
@@ -181,16 +181,17 @@
 
     <h3>2.2 Hesap (isteğe bağlı)</h3>
     <p>
-        Hesap oluşturursanız bize <strong>e-posta adresinizi</strong> ve bir şifre verirsiniz. Hesaplar
-        <strong>Supabase</strong> tarafından işletilir; Supabase e-posta adresini ve şifrenin özetlenmiş (okunamaz)
-        halini saklar ve girişi yönetir. Her çevrimiçi hizmette olduğu gibi, Uygulama Supabase'e eriştiğinde IP adresi
-        gibi teknik veriler işlenir. Oturum bilgisi Uygulamanın özel depolama alanında tutulur ve Android
-        yedeklerine dahil edilmez.
+        <strong>Google</strong> ile giriş yapabilirsiniz. Aquatick hiçbir zaman şifre görmez veya saklamaz. Google,
+        Uygulamaya <strong>e-posta adresinizi, adınızı ve profil fotoğrafı bağlantınızı</strong> içeren imzalı bir
+        jeton verir; hesaplar <strong>Supabase</strong> tarafından işletilir, Supabase bu bilgileri saklar ve girişi
+        yönetir. Her çevrimiçi hizmette olduğu gibi, Uygulama Supabase ve Google'a eriştiğinde IP adresi gibi teknik
+        veriler işlenir. Oturum bilgisi Uygulamanın özel depolama alanında tutulur ve Android yedeklerine dahil edilmez.
+        Giriş yapmazsanız Uygulama misafir olarak çalışır.
     </p>
 
     <h3>2.3 Bulut yedekleme (isteğe bağlı)</h3>
     <p>
-        Giriş yapmışsanız ve Ayarlar'da <strong>Veri yedekleme ve Senkronizasyon</strong>'u açarsanız, Aquatick içki
+        Aquatick Premium'a sahipseniz, giriş yapmışsanız ve Ayarlar'da <strong>Veri yedekleme ve Senkronizasyon</strong>'u açarsanız, Aquatick içki
         kaydınızı Avrupa'daki bir Supabase veritabanına kopyalar: her içecek için türü, mililitre cinsinden miktarı ve
         saati ile rastgele bir kimlik. Satırlar, yalnızca onları oluşturan hesap tarafından okunabilecek, değiştirilebilecek
         veya silinebilecek şekilde korunur. Adınız, yaşınız, kilonuz, hedefiniz, fotoğrafınız ve ayarlarınız
@@ -226,11 +227,20 @@
         yeni telefon kurarken cihazdan cihaza aktarıma dahil olabilir. Bu, Android yedekleme ayarlarınızla kontrol edilir
         ve Google tarafından yürütülür; Aquatick bunu almaz. Oturum bilgisi hariç tutulur.
     </p>
+    <h3>2.8 Satın alma (Premium)</h3>
+    <p>
+        Aquatick Premium, <strong>Google Play</strong> tarafından yürütülen tek seferlik bir satın almadır. Ödemeyi
+        Google işler; Aquatick yalnızca Premium'u açabilmek için satın almanın var olup olmadığını öğrenir ve bunu,
+        Premium'un çevrimdışı da çalışması için cihazınızda hatırlar. Aquatick kart veya ödeme bilgilerinizi hiçbir
+        zaman görmez ve saklamaz.
+    </p>
+
     <h2>3. Bilgilerinizi Nasıl Kullanıyoruz</h2>
     <ul>
         <li><strong>Temel işlevler</strong> &mdash; hedefinizi hesaplamak, içecek kaydetmek, geçmişi, istatistikleri ve serileri göstermek ve saatinizle eşleşmek</li>
         <li><strong>Hatırlatmalar</strong> &mdash; yerel bildirimleri planlamak ve iletmek</li>
-        <li><strong>Hesap ve yedekleme</strong> &mdash; giriş yapmanızı sağlamak ve açarsanız içki kaydınızı yedekleyip senkronize etmek</li>
+        <li><strong>Hesap ve yedekleme</strong> &mdash; Google ile giriş yapmanızı sağlamak ve Premium ile, açarsanız içki kaydınızı yedekleyip senkronize etmek</li>
+        <li><strong>Premium</strong> &mdash; satın almanızı Google Play üzerinden doğrulamak</li>
         <li><strong>Uyum</strong> &mdash; geçerli olduğu yerlerde yasal yükümlülükleri yerine getirmek</li>
     </ul>
     <p>
@@ -248,7 +258,7 @@
         <tbody>
             <tr>
                 <td><code>INTERNET, ACCESS_NETWORK_STATE</code></td>
-                <td>Giriş yapma, bulut yedekleme (yalnızca siz açarsanız) ve hesap silme</td>
+                <td>Google ile giriş, bulut yedekleme (yalnızca siz açarsanız), hesap silme ve Google Play satın almaları</td>
             </tr>
             <tr>
                 <td><code>POST_NOTIFICATIONS</code></td>
@@ -261,6 +271,10 @@
             <tr>
                 <td><code>RECEIVE_BOOT_COMPLETED</code></td>
                 <td>Cihaz yeniden başladığında veya Uygulama güncellendiğinde hatırlatmaları yeniden planlamak</td>
+            </tr>
+            <tr>
+                <td><code>BILLING</code></td>
+                <td>Premium'un Google Play üzerinden satın alınması</td>
             </tr>
             <tr>
                 <td><code>CAMERA</code></td>
@@ -279,14 +293,15 @@
         Yukarıdaki sınırlı amaçlar için şu üçüncü taraf hizmetleri kullanırız:
     </p>
     <ul>
-        <li><strong>Supabase</strong> &mdash; hesap girişi ve isteğe bağlı bulut yedekleme. Bkz. <a href="https://supabase.com/privacy" rel="noopener">Supabase Gizlilik Politikası</a>.</li>
-        <li><strong>Google Play hizmetleri</strong> (Google LLC) &mdash; uygulama dağıtımı, Wear OS veri bağlantısı ve Android yedekleme. Bkz. <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>.</li>
+        <li><strong>Google ile Giriş</strong> (Google LLC) &mdash; Google hesabınızla giriş. Bkz. <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>.</li>
+        <li><strong>Supabase</strong> &mdash; hesap kaydı ve isteğe bağlı bulut yedekleme. Bkz. <a href="https://supabase.com/privacy" rel="noopener">Supabase Gizlilik Politikası</a>.</li>
+        <li><strong>Google Play ve Google Play hizmetleri</strong> (Google LLC) &mdash; uygulama dağıtımı, satın almalar, Wear OS veri bağlantısı ve Android yedekleme. Bkz. <a href="https://policies.google.com/privacy" rel="noopener">Google Gizlilik Politikası</a>.</li>
     </ul>
 
     <h2>6. Veri Güvenliği</h2>
     <p>
         Cihazınızdaki verileriniz Android'in uygulama kum havuzuyla korunur. Supabase'e gönderilen veriler şifreli
-        bağlantılarla (TLS) iletilir, şifreler yalnızca özetlenmiş halde saklanır ve bulut satırlarına erişim onlara
+        bağlantılarla (TLS) iletilir, Uygulama hiçbir zaman şifre işlemez ve bulut satırlarına erişim onlara
         sahip olan hesapla sınırlıdır. Bununla birlikte hiçbir elektronik saklama veya iletim yöntemi %100 güvenli
         değildir.
     </p>

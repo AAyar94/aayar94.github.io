@@ -163,9 +163,9 @@
     </p>
     <p>
         In short: Aquatick has <strong>no ads, no advertising ID, no analytics and no crash-reporting service</strong>.
-        You can use the whole App as a guest, and your drink log and profile then stay on your device. An account is
-        only needed for the optional <strong>cloud backup</strong>, which you can switch off, and delete with your
-        account, at any time.
+        You can use the whole App as a guest, and your drink log and profile then stay on your device. A Google
+        sign-in is only needed for the optional <strong>cloud backup</strong>, a Premium feature that you can switch
+        off, and delete together with your account, at any time.
     </p>
 
     <h2>2. Information We Collect</h2>
@@ -181,16 +181,17 @@
 
     <h3>2.2 Account (optional)</h3>
     <p>
-        If you create an account, you give us your <strong>email address</strong> and a password. Accounts are run by
-        <strong>Supabase</strong>, which stores the email address and a hashed (not readable) form of the password
-        and handles sign-in. Like any online service, Supabase processes technical data such as your IP address when
-        the App contacts it. The sign-in session is kept in the App's private storage and is not included in
-        Android backups.
+        You can sign in with <strong>Google</strong>. Aquatick never sees or stores a password. Google gives the App a
+        signed token with your <strong>email address, name and profile picture link</strong>; accounts are run by
+        <strong>Supabase</strong>, which stores these details and handles sign-in. Like any online service,
+        Supabase and Google process technical data such as your IP address when the App contacts them. The sign-in
+        session is kept in the App's private storage and is not included in Android backups. Without signing in, the
+        App works as a guest.
     </p>
 
     <h3>2.3 Cloud backup (optional)</h3>
     <p>
-        If you are signed in and turn on <strong>Data backup and Synchronization</strong> in Settings, Aquatick
+        If you own Aquatick Premium, are signed in and turn on <strong>Data backup and Synchronization</strong> in Settings, Aquatick
         copies your drink log to a Supabase database in Europe: for each drink, its type, amount in millilitres and
         the time, plus a random identifier. Rows are protected so that only the signed-in account that created them
         can read, change or delete them. Your name, age, weight, goal, photo and settings are <strong>not</strong>
@@ -225,11 +226,19 @@
         account) and in device-to-device transfer when you set up a new phone. This is controlled by your Android
         backup settings and handled by Google; Aquatick does not receive it. The sign-in session is excluded.
     </p>
+    <h3>2.8 Purchases (Premium)</h3>
+    <p>
+        Aquatick Premium is a one-time purchase handled by <strong>Google Play</strong>. Google processes the payment;
+        Aquatick only learns whether the purchase exists so it can unlock Premium, and remembers that on your device so
+        Premium also works offline. Aquatick never sees or stores your card or payment details.
+    </p>
+
     <h2>3. How We Use Your Information</h2>
     <ul>
         <li><strong>Provide core functionality</strong> &mdash; calculating your goal, logging drinks, showing history, statistics and streaks, and syncing with your watch</li>
         <li><strong>Reminders</strong> &mdash; scheduling and delivering local notifications</li>
-        <li><strong>Account and backup</strong> &mdash; signing you in and, if you turn it on, backing up and syncing your drink log</li>
+        <li><strong>Account and backup</strong> &mdash; signing you in with Google and, with Premium and if you turn it on, backing up and syncing your drink log</li>
+        <li><strong>Premium</strong> &mdash; confirming your purchase through Google Play</li>
         <li><strong>Compliance</strong> &mdash; fulfilling legal obligations where applicable</li>
     </ul>
     <p>
@@ -247,7 +256,7 @@
         <tbody>
             <tr>
                 <td><code>INTERNET, ACCESS_NETWORK_STATE</code></td>
-                <td>Sign in, cloud backup (only if you turn it on) and account deletion</td>
+                <td>Sign in with Google, cloud backup (only if you turn it on), account deletion and Google Play purchases</td>
             </tr>
             <tr>
                 <td><code>POST_NOTIFICATIONS</code></td>
@@ -260,6 +269,10 @@
             <tr>
                 <td><code>RECEIVE_BOOT_COMPLETED</code></td>
                 <td>Re-schedule reminders after the device restarts or the App is updated</td>
+            </tr>
+            <tr>
+                <td><code>BILLING</code></td>
+                <td>Google Play purchase of Premium</td>
             </tr>
             <tr>
                 <td><code>CAMERA</code></td>
@@ -278,14 +291,15 @@
         these third-party services for the limited purposes above:
     </p>
     <ul>
-        <li><strong>Supabase</strong> &mdash; account sign-in and the optional cloud backup. See the <a href="https://supabase.com/privacy" rel="noopener">Supabase Privacy Policy</a>.</li>
-        <li><strong>Google Play services</strong> (Google LLC) &mdash; app distribution, the Wear OS data connection and Android backup. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li><strong>Google Sign-In</strong> (Google LLC) &mdash; sign-in with your Google account. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li><strong>Supabase</strong> &mdash; account storage and the optional cloud backup. See the <a href="https://supabase.com/privacy" rel="noopener">Supabase Privacy Policy</a>.</li>
+        <li><strong>Google Play and Google Play services</strong> (Google LLC) &mdash; app distribution, purchases, the Wear OS data connection and Android backup. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
     </ul>
 
     <h2>6. Data Security</h2>
     <p>
         Your data on the device is protected by Android's app sandbox. Data sent to Supabase travels over encrypted
-        connections (TLS), passwords are stored only in hashed form, and access to cloud rows is restricted to the
+        connections (TLS), the App never handles a password, and access to cloud rows is restricted to the
         account that owns them. However, no method of electronic storage or transmission is 100% secure.
     </p>
 
