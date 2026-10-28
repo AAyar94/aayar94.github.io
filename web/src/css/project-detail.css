@@ -214,3 +214,11 @@
     grid-template-columns: 1fr;
   }
 }
+
+.marketplace-widget--install {
+  margin-bottom: var(--space-8);
+}
+
+.marketplace-widget--card {
+  margin-bottom: var(--space-8);
+}

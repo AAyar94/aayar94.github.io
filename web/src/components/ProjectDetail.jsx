@@ -4,6 +4,7 @@ import { Fade } from 'react-awesome-reveal';
 import InlineText from './InlineText';
 import { GithubIcon, ExternalIcon } from './icons';
 import FallbackSpinner from './FallbackSpinner';
+import MarketplaceWidget from './MarketplaceWidget';
 import { useLocale, localizePath } from '../i18n/LocaleContext';
 import isStaticPageHref from '../utils/staticPage';
 import '../css/skills.css';
@@ -154,9 +155,25 @@ function ProjectDetail() {
           </div>
         )}
 
+        {data.marketplace && (
+          <MarketplaceWidget
+            type="install"
+            pluginId={data.marketplace.pluginId}
+            className="marketplace-widget marketplace-widget--install"
+          />
+        )}
+
         {data.sections?.map((section) => (
           <Section key={section.titleBefore} section={section} lang={lang} />
         ))}
+
+        {data.marketplace && (
+          <MarketplaceWidget
+            type="card"
+            pluginId={data.marketplace.pluginId}
+            className="marketplace-widget marketplace-widget--card"
+          />
+        )}
 
         {data.techStack?.length > 0 && (
           <div className="project-techstack">
