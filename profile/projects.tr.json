@@ -2,7 +2,7 @@
     "projects": [
         {
             "slug": "chronix",
-            "image": "images/projects/chronix_home.png",
+            "image": "images/projects/chronix_feature.tr.png",
             "title": "Chronix",
             "bodyText": "Ana ekran widget'ları, takvimden içe aktarma, hatırlatıcılar ve yedekleme sunan Android geri sayım ve etkinlik sayacı — Jetpack Compose ile modüler Clean Architecture. Google Play'de.",
             "tags": [
@@ -105,17 +105,6 @@
             ]
         },
         {
-            "slug": "earthquakes",
-            "image": "images/projects/earthquakes_mockup.png",
-            "title": "Last Earthquakes",
-            "bodyText": "Türkiye'deki son 100 depremi interaktif harita görünümü ve risk bölgesi görselleştirmesiyle gösteren gerçek zamanlı takip uygulaması.",
-            "tags": [
-                "Kotlin",
-                "Retrofit",
-                "Maps"
-            ]
-        },
-        {
             "slug": "foodrecipes",
             "image": "images/projects/food_recipes_mockup.png",
             "title": "Food Recipes",
@@ -124,17 +113,6 @@
                 "Kotlin",
                 "Retrofit",
                 "Room",
-                "MVVM"
-            ]
-        },
-        {
-            "slug": "valorguide",
-            "image": "images/projects/valorguide_image.png",
-            "title": "ValoGuide & Stats",
-            "bodyText": "Valorant arkadaş uygulaması — oyun bilgilerini ve ajan rehberlerini incele, kişisel maç istatistiklerini görüntüle.",
-            "tags": [
-                "Kotlin",
-                "Retrofit",
                 "MVVM"
             ]
         },

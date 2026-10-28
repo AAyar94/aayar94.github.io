@@ -8,7 +8,7 @@
   ],
   "actions": [
     {
-      "label": "JetBrains Marketplace",
+      "label": "JetBrains Marketplace'ten indir",
       "href": "https://plugins.jetbrains.com/plugin/31219",
       "variant": "primary",
       "icon": "external",
