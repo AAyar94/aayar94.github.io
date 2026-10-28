@@ -2,7 +2,7 @@
     "projects": [
         {
             "slug": "chronix",
-            "image": "images/projects/chronix_home.png",
+            "image": "images/projects/chronix_feature.tr.png",
             "title": "Chronix",
             "bodyText": "Ana ekran widget'ları, takvimden içe aktarma, hatırlatıcılar ve yedekleme sunan Android geri sayım ve etkinlik sayacı — Jetpack Compose ile modüler Clean Architecture. Google Play'de.",
             "tags": [

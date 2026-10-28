@@ -2,7 +2,7 @@
     "projects": [
         {
             "slug": "chronix",
-            "image": "images/projects/chronix_home.png",
+            "image": "images/projects/chronix_feature.png",
             "title": "Chronix",
             "bodyText": "Countdown & event timer for Android with home-screen widgets, calendar import, reminders and backup — modular Clean Architecture with Jetpack Compose. On Google Play.",
             "tags": [
