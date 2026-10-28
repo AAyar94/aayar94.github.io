@@ -20,6 +20,9 @@
       "variant": "outline"
     }
   ],
+  "marketplace": {
+    "pluginId": 31219
+  },
   "sections": [
     {
       "labelKey": "overview",
