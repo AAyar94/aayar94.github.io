@@ -155,14 +155,6 @@ function ProjectDetail() {
           </div>
         )}
 
-        {data.marketplace && (
-          <MarketplaceWidget
-            type="install"
-            pluginId={data.marketplace.pluginId}
-            className="marketplace-widget marketplace-widget--install"
-          />
-        )}
-
         {data.sections?.map((section) => (
           <Section key={section.titleBefore} section={section} lang={lang} />
         ))}

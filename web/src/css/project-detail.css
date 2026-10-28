@@ -215,10 +215,8 @@
   }
 }
 
-.marketplace-widget--install {
-  margin-bottom: var(--space-8);
-}
-
 .marketplace-widget--card {
+  display: flex;
+  justify-content: center;
   margin-bottom: var(--space-8);
 }
