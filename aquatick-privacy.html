@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Aquatick</title>
+    <style>
+        
+        :root {
+            --primary: #0A7F9E;
+            --on-primary: #FFFFFF;
+            --surface: #F4F8FF;
+            --surface-container: #E4ECFA;
+            --on-surface: #0B1530;
+            --on-surface-variant: #3B4A6B;
+            --outline: #8A9CC4;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--on-primary);
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        h2:first-of-type { margin-top: 0; }
+
+        p, li {
+            font-size: 0.95rem;
+            color: var(--on-surface-variant);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li { margin-bottom: 6px; }
+
+        strong { color: var(--on-surface); }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--outline);
+            color: var(--on-surface-variant);
+        }
+
+        th {
+            background: var(--surface-container);
+            color: var(--on-surface);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.8rem;
+            color: var(--outline);
+        }
+
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--on-surface);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, monospace;
+            font-size: 0.85em;
+        }
+
+        header a {
+            color: var(--on-primary);
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #2EE6FF;
+                --on-primary: #04101F;
+                --surface: #050B1D;
+                --surface-container: #0E1830;
+                --on-surface: #F3F7FF;
+                --on-surface-variant: #B4C1DE;
+                --outline: #5A6B94;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Privacy Policy</h1>
+    <p>Aquatick &mdash; Last updated: October 26, 2026</p>
+    <p class="lang-switch"><a href="/aquatick-privacy.tr.html" hreflang="tr">Türkçe</a></p>
+</header>
+
+<main>
+    <h2>1. Introduction</h2>
+    <p>
+        Welcome to <strong>Aquatick</strong> ("we," "our," or "us"). This privacy policy explains what information
+        Aquatick handles when you use our Android application and its Wear OS companion (together, the "App"), what
+        leaves your device, and the choices you have. By using Aquatick, you agree to the practices described in
+        this policy.
+    </p>
+    <p>
+        In short: Aquatick has <strong>no ads, no advertising ID, no analytics and no crash-reporting service</strong>.
+        You can use the whole App as a guest, and your drink log and profile then stay on your device. A Google
+        sign-in is only needed for the optional <strong>cloud backup</strong>, a Premium feature that you can switch
+        off, and delete together with your account, at any time.
+    </p>
+
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Data you enter in the App</h3>
+    <p>
+        When you set up Aquatick you can enter your name, gender, age, weight, activity level, daily water goal and
+        wake-up and bedtime. You also log drinks (type, amount and time), create custom drinks and set reminder
+        times. This data, together with your settings, is stored only in the App's private storage on your device
+        and is used to calculate your goal, streaks, history and statistics. It is <strong>not</strong> sent to us
+        unless you turn on cloud backup (see 2.3).
+    </p>
+
+    <h3>2.2 Account (optional)</h3>
+    <p>
+        You can sign in with <strong>Google</strong>. Aquatick never sees or stores a password. Google gives the App a
+        signed token with your <strong>email address, name and profile picture link</strong>; accounts are run by
+        <strong>Supabase</strong>, which stores these details and handles sign-in. Like any online service,
+        Supabase and Google process technical data such as your IP address when the App contacts them. The sign-in
+        session is kept in the App's private storage and is not included in Android backups. Without signing in, the
+        App works as a guest.
+    </p>
+
+    <h3>2.3 Cloud backup (optional)</h3>
+    <p>
+        If you own Aquatick Premium, are signed in and turn on <strong>Data backup and Synchronization</strong> in Settings, Aquatick
+        copies your drink log to a Supabase database in Europe: for each drink, its type, amount in millilitres and
+        the time, plus a random identifier. Rows are protected so that only the signed-in account that created them
+        can read, change or delete them. Your name, age, weight, goal, photo and settings are <strong>not</strong>
+        uploaded. If you use several devices with the same account, the log is kept in step between them, including
+        drinks you delete. Turning the switch off stops uploads; your cloud copy stays until you delete your account.
+    </p>
+
+    <h3>2.4 Camera and profile photo</h3>
+    <p>
+        If you choose to take a profile photo, Aquatick asks for camera access. The photo is saved in the App's
+        private storage on your device and is never uploaded. You can deny or revoke the permission at any time in
+        Android Settings.
+    </p>
+
+    <h3>2.5 Notifications and alarms</h3>
+    <p>
+        Reminders are scheduled and delivered locally on your device. Aquatick uses the notification permission,
+        exact alarms and a boot receiver only so reminders arrive on time and are re-scheduled after a restart or
+        an update. You can switch reminders off in Settings.
+    </p>
+
+    <h3>2.6 Wear OS companion</h3>
+    <p>
+        If you use the Aquatick watch app, your phone and watch exchange your daily total, goal and the drinks you
+        log on the watch through Google Play services' Wearable Data Layer, directly between your own devices.
+        Aquatick does not send this data to us.
+    </p>
+
+    <h3>2.7 Android backup</h3>
+    <p>
+        Your drink log and settings may be included in Android's own backup (for example Google backup to your Google
+        account) and in device-to-device transfer when you set up a new phone. This is controlled by your Android
+        backup settings and handled by Google; Aquatick does not receive it. The sign-in session is excluded.
+    </p>
+    <h3>2.8 Purchases (Premium)</h3>
+    <p>
+        Aquatick Premium is a one-time purchase handled by <strong>Google Play</strong>. Google processes the payment;
+        Aquatick only learns whether the purchase exists so it can unlock Premium, and remembers that on your device so
+        Premium also works offline. Aquatick never sees or stores your card or payment details.
+    </p>
+
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+        <li><strong>Provide core functionality</strong> &mdash; calculating your goal, logging drinks, showing history, statistics and streaks, and syncing with your watch</li>
+        <li><strong>Reminders</strong> &mdash; scheduling and delivering local notifications</li>
+        <li><strong>Account and backup</strong> &mdash; signing you in with Google and, with Premium and if you turn it on, backing up and syncing your drink log</li>
+        <li><strong>Premium</strong> &mdash; confirming your purchase through Google Play</li>
+        <li><strong>Compliance</strong> &mdash; fulfilling legal obligations where applicable</li>
+    </ul>
+    <p>
+        We do not use your data for advertising, profiling or analytics.
+    </p>
+
+    <h2>4. Permissions Summary</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Permission</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>INTERNET, ACCESS_NETWORK_STATE</code></td>
+                <td>Sign in with Google, cloud backup (only if you turn it on), account deletion and Google Play purchases</td>
+            </tr>
+            <tr>
+                <td><code>POST_NOTIFICATIONS</code></td>
+                <td>Show your water reminders</td>
+            </tr>
+            <tr>
+                <td><code>SCHEDULE_EXACT_ALARM</code></td>
+                <td>Deliver reminders at the time you set</td>
+            </tr>
+            <tr>
+                <td><code>RECEIVE_BOOT_COMPLETED</code></td>
+                <td>Re-schedule reminders after the device restarts or the App is updated</td>
+            </tr>
+            <tr>
+                <td><code>BILLING</code></td>
+                <td>Google Play purchase of Premium</td>
+            </tr>
+            <tr>
+                <td><code>CAMERA</code></td>
+                <td>Take a profile photo (optional; the photo stays on your device)</td>
+            </tr>
+            <tr>
+                <td><code>VIBRATE, WAKE_LOCK</code></td>
+                <td>Let reminders vibrate and wake the device briefly</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>5. Data Sharing &amp; Third-Party Services</h2>
+    <p>
+        Aquatick does <strong>not</strong> sell, trade or rent your personal information, and it shows no ads. We use
+        these third-party services for the limited purposes above:
+    </p>
+    <ul>
+        <li><strong>Google Sign-In</strong> (Google LLC) &mdash; sign-in with your Google account. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+        <li><strong>Supabase</strong> &mdash; account storage and the optional cloud backup. See the <a href="https://supabase.com/privacy" rel="noopener">Supabase Privacy Policy</a>.</li>
+        <li><strong>Google Play and Google Play services</strong> (Google LLC) &mdash; app distribution, purchases, the Wear OS data connection and Android backup. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
+    </ul>
+
+    <h2>6. Data Security</h2>
+    <p>
+        Your data on the device is protected by Android's app sandbox. Data sent to Supabase travels over encrypted
+        connections (TLS), the App never handles a password, and access to cloud rows is restricted to the
+        account that owns them. However, no method of electronic storage or transmission is 100% secure.
+    </p>
+
+    <h2 id="delete">7. Data Retention and Deletion</h2>
+    <p>
+        Data on your device remains as long as the App is installed; you can delete it by uninstalling the App or
+        clearing its data in Android Settings. Account and cloud backup data remain until you delete your account.
+        To delete it, open <strong>Settings &rarr; Account &rarr; Delete Account</strong> in the App. This permanently
+        removes your account and all drinks backed up to the cloud. Drinks stored on your device are kept until you
+        remove them yourself. If you cannot use the App, email us and we will delete your account on request.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+        Aquatick is not directed to children under the age of 13. We do not knowingly collect personal information
+        from children. If you believe a child has provided us with personal information, please contact us and
+        we will take steps to delete such information.
+    </p>
+
+    <h2>9. Your Rights and Choices</h2>
+    <p>
+        You can use Aquatick without an account, switch cloud backup and reminders off in Settings, log out, delete
+        your account, and revoke the camera and notification permissions in Android Settings. Depending on your
+        jurisdiction you may also have the right to:
+    </p>
+    <ul>
+        <li><strong>Access</strong> &mdash; request a copy of data we hold about you</li>
+        <li><strong>Deletion</strong> &mdash; request deletion of your data</li>
+        <li><strong>Correction</strong> &mdash; request correction of inaccurate data</li>
+        <li><strong>Portability</strong> &mdash; request your data in a portable format</li>
+        <li><strong>Objection</strong> &mdash; object to processing of your data</li>
+    </ul>
+    <p>
+        To exercise these rights, please contact us using the information below.
+    </p>
+
+    <h2>10. Changes to This Policy</h2>
+    <p>
+        We may update this privacy policy from time to time. Any changes will be posted on this page with an updated
+        "Last updated" date. We encourage you to review this policy periodically. Continued use of the App after
+        changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>11. Contact Us</h2>
+    <p>
+        If you have any questions about this privacy policy or our practices, please contact us at:
+    </p>
+    <p>
+        <strong>Email:</strong> <a href="mailto:support@vnsapp.com">support@vnsapp.com</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/AAyar94/Aquatick/issues">github.com/AAyar94/Aquatick</a>
+    </p>
+
+</main>
+<footer>
+    &copy; 2026 Aquatick. All rights reserved.
+</footer>
+</body>
+</html>
