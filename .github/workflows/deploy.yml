@@ -54,9 +54,10 @@ jobs:
       # GitHub Pages serves this repo straight from main's root, so the
       # build output has to live there too. Copy it in without deleting
       # anything: a page added only at the root used to vanish on the next
-      # deploy (it did for the Aquatick privacy policy). Only assets/ is
-      # cleaned, because its file names carry a hash and stale bundles would
-      # otherwise pile up. Keep static pages in web/public.
+      # deploy (it did for the Aquatick privacy policy), and assets are
+      # sometimes uploaded ahead of a build. Stale hashed bundles in assets/
+      # therefore pile up; clear them by hand when it gets out of hand.
+      # Keep static pages in web/public.
       - name: Publish build to repo root
         run: |
           rsync -a \
@@ -67,7 +68,6 @@ jobs:
             --exclude='/README.md' \
             --exclude='/.gitignore' \
             web/build/ ./
-          rsync -a --delete web/build/assets/ ./assets/
 
       - name: Commit and push
         run: |
