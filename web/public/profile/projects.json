@@ -105,17 +105,6 @@
             ]
         },
         {
-            "slug": "earthquakes",
-            "image": "images/projects/earthquakes_mockup.png",
-            "title": "Last Earthquakes",
-            "bodyText": "Real-time tracker for the last 100 earthquakes in Turkey with interactive map view and risk zone visualization.",
-            "tags": [
-                "Kotlin",
-                "Retrofit",
-                "Maps"
-            ]
-        },
-        {
             "slug": "foodrecipes",
             "image": "images/projects/food_recipes_mockup.png",
             "title": "Food Recipes",
@@ -124,17 +113,6 @@
                 "Kotlin",
                 "Retrofit",
                 "Room",
-                "MVVM"
-            ]
-        },
-        {
-            "slug": "valorguide",
-            "image": "images/projects/valorguide_image.png",
-            "title": "ValoGuide & Stats",
-            "bodyText": "Valorant companion app — browse game info, agent guides, and view your personal match statistics.",
-            "tags": [
-                "Kotlin",
-                "Retrofit",
                 "MVVM"
             ]
         },
