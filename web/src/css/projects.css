@@ -114,9 +114,3 @@
   border-radius: 999px;
   padding: 0.3em 0.75em;
 }
-
-.projects-more {
-  display: flex;
-  justify-content: center;
-  margin-top: var(--space-6);
-}

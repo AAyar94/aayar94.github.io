@@ -8,13 +8,10 @@ import FallbackSpinner from './FallbackSpinner';
 import { useLocale, localizePath } from '../i18n/LocaleContext';
 import '../css/projects.css';
 
-const SHOW_MORE = { en: 'Show more', tr: 'Daha fazla göster' };
-
 const Projects = (props) => {
   const { header } = props;
   const { lang } = useLocale();
   const [data, setData] = useState(null);
-  const [showMore, setShowMore] = useState(false);
 
   useEffect(() => {
     fetch(localizePath(endpoints.projects, lang), {
@@ -25,8 +22,6 @@ const Projects = (props) => {
       .catch((err) => err);
   }, [lang]);
 
-  const numberOfItems = showMore && data ? data.projects.length : 6;
-
   return (
     <>
       <Header title={header} />
@@ -34,7 +29,7 @@ const Projects = (props) => {
         <div className="section-content-container">
           <Fade triggerOnce>
             <div className="bento">
-              {data.projects?.slice(0, numberOfItems).map((project, index) => (
+              {data.projects?.map((project, index) => (
                 <ProjectCard
                   key={project.title}
                   project={project}
@@ -43,18 +38,6 @@ const Projects = (props) => {
               ))}
             </div>
           </Fade>
-
-          {!showMore && data.projects?.length > numberOfItems && (
-            <div className="projects-more">
-              <button
-                type="button"
-                className="btn-pill btn-ghost"
-                onClick={() => setShowMore(true)}
-              >
-                {SHOW_MORE[lang]}
-              </button>
-            </div>
-          )}
         </div>
       ) : <FallbackSpinner /> }
     </>
