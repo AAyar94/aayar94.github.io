@@ -148,7 +148,7 @@
 
 <header>
     <h1>Privacy Policy</h1>
-    <p>Chronix &mdash; Last updated: November 1, 2026</p>
+    <p>Chronix &mdash; Last updated: November 3, 2026</p>
     <p class="lang-switch"><a href="/chronix-privacy-policy.tr.html" hreflang="tr">Türkçe</a></p>
 </header>
 
@@ -162,7 +162,7 @@
     </p>
     <p>
         In short: Chronix has <strong>no ads and no advertising ID</strong>. You use it as a <strong>guest</strong> or
-        sign in with <strong>Google</strong>. Your countdowns are kept on your device and, so that they can follow you
+        sign in with <strong>Google</strong> or, on iOS, <strong>Apple</strong>. Your countdowns are kept on your device and, so that they can follow you
         between your devices, on our server. You can <strong>delete your account and its data inside the App</strong>
         (<a href="#delete-account">how</a>). On Android the App can also send anonymous usage statistics and crash
         reports, and you can switch both off in <strong>Settings &rarr; Privacy</strong>.
@@ -172,7 +172,8 @@
 
     <h3>2.1 Your account</h3>
     <p>
-        When you first open the App you continue as a <strong>guest</strong> or sign in with <strong>Google</strong>.
+        When you first open the App you continue as a <strong>guest</strong> or sign in with <strong>Google</strong> or,
+        on iOS, <strong>Apple</strong>.
     </p>
     <ul>
         <li><strong>Guest</strong> &mdash; the App creates an anonymous account identified only by a random ID. It has
@@ -181,10 +182,14 @@
             identifier. Our sign-in provider may also store the other basic profile details Google returns (such as your
             name and profile picture) as part of the sign-in record; Chronix does not use or show them. Chronix never
             sees your Google password.</li>
+        <li><strong>Sign in with Apple (iOS)</strong> &mdash; Apple tells the App an Apple account identifier and
+            your email address, which is either your real address or, if you choose to hide it, a private relay
+            address that forwards to you. The App asks for the email address only, not your name. Chronix never sees
+            your Apple password.</li>
     </ul>
     <p>
-        If you add Google to a guest account, your countdowns stay with you. If that Google account already has a
-        Chronix account, you are signed in to it and the countdowns on this device are added to it.
+        If you add Google or Apple to a guest account, your countdowns stay with you. If that Google or Apple account
+        already has a Chronix account, you are signed in to it and the countdowns on this device are added to it.
     </p>
 
     <h3>2.2 Your countdowns (data you create)</h3>
@@ -210,11 +215,16 @@
         time in your device's settings.
     </p>
 
-    <h3>2.4 Notifications and alarms</h3>
+    <h3>2.4 Notifications, widgets and alarms</h3>
     <p>
         Reminders and milestone notifications are scheduled and delivered locally on your device. On Android, Chronix
         uses the notification permission, exact alarms and a boot receiver only so reminders arrive on time and are
         re-scheduled after a restart. On iOS it uses local notifications.
+    </p>
+    <p>
+        On iOS, the home screen and Lock Screen widgets and the Live Activity that shows your next countdown on the
+        Lock Screen and in the Dynamic Island during its final 24 hours are drawn from countdown data kept on your
+        device, in a storage area shared only between the App and its widgets. Nothing is sent anywhere for them.
     </p>
 
     <h3>2.5 Usage analytics (Android, optional)</h3>
@@ -258,8 +268,18 @@
         Payments &amp; subscriptions &rarr; Subscriptions, or <strong>Settings &rarr; Manage subscription</strong> in the
         App). Cancelling stops the next renewal, and Premium stays until the end of the period you already paid for.
         Premium is tied to your Chronix account (a guest account included), so it follows you to a new phone when you
-        sign in to the same account; if it does not appear, choose <strong>Restore purchases</strong>. Premium is not
-        offered on iOS yet.
+        sign in to the same account; if it does not appear, choose <strong>Restore purchases</strong>.
+    </p>
+    <p>
+        On iOS, Premium is available as the same <strong>monthly subscription</strong>, <strong>yearly
+        subscription</strong> and <strong>one-time Lifetime purchase</strong>, all handled by the <strong>App
+        Store</strong> (Apple). Apple processes the payment and shows the price in your currency; Chronix only learns
+        whether an active purchase exists so it can unlock Premium, and never sees or stores your card or payment
+        details. Subscriptions renew automatically until you cancel them at least 24 hours before the end of the current
+        period, in your Apple Account's subscription settings (or <strong>Settings &rarr; Manage subscription</strong>
+        in the App, which opens them). A free trial, where offered, turns into a paid subscription unless you cancel it
+        before it ends. Premium follows your Chronix account in the same way, and <strong>Restore purchases</strong>
+        brings it back if it does not appear.
     </p>
     <p>
         Purchases are managed with <strong>RevenueCat</strong> (RevenueCat, Inc.), a subscription service. To check
@@ -286,11 +306,11 @@
 
     <h2>3. How We Use Your Information</h2>
     <ul>
-        <li><strong>Provide core functionality</strong> &mdash; creating, displaying and managing countdowns, including home screen widgets, the Quick Settings tile and launcher shortcuts on Android</li>
+        <li><strong>Provide core functionality</strong> &mdash; creating, displaying and managing countdowns, including home screen widgets, the Quick Settings tile and launcher shortcuts on Android, and home screen and Lock Screen widgets and Live Activities on iOS</li>
         <li><strong>Accounts and sync</strong> &mdash; signing you in and keeping your countdowns the same on your devices</li>
         <li><strong>Calendar import</strong> &mdash; reading calendar events you choose to add as countdowns</li>
         <li><strong>Reminders</strong> &mdash; scheduling and delivering local notifications</li>
-        <li><strong>Premium</strong> &mdash; confirming your purchase through Google Play and RevenueCat</li>
+        <li><strong>Premium</strong> &mdash; confirming your purchase through Google Play or the App Store, and RevenueCat</li>
         <li><strong>App improvement</strong> &mdash; analyzing anonymous usage data and crash reports to fix bugs and improve features (only while those switches are on)</li>
         <li><strong>Compliance</strong> &mdash; fulfilling legal obligations where applicable</li>
     </ul>
@@ -340,6 +360,7 @@
         <li><strong>Supabase</strong> &mdash; hosts your account and your synced countdowns (in Europe). See the <a href="https://supabase.com/privacy" rel="noopener">Supabase privacy policy</a>.</li>
         <li><strong>Google Sign-In</strong> (Google LLC) &mdash; signing in with your Google account, only if you choose it. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</li>
         <li><strong>Firebase Analytics and Firebase Crashlytics</strong> (Google LLC) &mdash; anonymous usage statistics and crash reports on Android, optional. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy information</a>.</li>
+        <li><strong>Sign in with Apple and the App Store</strong> (Apple Inc.) &mdash; signing in with your Apple account, only if you choose it, and purchases on iOS. See the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</li>
         <li><strong>Google Play</strong> (Google LLC) &mdash; purchases on Android.</li>
         <li><strong>RevenueCat</strong> (RevenueCat, Inc.) &mdash; checks purchases and keeps Premium on your account. See the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat privacy policy</a>.</li>
     </ul>
@@ -375,9 +396,16 @@
     </p>
     <p>
         If you cannot open the App, email <a href="mailto:support@vnsapp.com">support@vnsapp.com</a> from the email
-        address of your Google account and ask us to delete your Chronix account; we will do so within 30 days. A guest
+        address of your Google or Apple account (if you hid your address with Sign in with Apple, tell us the private
+        relay address shown in your Apple Account settings) and ask us to delete your Chronix account; we will do so
+        within 30 days. A guest
         account has no email address that identifies it, so it can only be deleted in the App on the device where it
         was created.
+    </p>
+    <p>
+        If you signed in with Apple, deleting your account in the App does not remove Chronix from your Apple Account's
+        list of apps that use Sign in with Apple. To remove it there as well, open <strong>Settings &rarr; your name
+        &rarr; Sign in with Apple</strong>, choose Chronix and stop using your Apple Account with it.
     </p>
 
     <h2>8. Children's Privacy</h2>
@@ -389,11 +417,11 @@
 
     <h2>9. Your Rights and Choices</h2>
     <p>
-        You can use Chronix as a guest instead of signing in with Google, switch usage analytics and crash reports off
+        You can use Chronix as a guest instead of signing in with Google or Apple, switch usage analytics and crash reports off
         in Settings &rarr; Privacy on Android, revoke the calendar and notification permissions in your device's
         settings, and delete your account in the App. On Android, <strong>Export countdowns</strong> gives you a copy of
         your countdowns in a file. The personal data we hold about you is limited to your account (a random ID and, if
-        you signed in with Google, your email address), your countdowns, and the anonymous analytics and crash data
+        you signed in with Google or Apple, your email address, which for Apple may be a private relay address), your countdowns, and the anonymous analytics and crash data
         described above. Depending on your jurisdiction you may also have the right to:
     </p>
     <ul>
