@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — Chronix</title>
+    <style>
+        :root {
+            --primary: #6442D6;
+            --on-primary: #FFFFFF;
+            --surface: #FDF7FF;
+            --surface-container: #F2ECF7;
+            --on-surface: #1C1B20;
+            --on-surface-variant: #48454E;
+            --outline: #79767F;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--surface);
+            color: var(--on-surface);
+            line-height: 1.7;
+        }
+
+        header {
+            background: var(--primary);
+            color: var(--on-primary);
+            padding: 48px 24px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        h2:first-of-type { margin-top: 0; }
+
+        p, li {
+            font-size: 0.95rem;
+            color: var(--on-surface-variant);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li { margin-bottom: 6px; }
+
+        strong { color: var(--on-surface); }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--outline);
+            color: var(--on-surface-variant);
+        }
+
+        th {
+            background: var(--surface-container);
+            color: var(--on-surface);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            font-size: 0.8rem;
+            color: var(--outline);
+        }
+
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--on-surface);
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, monospace;
+            font-size: 0.85em;
+        }
+
+        header a {
+            color: var(--on-primary);
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            margin-top: 12px;
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #C9BFFF;
+                --on-primary: #1B0064;
+                --surface: #141218;
+                --surface-container: #211F26;
+                --on-surface: #E6E0E9;
+                --on-surface-variant: #CAC4D0;
+                --outline: #938F99;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Chronix Support</h1>
+    <p>Help for the Chronix countdown app on iPhone and Android</p>
+    <p class="lang-switch"><a href="#tr" hreflang="tr">Türkçe</a></p>
+</header>
+
+<main>
+
+    <h2>Contact</h2>
+    <p>
+        Write to <a href="mailto:support@vnsapp.com">support@vnsapp.com</a> with your question, your device and the app
+        version (Settings, at the bottom). We usually answer within two working days.
+    </p>
+
+    <h2>Common questions</h2>
+    <h3>I bought Premium. How do I get it back on a new phone?</h3>
+    <p>
+        Open Chronix, go to <strong>Settings</strong> and tap <strong>Restore purchases</strong>, signed in to the same
+        Apple ID (iPhone) or Google account (Android) that made the purchase.
+    </p>
+    <h3>How do I cancel my subscription?</h3>
+    <p>
+        On iPhone: <strong>Settings &rarr; [your name] &rarr; Subscriptions &rarr; Chronix</strong>, or
+        <strong>Manage subscription</strong> in the app's Settings. On Android: Google Play &rarr; Payments &amp;
+        subscriptions. A subscription stays active until the end of the period you paid for.
+    </p>
+    <h3>Will I lose my countdowns if I change phones?</h3>
+    <p>
+        Signed-in accounts (Apple or Google) sync countdowns to every device you sign in on. As a guest, use
+        <strong>Settings &rarr; Export backup</strong> and import the file on the new phone; a backup made on Android
+        restores on iPhone and the other way round.
+    </p>
+    <h3>How do I delete my account and data?</h3>
+    <p>
+        In the app: <strong>Settings &rarr; Delete account</strong>. This removes your account and synced countdowns from
+        our server. See the <a href="/chronix-privacy-policy.html#delete-account">privacy policy</a> for details.
+    </p>
+    <h3>The widget does not update or shows nothing.</h3>
+    <p>
+        Open Chronix once after installing or updating, then remove and re-add the widget. Widgets read the countdowns
+        saved on the device, so a countdown must exist in the app first.
+    </p>
+
+    <h2>Legal</h2>
+    <p>
+        <a href="/chronix-privacy-policy.html">Privacy policy</a> &middot;
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Terms of use (Apple standard EULA)</a>
+    </p>
+
+    <h2 id="tr">Türkçe</h2>
+    <p>
+        Sorularını <a href="mailto:support@vnsapp.com">support@vnsapp.com</a> adresine, cihazın ve uygulama sürümüyle
+        (Ayarlar'ın en altında) birlikte yaz. Genellikle iki iş günü içinde yanıtlarız.
+    </p>
+    <h3>Premium aldım, yeni telefonda nasıl geri alırım?</h3>
+    <p>Satın alımı yapan Apple kimliği ya da Google hesabıyla <strong>Ayarlar &rarr; Satın alımları geri yükle</strong>.</p>
+    <h3>Aboneliği nasıl iptal ederim?</h3>
+    <p>
+        iPhone'da <strong>Ayarlar &rarr; [adın] &rarr; Abonelikler &rarr; Chronix</strong> ya da uygulamadaki
+        <strong>Aboneliği yönet</strong>. Android'de Google Play &rarr; Ödemeler ve abonelikler. Abonelik, ödediğin dönemin
+        sonuna kadar etkin kalır.
+    </p>
+    <h3>Telefon değiştirirsem geri sayımlarım kaybolur mu?</h3>
+    <p>
+        Apple ya da Google ile giriş yaptıysan geri sayımlar giriş yaptığın her cihaza eşitlenir. Misafir olarak
+        <strong>Ayarlar &rarr; Yedeği dışa aktar</strong> ile dosyayı yeni telefonda içe aktar; Android yedeği iPhone'da da
+        açılır.
+    </p>
+    <h3>Hesabımı ve verilerimi nasıl silerim?</h3>
+    <p>
+        Uygulamada <strong>Ayarlar &rarr; Hesabı sil</strong>. Ayrıntılar
+        <a href="/chronix-privacy-policy.tr.html">gizlilik politikasında</a>.
+    </p>
+
+</main>
+
+<footer>
+    &copy; 2026 Chronix. All rights reserved.
+</footer>
+
+</body>
+</html>
