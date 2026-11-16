@@ -148,7 +148,7 @@
 
 <header>
     <h1>Privacy Policy</h1>
-    <p>Chronix &mdash; Last updated: November 8, 2026</p>
+    <p>Chronix &mdash; Last updated: November 16, 2026</p>
     <p class="lang-switch"><a href="/chronix-privacy-policy.tr.html" hreflang="tr">Türkçe</a></p>
 </header>
 
@@ -300,13 +300,45 @@
         On Android, <strong>Export countdowns</strong> saves a file to a location you choose, and
         <strong>Import countdowns</strong> reads a file you choose. When you share a countdown as an image or text, it
         goes only to the app you pick in your device's share sheet. Chronix does not transmit these files or images
-        itself.
+        itself. Share links work differently and are described next.
+    </p>
+
+    <h3 id="share-links">2.10 Share links</h3>
+    <p>
+        If you are signed in with Google or Apple, you can <strong>share a countdown as a link</strong>
+        (<code>https://chronix.vnsapp.app/c/&hellip;</code>). Guests cannot create links. When you do, the App sends
+        that countdown's <strong>title, date and time, time zone, category, colour, icon</strong>, whether it counts up,
+        and the App's language to our server, together with your random account ID and the countdown's internal ID so
+        that only you can change or stop the link. Your <strong>notes, reminders and other countdowns are never
+        sent</strong>.
+    </p>
+    <p>
+        A link is <strong>public</strong>: anyone who has it can open a web page showing that countdown's title, date,
+        time zone, category, colour and icon, and can add it to their own Chronix. The page never shows who shared it:
+        your name, email address and account are not stored with the link and are not shown. Only share a link with
+        people you want to see the countdown.
+    </p>
+    <p>
+        Editing a shared countdown updates its page; deleting it, or choosing <strong>Stop sharing</strong>, ends the
+        link. Every link also ends by itself <strong>30 days after you last shared it</strong> (sharing it again starts
+        the 30 days again). When a link ends, its countdown details are deleted from our server. We keep a short record
+        that a link existed (its ID, your account ID, the countdown's internal ID, when it started and ended, and why it
+        ended), never its title, date or other details, to understand how sharing is used and to notice abuse. When you
+        delete your account, its links are ended first and these records are no longer tied to your account.
+    </p>
+    <p>
+        When you open someone else's link in the App, the App asks our server for that link's countdown without sending
+        your account; the countdown is only saved to your account if you choose <strong>Add to my countdowns</strong>.
+        Share links and their pages are served by <strong>Cloudflare</strong>, which, like any web server, sees the IP
+        address of the device asking. We use it only to limit how often one address can make requests, and we do not
+        store it.
     </p>
 
     <h2>3. How We Use Your Information</h2>
     <ul>
         <li><strong>Provide core functionality</strong> &mdash; creating, displaying and managing countdowns, including home screen widgets, the Quick Settings tile and launcher shortcuts on Android, and home screen and Lock Screen widgets and Live Activities on iOS</li>
         <li><strong>Accounts and sync</strong> &mdash; signing you in and keeping your countdowns the same on your devices</li>
+        <li><strong>Share links</strong> &mdash; publishing a countdown you choose to share at a link anyone who has it can open, keeping that page up to date, ending it, and showing you someone else's shared countdown when you open their link</li>
         <li><strong>Calendar import</strong> &mdash; reading calendar events you choose to add as countdowns</li>
         <li><strong>Reminders</strong> &mdash; scheduling and delivering local notifications</li>
         <li><strong>Premium</strong> &mdash; confirming your purchase through Google Play or the App Store, and RevenueCat</li>
@@ -325,7 +357,7 @@
         <tbody>
             <tr>
                 <td><code>INTERNET</code> (Android)</td>
-                <td>Sign-in, syncing your countdowns, anonymous analytics, crash reports and Google Play purchases</td>
+                <td>Sign-in, syncing your countdowns, share links, anonymous analytics, crash reports and Google Play purchases</td>
             </tr>
             <tr>
                 <td><code>READ_CALENDAR</code> (Android), Calendars (iOS)</td>
@@ -362,9 +394,11 @@
         <li><strong>Sign in with Apple and the App Store</strong> (Apple Inc.) &mdash; signing in with your Apple account, only if you choose it, and purchases on iOS. See the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</li>
         <li><strong>Google Play</strong> (Google LLC) &mdash; purchases on Android.</li>
         <li><strong>RevenueCat</strong> (RevenueCat, Inc.) &mdash; checks purchases and keeps Premium on your account. See the <a href="https://www.revenuecat.com/privacy" rel="noopener">RevenueCat privacy policy</a>.</li>
+        <li><strong>Cloudflare</strong> (Cloudflare, Inc.) &mdash; stores and serves share links and their pages, and runs our small server for them (<a href="#share-links">2.10</a>). See the <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare privacy policy</a>.</li>
     </ul>
     <p>
-        We do not share your calendar data or the content of your countdowns with anyone else.
+        We do not share your calendar data or the content of your countdowns with anyone else. The only exception is a
+        countdown you choose to share as a link, which anyone with that link can see until the link ends.
     </p>
 
     <h2>6. Data Security</h2>
@@ -372,7 +406,9 @@
         Your countdowns are stored on your device, protected by the operating system's app sandbox, and on our server,
         where access rules let each account read and change only its own countdowns. The sign-in session kept on your
         device is stored encrypted (Android Keystore, iOS Keychain) and is excluded from device backups. Data travels
-        over encrypted connections (TLS). However, no method of electronic storage or transmission is 100% secure.
+        over encrypted connections (TLS). A shared countdown's page is public by design: anyone with its link can see
+        it, and links are long random codes that cannot be guessed in practice. However, no method of electronic
+        storage or transmission is 100% secure.
     </p>
 
     <h2>7. Data Retention, Deleting Your Account and Device Backup</h2>
@@ -381,7 +417,9 @@
         device as long as the App is installed; you can delete them there by uninstalling the App or clearing its data.
         On Android, the database, the sign-in session and the sync position are excluded from Google cloud backup; when
         you set up a new phone with device-to-device transfer, the countdown database may be copied to it, but you
-        sign in again. Analytics and crash data held by Google is kept under Firebase's standard retention settings.
+        sign in again. Share links last until you stop them, delete their countdown or your account, and at most 30
+        days after you last shared them (<a href="#share-links">2.10</a>). Analytics and crash data held by Google is
+        kept under Firebase's standard retention settings.
         Switching a privacy switch off stops new collection.
     </p>
 
@@ -389,7 +427,8 @@
     <p>
         You can delete your account and its data at any time <strong>in the App</strong>:
         <strong>Settings &rarr; Account &rarr; Delete account</strong>, then confirm. This permanently deletes your
-        account and all the countdowns stored under it on our server. It cannot be undone. Countdowns that are on the
+        account and all the countdowns stored under it on our server, and ends every link you shared first. It cannot
+        be undone. Countdowns that are on the
         device you used stay there until you remove them, and anonymous analytics and crash data (which is tied to a
         random installation identifier, not to your account) is not removed by deleting the account.
     </p>
@@ -420,7 +459,7 @@
         in Settings &rarr; Privacy on Android, revoke the calendar and notification permissions in your device's
         settings, and delete your account in the App. On Android, <strong>Export countdowns</strong> gives you a copy of
         your countdowns in a file. The personal data we hold about you is limited to your account (a random ID and, if
-        you signed in with Google or Apple, your email address, which for Apple may be a private relay address), your countdowns, and the anonymous analytics and crash data
+        you signed in with Google or Apple, your email address, which for Apple may be a private relay address), your countdowns, the countdowns you share as links while they are shared, and the anonymous analytics and crash data
         described above. Depending on your jurisdiction you may also have the right to:
     </p>
     <ul>
