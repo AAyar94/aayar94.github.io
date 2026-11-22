@@ -1,6 +1,6 @@
 {
   "title": "Chronix",
-  "subtitle": "Android için geri sayım ve etkinlik sayacı — önemli anlara kalan günleri ana ekranınızdan takip edin; takvimden içe aktarma, hatırlatıcılar ve yedekleme ile.",
+  "subtitle": "iPhone ve Android için geri sayım ve etkinlik sayacı — önemli anlara kalan günleri ana ekranınızdan takip edin; takvimden içe aktarma, hatırlatıcılar ve yedekleme ile.",
   "tags": [
     "Kotlin",
     "Compose",
@@ -12,6 +12,13 @@
     {
       "label": "Google Play'de İndir",
       "href": "https://play.google.com/store/apps/details?id=com.vnsapp.chronix",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "App Store'dan İndir",
+      "href": "https://apps.apple.com/app/id6829918515",
       "variant": "primary",
       "icon": "external",
       "external": true
@@ -32,15 +39,15 @@
       "labelKey": "overview",
       "titleBefore": "Önemli olana",
       "titleHighlight": "geri sayın",
-      "description": "Chronix, önemli tarihleri — doğum günleri, son teslim tarihleri, tatiller, geziler — istediğiniz an göz atabileceğiniz canlı geri sayımlara dönüştürür. Etkinlikleri elle ekleyin ya da doğrudan cihaz takviminizden içe aktarın, widget olarak ana ekranınıza sabitleyin ve gelmeden önce hatırlatma alın. Her şey cihazınızda yerel olarak saklanır.",
+      "description": "Chronix, önemli tarihleri — doğum günleri, son teslim tarihleri, tatiller, geziler — istediğiniz an göz atabileceğiniz canlı geri sayımlara dönüştürür. Etkinlikleri elle ekleyin ya da doğrudan cihaz takviminizden içe aktarın, widget olarak ana ekranınıza sabitleyin ve gelmeden önce hatırlatma alın. Geri sayımlar cihazınızda durur; isteğe bağlı bir hesapla telefonlarınız arasında senkronize olur.",
       "features": [
         "Herhangi bir tarih için geri sayım oluşturun ve günlerin azalışını izleyin",
         "Etkinlikleri doğrudan cihaz takviminizden içe aktarın (yalnızca okuma)",
         "2×2, 4×2, 4×4 ve sayaç boyutlarında ana ekran widget'ları",
         "Yeniden başlatmadan sonra yeniden planlanan hatırlatıcı ve kilometre taşı bildirimleri",
         "Geri sayımlarınızı yedekleyin, geri yükleyin ve kart olarak paylaşın",
-        "Açık ve koyu temalı, 7 dil destekli editoryal \"Ink\" tasarım",
-        "Geri sayımlarınız cihazınızda yerel olarak saklanır"
+        "Açık ve koyu temalı, 8 dil destekli editoryal \"Ink\" tasarım",
+        "İnternetsiz çalışır; isteğe bağlı Apple veya Google girişiyle geri sayımlar senkronize olur"
       ],
       "image": "images/projects/chronix_home.png",
       "imageAlt": "Chronix home screen",
