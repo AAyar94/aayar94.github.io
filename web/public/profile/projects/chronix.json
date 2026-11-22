@@ -1,6 +1,6 @@
 {
   "title": "Chronix",
-  "subtitle": "Countdown & event timer for Android — track the days to the moments that matter, right from your home screen, with calendar import, reminders and backup.",
+  "subtitle": "Countdown & event timer for iPhone and Android — track the days to the moments that matter, right from your home screen, with calendar import, reminders and backup.",
   "tags": [
     "Kotlin",
     "Compose",
@@ -12,6 +12,13 @@
     {
       "label": "Get it on Google Play",
       "href": "https://play.google.com/store/apps/details?id=com.vnsapp.chronix",
+      "variant": "primary",
+      "icon": "external",
+      "external": true
+    },
+    {
+      "label": "Download on the App Store",
+      "href": "https://apps.apple.com/app/id6829918515",
       "variant": "primary",
       "icon": "external",
       "external": true
@@ -32,15 +39,15 @@
       "labelKey": "overview",
       "titleBefore": "Count down to",
       "titleHighlight": "what matters",
-      "description": "Chronix turns important dates — birthdays, deadlines, holidays, trips — into live countdowns you can glance at any time. Add events by hand or import them straight from your device calendar, pin them to your home screen as widgets, and get a reminder before they arrive. Everything is stored locally on your device.",
+      "description": "Chronix turns important dates — birthdays, deadlines, holidays, trips — into live countdowns you can glance at any time. Add events by hand or import them straight from your device calendar, pin them to your home screen as widgets, and get a reminder before they arrive. Countdowns live on your device, and an optional account keeps them in sync across your phones.",
       "features": [
         "Create countdowns for any date and watch the days tick down",
         "Import events directly from your device calendar (read-only)",
         "Home-screen widgets in 2×2, 4×2, 4×4 and timer sizes",
         "Reminders and milestone notifications, re-scheduled after reboot",
         "Back up and restore your countdowns, and share them as a card",
-        "Editorial \"Ink\" design with light & dark themes and 7 languages",
-        "Your countdowns are stored locally on your device"
+        "Editorial \"Ink\" design with light & dark themes and 8 languages",
+        "Works offline; optional Apple or Google sign-in syncs your countdowns"
       ],
       "image": "images/projects/chronix_home.png",
       "imageAlt": "Chronix home screen",
